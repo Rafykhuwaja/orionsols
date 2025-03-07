@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s forwards;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-7%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.myAnimate:hover {
+  animation: bounce 1s infinite;
+}
+
+*{
+  font-family: Helvetica, sans-serif;
+}
+
+.animated-object {
+  
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.background{
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+.serviceBackground{
+  background-image: url("/images/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+.ContactBackground{
+  background-image: url("/images/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+.blog-background{
+  background-image: url("/images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+.blog-bg{
+  background-image: url("/images/blogBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+/* CSS changes */
+/* Base styles for the card */
+.card {
+  width: 100%; /* Full width on smaller screens */
+  height: 400px; /* Fixed height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  border-radius: 10px; /* Added for better aesthetics */
+}
+
+/* Card content styles */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transform: translateY(140%);
+  transition: transform 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Hover effect for card content */
+.card:hover .card-content {
+  transform: translateY(0);
+}
+
+/* Card image styles */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Gradient overlay for the card */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.507), transparent);
+  z-index: 1;
+}
+
+/* Card title styles */
+.card-title {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.5rem;
+  z-index: 2;
+  color: #ff9c00; /* Added to match your theme */
+  font-weight: bold; /* Added for emphasis */
+}
+
+/* Hide title on hover */
+.card:hover .card-title {
+  visibility: hidden;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .card {
+    width: 100%; /* Full width on medium screens */
+    max-width: 500px; /* Max width for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 100%; /* Full width on larger screens */
+    max-width: 400px; /* Adjust as needed */
+  }
+}
+/* CSS for the animation */
+.animate-button {
+  background: linear-gradient(to right, #ff6a00 50%, #ff9c00 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.5s ease;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none; /* Remove outline on focus */
+}
+
+.animate-button:hover {
+  background-position: 0%;
+}
+
+
+.blogcard-image{
+  background-color: black;
+  opacity: 0.7;
+}
+
+.blogcard:hover .blogcard-image{
+  opacity: 1;
+}
+
+@keyframes fillBackground {
+  from {
+    background-position: bottom;
+  }
+  to {
+    background-position: top;
+  }
+}
+
+.blogcard {
+  position: relative;
+  overflow: hidden;
+  background-color: #030712; /* Initial background color */
+  background-image: linear-gradient(to top, black, black);
+  background-size: 100% 0;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, color 0.3s;
+}
+
+.blogcard:hover {
+  background-size: 100% 100%; /* Fill from bottom to top */
+  color: white;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s, transform 0.3s;
+  filter: brightness(60%); /* Initial black shade */
+}
+
+.blogcard:hover .card-image {
+  filter: brightness(100%); /* Brighten image on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-subtitle,
+.card-title,
+.card-description {
+  transition: color 0.3s;
+  color: #ffffff; /* Initial text color */
+}
+
+.blogcard:hover .card-subtitle,
+.blogcard:hover .card-title,
+.blogcard:hover .card-description {
+  color: #333; /* Text color on hover */
+}
+
+.smooth-transition {
+  transition: all 0.8s ease-in-out;
+}
+.smooth-transition:hover {
+  position: relative;
+  bottom: 15px;
+}
+.services-hover:hover svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+
+
+/* Keyframes for the animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at normal position */
+  }
+  50% {
+    transform: translateY(-30px); /* Move 30px up */
+  }
+  100% {
+    transform: translateY(0); /* End at normal position */
+  }
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
