@@ -36,7 +36,7 @@ const WhatsAppPopup = () => {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>
-              <div className="flex justify-center items-center w-full rounded-t-xl py-4 bg-gray-900">
+              <div className="flex justify-center items-center w-full rounded-t-xl py-4 bg-green-600">
                 <img className=" w-[90px] " src="/images/orionsols-white.png" />
               </div>
             </DialogTitle>
