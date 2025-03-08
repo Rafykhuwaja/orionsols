@@ -15,7 +15,7 @@ function About() {
           also deliver a seamless user experience across all devices. We focus
           on making your site easy to navigate, intuitive, and engaging,
           ensuring that visitors stay connected with your content and interact
-          with your brand. Whether you're aiming to boost online sales, improve
+          with your brand. Whether you re aiming to boost online sales, improve
           user engagement, or strengthen your brand identity, our websites are
           built to help you achieve your goals and leave a lasting impression on
           your audience.
