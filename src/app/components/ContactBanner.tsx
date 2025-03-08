@@ -20,7 +20,7 @@ function ContactBanner() {
             TOUCH WITH US
           </span>
         </h1>
-        <p className="mt-3 sm:mt-4 md:mt-6 pr-0 md:pr-9 text-sm sm:text-base md:text-lg lg:text-xl max-w-[920px]">
+        <p className="mt-3 sm:mt-4 md:mt-3 pr-0 md:pr-9 text-sm sm:text-base md:text-lg lg:text-xl max-w-[920px]">
           At Orionsols, were always here to help you take your business to the
           next level. Whether you have questions, want to discuss a project, or
           need expert advice, our team is just a message away.
@@ -28,7 +28,7 @@ function ContactBanner() {
         <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#ff9c00] mt-6 sm:mt-8 md:mt-10">
           Lets Connect
         </h1>
-        <p className="mt-3 sm:mt-4 md:mt-6 font-medium text-sm sm:text-base md:text-lg lg:text-xl max-w-[560px]">
+        <p className="mt-3 sm:mt-4 md:mt-4 font-medium text-sm sm:text-base md:text-lg lg:text-xl max-w-[560px]">
           We d love to hear from you! Fill out the form below or contact us
           directly through the details provided.
         </p>

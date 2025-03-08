@@ -7,7 +7,7 @@ function Testinominols() {
         <p className="text-white font-bold">Client Testimonials</p>
         <h1 className="text-2xl md:text-4xl font-extrabold my-3 text-[#ff9c00]">What Our Clients Are Saying</h1>
         <div className="flex flex-col md:flex-row justify-center gap-5 text-left mt-8 text-white">
-          <div className="p-5 shadow-sm shadow-black rounded-md w-full md:w-1/3 myAnimate">
+          <div className="p-5 shadow-sm shadow-gray-500 rounded-md w-full md:w-1/3 myAnimate ">
             <h1 className="text-xl md:text-3xl font-bold mb-3">
               A Game-Changer for Our Brand
             </h1>
@@ -19,7 +19,7 @@ function Testinominols() {
               <p>CEO, Innovative Tech Solutions</p>
             </div>
           </div>
-          <div className="p-5 shadow-sm shadow-black rounded-md w-full md:w-1/3 myAnimate">
+          <div className="p-5 shadow-sm shadow-gray-500 rounded-md w-full md:w-1/3 myAnimate">
             <h1 className="text-xl md:text-3xl font-bold mb-3">
               Expert Strategies and Results
             </h1>
@@ -31,7 +31,7 @@ function Testinominols() {
               <p>Marketing Director, Global Enterprises</p>
             </div>
           </div>
-          <div className="p-5 shadow-sm shadow-black rounded-md w-full md:w-1/3 myAnimate">
+          <div className="p-5 shadow-sm shadow-gray-500 rounded-md w-full md:w-1/3 myAnimate">
             <h1 className="text-xl md:text-3xl font-bold mb-3">
               Phenomenal Results with SEO
             </h1>

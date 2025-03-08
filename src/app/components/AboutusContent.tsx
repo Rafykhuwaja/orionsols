@@ -5,11 +5,11 @@ import WhatsAppPopup from "./whatsappPOpUp";
 function AboutusContent() {
   return (
     <div className="md:mt-[750px] bg-gray-950 w-full pt-[50px]">
-      <div>
-        <h1 className="text-3xl ml-10 md:text-7xl text-white my-10 md:ml-52 font-bold">
+      <div className="md:px-40 text-start px-10">
+        <h1 className="text-3xl md:text-7xl text-white md:my-10 my-5 font-bold">
           Our <span className="text-[#ff9c00]">Philosophy</span>
         </h1>
-        <p className="text-gray-300 text-center mx-5 md:mx-20 text-xl">
+        <p className="text-gray-300 md:text-xl">
           At Orionsols, our mission is to assist entrepreneurs and business
           owners in creating successful online stores with minimal hassle
           through our e-commerce outsourcing services. We understand the
@@ -23,10 +23,10 @@ function AboutusContent() {
           serving your customers.
         </p>
       </div>
-      <h1 className="text-3xl ml-10 md:text-7xl text-white mt-[100px] md:mt-[200px] md:ml-52 font-bold">
-        Our Satisfied <span className="text-[#ff9c00]">Clients</span>
-      </h1>
-      <div className="py-10">
+      <h1 className="text-3xl md:text-7xl text-white md:my-10 my-5 font-bold md:px-40 text-start px-10">
+          Our Satisfied <span className="text-[#ff9c00]">Client</span>
+        </h1>
+      <div className="py-7">
         <InfiniteMovingCardsDemo />
       </div>
       <div>

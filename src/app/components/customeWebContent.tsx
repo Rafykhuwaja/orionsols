@@ -11,7 +11,7 @@ function CustomeWebContent() {
       <section className="text-gray-300 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <Send
                   className=" rounded w-full object-cover object-center mb-6"
@@ -30,7 +30,7 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <BookText
                   className=" rounded w-full object-cover object-center mb-6"
@@ -49,7 +49,7 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <Cable
                   className=" rounded w-full object-cover object-center mb-6"
@@ -68,7 +68,7 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <HardDriveUpload
                   className=" rounded w-full object-cover object-center mb-6"

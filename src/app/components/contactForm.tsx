@@ -14,9 +14,9 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-between md:py-20 md:px-8 bg-gray-950 md:mt-[760px]">
+    <div className="flex flex-col md:flex-row md:justify-between lg:py-20 md:px-8 bg-gray-950 md:mt-[760px]">
       <div className="md:w-1/2 text-white p-6">
-      <div className="md:ml-[200px]">
+      <div className="">
 
     
         <h1 className="text-[#ff9c00] text-6xl font-extrabold mb-5">
