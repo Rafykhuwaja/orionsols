@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Orionsols UK",
+  title: "Orionsols",
   description: "Business Growth Agency",
   icons: {
     icon: ["/favicon.ico?v=4"],
