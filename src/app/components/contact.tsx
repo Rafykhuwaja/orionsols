@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 
@@ -27,9 +28,11 @@ function Contact() {
         long-term success, and a clear path forward in todays competitive
         market{" "}
       </p>
+      <Link href="/contact">
       <button className="text-lg px-6 py-3 rounded-lg bg-[#ff9c00] my-10 hover:bg-orange-500 ">
         Contact us
       </button>
+      </Link>
     </div>
 
 

@@ -5,7 +5,7 @@ function About() {
     <div className="px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
       <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:pr-20">
         <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 md:mt-16 mt-10 md:text-5xl">
-        Website Development
+        Website <br /> Development
         </h1>
         <p className="text-gray-300 md:text-xl">
           At Orionsols, we specialize in creating responsive, user-friendly, and

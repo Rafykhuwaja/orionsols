@@ -14,7 +14,7 @@ function WhyChoosUsSection() {
       </div>
       <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:ml-7">
         <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
-        Social Media Marketing
+        Social Media <br /> Marketing
         </h1>
         <p className="text-gray-300 md:text-xl">
         We specialize in creating customized marketing strategies that are
