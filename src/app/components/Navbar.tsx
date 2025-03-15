@@ -24,8 +24,8 @@ function Navbar() {
           <Link href='/'>
           <Image
             src="/images/orionsols_logo.png"
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
             className="w-[180px]"
             alt="orionsols"
             />
