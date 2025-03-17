@@ -27,7 +27,7 @@ const WhatsAppPopup = () => {
   };
 
   // WhatsApp Contacts Data
-  const contacts = [{ name: "Rafay Khwaja", number: "0528977529" }];
+  const contacts = [{ name: "Rafay Khwaja", number: "+971528977529" }];
 
   return (
     <div>

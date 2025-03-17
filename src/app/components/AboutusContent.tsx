@@ -4,7 +4,7 @@ import WhatsAppPopup from "./whatsappPOpUp";
 
 function AboutusContent() {
   return (
-    <div className="md:mt-[750px] bg-gray-950 w-full pt-[50px]">
+    <div className="md:mt-[760px] bg-gray-950 w-full pt-[50px]">
       <div className="md:px-40 text-start px-10">
         <h1 className="text-3xl md:text-7xl text-white md:my-10 my-5 font-bold">
           Our <span className="text-[#ff9c00]">Philosophy</span>

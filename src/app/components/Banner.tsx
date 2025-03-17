@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+
 function Banner() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 md:pt-24 w-full md:fixed md:z-[-1]">
+      <div className="flex flex-col md:flex-row background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 md:pt-32 w-full md:fixed md:z-[-1]">
      
         <div className="w-full md:w-1/2 pt-12 sm:pt-20 md:pt-32 fadeInLeft md:text-left">
           <div className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 md:mb-12">

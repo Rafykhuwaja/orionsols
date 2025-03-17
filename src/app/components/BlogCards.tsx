@@ -79,7 +79,7 @@ const Card: React.FC<CardProps> = ({
 
 const CardSection = () => {
   return (
-    <section className="text-gray-600 body-font blog-bg md:mt-[750px]">
+    <section className="text-gray-600 body-font blog-bg md:mt-[780px]">
       <div className="container py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="w-full mb-6 lg:mb-0">

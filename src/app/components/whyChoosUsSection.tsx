@@ -2,7 +2,7 @@ import React from "react";
 
 function WhyChoosUsSection() {
   return (
-    <div className="py-10 md:pb-36 md:pt-16 px-4 md:px-10 lg:px-20 bg-gray-900 md:mt-[760px]">
+    <div className="py-10 md:pb-36 md:pt-16 px-4 md:px-10 lg:px-20 bg-gray-900 md:mt-[780px]">
     
       <h1 className="md:text-5xl text-3xl font-bold text-[#ff9c00]">Empowering Brands with Innovative Digital Solutions</h1>
       <div className="h-1 w-3/4 md:max-w-5xl bg-[#ff9c00] mt-5 rounded  md:mb-28 mb-14"></div>

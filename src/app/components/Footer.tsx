@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 
 function Footer() {
@@ -26,12 +28,25 @@ function Footer() {
           <p className='font-bold'>Mail us:</p>
           <p>info@Orionsols.com</p>
         </div>
+        <div className="flex gap-10 mb-10">
+          <Link href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr" target="_blank">
+          <Facebook color="#9ca3af" />
+          </Link>
+          <Link href="https://www.instagram.com/orionsols_official?igsh=MTN4YXF2emdyNWIybw==" target="_blank">
+          <Instagram color="#9ca3af" />
+          </Link>
+          <Link href="https://www.linkedin.com/company/orionsols?trk=profile-position" target="_blank">
+          <Linkedin color="#9ca3af" />
+          </Link>
+          <Twitter color="#9ca3af" />
+        </div>
       </div>
     </div>
     {/* <div className='bg-gray-800 text-sm text-gray-400 px-3 flex gap-3'>
       <h1>Developed by Muhammad Uzair</h1>
       <p>uzairshaikh346@gmail.com</p>
     </div> */}
+    
     </div>
   );
 }

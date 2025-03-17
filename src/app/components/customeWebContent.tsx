@@ -3,7 +3,7 @@ import { BookText, Cable, HardDriveUpload, Send } from "lucide-react";
 
 function CustomeWebContent() {
   return (
-    <div className="md:mt-[750px] bg-gray-950 w-full pt-[100px]">
+    <div className="md:mt-[780px] bg-gray-950 w-full pt-[100px]">
       <h1 className="text-3xl ml-10 md:text-7xl text-white mt-10 md:ml-52 font-bold">
         How It <span className="text-[#ff9c00]">Works</span>
       </h1>

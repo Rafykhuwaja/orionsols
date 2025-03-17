@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogBanner() {
   return (
-    <div className="flex flex-col-reverse md:flex-row blog-background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 md:pt-24 w-full md:fixed md:z-[-1]">
+    <div className="flex flex-col-reverse md:flex-row blog-background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 md:pt-36 w-full md:fixed md:z-[-1]">
       <div className="w-full md:w-1/2">
         <img
           className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] max-w-full mx-auto fadeInLeft"
