@@ -1,7 +1,7 @@
 import { link } from "fs";
 import Link from "next/link";
 import React from "react";
-
+import Image from "next/image";
 interface CardProps {
   imgSrc: string;
   subtitle: string;
@@ -57,10 +57,12 @@ const Card: React.FC<CardProps> = ({
     <div className="xl:w-1/4 md:w-1/2 p-4 min-w-[350px]">
       <Link href={link}>
         <div className="p-6 rounded-lg bg-gray-950 border-2 border-[#ff9c00] blogcard transform transition-transform duration-500 ease-in-out hover:rounded-none hover:translate-y-2">
-          <img
+          <Image
             className="h-40 rounded w-full object-cover object-center mb-6 blogcard-image"
             src={imgSrc}
             alt={title}
+            height={1000}
+            width={1000}
           />
           <h3 className="tracking-widest text-[#ff9c00] text-xs font-medium title-font">
             {subtitle}

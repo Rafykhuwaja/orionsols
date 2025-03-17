@@ -1,6 +1,7 @@
 import Footer from '@/app/components/Footer'
 import Navbar from '@/app/components/Navbar'
 import React from 'react'
+import Image from 'next/image'
 
 function Page() {
   return (
@@ -13,10 +14,12 @@ function Page() {
 
       {/* Image Placeholder */}
       <div className='mb-8 flex justify-center mt-10'>
-        <img 
+        <Image 
           src="/images/marketingstrategy.jpg" 
           alt="Campaign Strategy" 
           className="h-auto rounded-md shadow-lg md:w-1/2"
+          height={1000}
+          width={1000}
           />
       </div>
 

@@ -1,6 +1,7 @@
 import Footer from '@/app/components/Footer'
 import Navbar from '@/app/components/Navbar'
 import React from 'react'
+import Image from 'next/image'
 
 function Page() {
   return (
@@ -12,10 +13,12 @@ function Page() {
         Maximizing Your Brand Capacity with Social Media and SEO
       </h1>
       <div className="mb-10 flex justify-center ">
-        <img 
+        <Image 
           src="/images/digitalmarketing.jpg" 
           alt="Social Media and SEO Strategy" 
           className="md:w-1/2 h-auto rounded-lg shadow-lg" 
+          height={1000}
+          width={1000}
           />
       </div>
 

@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <div className="w-full bg-gray-900">
-      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[215px] py-4">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[150px] lg:px-[215px] py-4">
         {/* Logo and Hamburger Menu */}
         <div className="flex justify-between items-center w-full md:w-auto">
           <Link href='/'>

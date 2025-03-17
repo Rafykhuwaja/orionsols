@@ -1,6 +1,7 @@
 import Footer from '@/app/components/Footer'
 import Navbar from '@/app/components/Navbar'
 import React from 'react'
+import Image from 'next/image'
 
 function Page() {
   return (
@@ -14,10 +15,12 @@ function Page() {
 
         {/* Image Placeholder */}
         <div className='mb-8 flex justify-center mt-10 '>
-          <img 
+          <Image
             src="/images/chatgpt.jpg" 
             alt="GPT-3.5 vs GPT-4" 
             className="h-auto rounded-md shadow-lg md:w-1/2"
+            width={1000}
+            height={1000}
           />
         </div>
         

@@ -1,7 +1,7 @@
 import Footer from '@/app/components/Footer'
 import Navbar from '@/app/components/Navbar'
 import React from 'react'
-
+import Image from 'next/image'
 function Page() {
   return (
     <div>
@@ -14,10 +14,12 @@ function Page() {
         Embrace Digital Marketing Strategies for Trade Development
       </h2>
       <div className="mb-6 flex justify-center mt-10">
-        <img 
+        <Image 
           src="/images/tradedevelopement.avif" 
           alt="Digital Marketing Strategy" 
           className="md:w-1/2 h-auto rounded-lg shadow-lg" 
+          height={1000}
+          width={1000}
           />
       </div>
 
