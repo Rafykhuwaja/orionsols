@@ -79,7 +79,7 @@ function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-semibold text-gray-300">
+        <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-semibold text-lg text-gray-300">
           <li className="hover:text-gray-500">
             <Link href="/">HOME</Link>
           </li>
