@@ -22,7 +22,7 @@ function Banner() {
           </div>
           <div className="relative md:bottom-5">
             <p className="mt-4 sm:mt-6 md:mt-8 font-medium text-sm sm:text-base md:text-lg lg:text-xl text-left md:text-left">
-              Let's work together to elevate your business to new heights.
+              Lets work together to elevate your business to new heights.
             </p>
             <Link href="/">
               <button className="text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-600 md:inline-block">
