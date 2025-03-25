@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactBanner() {
   return (
-    <div className="flex flex-col-reverse md:flex-row ContactBackground px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 md:pt-36 w-full md:fixed md:z-[-1]">
+    <div className="flex flex-col-reverse md:flex-row background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0 ">
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <img

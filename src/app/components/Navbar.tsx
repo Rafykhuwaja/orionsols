@@ -8,7 +8,7 @@ import {
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card";
 import { ChevronDown } from "lucide-react";
-import { Phone, Facebook, Instagram, Linkedin, Twitter , Mail} from "lucide-react";
+import { Phone, Facebook, Instagram, Linkedin, Twitter , Mail , Music2} from "lucide-react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +42,10 @@ function Navbar() {
           <Linkedin color="#ff9c00" />
           </Link>
           <Twitter color="#ff9c00" />
+          <Link href="https://www.tiktok.com/@orionsols">
+          <Music2 color="#ff9c00"/>
+          </Link>
+          
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[150px] lg:px-[215px] py-4">
@@ -79,7 +83,7 @@ function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-semibold text-lg text-gray-300">
+        <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-medium text-lg text-gray-300">
           <li className="hover:text-gray-500">
             <Link href="/">HOME</Link>
           </li>
@@ -115,7 +119,7 @@ function Navbar() {
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <ul className="flex flex-col items-start px-10 gap-5 font-semibold text-gray-300 py-4">
+        <ul className="flex flex-col items-start px-10 gap-5 font-medium text-gray-300 py-4">
           <li className="hover:text-gray-500">
             <Link href="/">HOME</Link>
           </li>

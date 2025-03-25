@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
@@ -10,7 +11,9 @@ import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import WhatsAppPopup from "./components/whatsappPOpUp";
 
+
 export default function Home() {
+
   return (
     <main>
       <Navbar/>
@@ -27,3 +30,5 @@ export default function Home() {
     </main>
   );
 }
+
+
