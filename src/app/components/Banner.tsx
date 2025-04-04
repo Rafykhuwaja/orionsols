@@ -5,50 +5,62 @@ function Banner() {
   return (
     <div>
       <div className="flex flex-col md:flex-row background px-4 sm:px-8 md:px-5 lg:px-10 xl:px-10 text-white top-0 w-full md:z-[-1]">
-        <div className="w-full md:w-1/3 pt-12 sm:pt-20 md:pt-32 fadeInLeft md:text-left">
-          <div className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 md:mb-12">
-            <div className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[40px] text-[#ff9c00] font-semibold md:mb-2">
+        {/* Text Section */}
+        <div className="w-full md:w-[27vw] pt-12 sm:pt-20 md:pt-32 fadeInLeft md:text-left md:hidden">
+          <div className="font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 md:mb-12">
+            <div className="text-[28px] sm:text-[32px] md:text-[30px] lg:text-[40px] text-[#ff9c00] font-semibold md:mb-2">
               Take Your
             </div>
-            <div className="text-[28px] sm:text-[36px] md:text-[15px] lg:text-[65px] md:mb-2">
+            <div className="text-[24px] sm:text-[28px] md:text-[15px] lg:text-[40px] md:mb-2">
               BUSINESS TO
             </div>
-            <div className="text-[32px] sm:text-[50px] md:text-[15px] lg:text-[65px]">
+            <div className="text-[28px] sm:text-[32px] md:text-[28px] ">
               NEW HEIGHT WITH
             </div>
-            <div className="text-[#ff9c00] text-[55px] md:text-[50px] lg:text-[65px] mt-2 md:mt-0 leading-none">
+            <div className="text-[#ff9c00] text-[40px] sm:text-[44px] md:text-[57px] mt-4 md:mt-0 leading-none">
               Orionsols
             </div>
           </div>
           <div className="relative md:bottom-5">
-            <p className="mt-4 sm:mt-6 md:mt-8 font-medium text-sm sm:text-base md:text-lg lg:text-xl text-left md:text-left">
+            <p className="mt-4 sm:mt-6 md:mt-8 font-medium text-xs sm:text-sm md:text-base lg:text-lg text-left">
               Lets work together to elevate your business to new heights.
             </p>
             <Link href="/">
-              <button className="text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-600 md:inline-block">
+              <button className="text-xs sm:text-sm md:text-base lg:text-lg px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-600 md:inline-block">
                 Contact us!
               </button>
             </Link>
           </div>
         </div>
-      <div className="flex flex-col-reverse md:flex-row md:w-2/3">
-
-        <div className="w-full md:w-1/2">
-          <img
-            className="h-[350px] sm:h-[350px] md:h-[40px] lg:h-[600px] xl:h-[800px] mt-5 mx-auto fadeInRight"
-            src="/images/bannerImage3.png"
-            alt="Banner"
-          />
+        <div className="hidden md:flex flex-col">
+          <img src="/bannerTextImage.png"
+          className="w-[36vw] top-10 relative"/>
+          <Link href="/">
+              <button className="text-xs sm:text-sm md:text-base lg:text-lg px-6 py-2 rounded-lg bg-[#ff9c00] mb-10 ml-[2vw] hover:bg-orange-500 hover:border-orange-600 md:inline-block">
+                Contact us!
+              </button>
+            </Link>
         </div>
 
-        <div>
-          <img
-            src="/images/bannerContent.png"
-            alt="Banner Content"
-            className="md:w-[300px] lg:w-[450px] w-[400px] relative md:top-12 mx-auto fadeInRight"
-          />
+        {/* Images Section */}
+        <div className="flex flex-col-reverse md:flex-row md:w-[66vw]">
+          {/* Left Image */}
+          <div className="w-full md:w-[45vw]">
+            <img
+              className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[600px] mt-5 mx-auto fadeInRight"
+              src="/images/bannerImage3.png"
+              alt="Banner"
+            />
+          </div>
+          {/* Right Image */}
+          <div className="w-full md:w-[27vw]">
+            <img
+              src="/images/bannerContent.png"
+              alt="Banner Content"
+              className="relative md:top-12 mx-auto fadeInRight"
+            />
+          </div>
         </div>
-      </ div>
       </div>
     </div>
   );

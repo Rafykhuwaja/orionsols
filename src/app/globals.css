@@ -160,6 +160,7 @@
   visibility: hidden;
 }
 
+
 /* Responsive styles */
 @media (min-width: 768px) {
   .card {

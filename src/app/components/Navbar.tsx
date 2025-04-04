@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <div className="w-full bg-gray-900">
-      <div className="md:flex bg-gray-950 py-4 md:px-[150px] lg:px-[220px] items-center gap-24 text-[18px] justify-between hidden">
+      <div className="md:flex bg-gray-950 py-4 md:px-[10vw] items-center gap-24 text-[18px] justify-between hidden">
         <div className="flex gap-10">
 
         <div className="flex gap-3">
@@ -48,7 +48,7 @@ function Navbar() {
           
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[150px] lg:px-[215px] py-4">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[10vw] py-4">
         {/* Logo and Hamburger Menu */}
         <div className="flex justify-between items-center w-full md:w-auto">
           <Link href="/">
