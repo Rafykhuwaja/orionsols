@@ -32,7 +32,7 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex flex-col">
+        <div className="hidden md:flex flex-col fadeInLeft">
           <img src="/bannerTextImage.png"
           className="w-[36vw] top-10 relative"/>
           <Link href="/">
@@ -47,7 +47,7 @@ function Banner() {
           {/* Left Image */}
           <div className="w-full md:w-[45vw]">
             <img
-              className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[600px] mt-5 mx-auto fadeInRight"
+              className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[630px] mt-5 mx-auto fadeInRight"
               src="/images/bannerImage3.png"
               alt="Banner"
             />
