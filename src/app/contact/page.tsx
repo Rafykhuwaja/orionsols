@@ -2,9 +2,9 @@ import React from 'react'
 import ContactBanner from '../components/ContactBanner'
 import Navbar from '../components/Navbar'
 import ContactForm from '../components/contactForm'
-import Contact from '../components/contact'
 import Footer from '../components/Footer'
 import WhatsAppPopup from '../components/whatsappPOpUp'
+import ContactPagePara from '../components/contactpagepara'
 
 function Contactus() {
   return (
@@ -12,7 +12,7 @@ function Contactus() {
         <Navbar/>
       <ContactBanner/>
       <ContactForm/>
-      <Contact/>
+      <ContactPagePara/>
       <WhatsAppPopup/>
       <Footer/>
     </div>
