@@ -25,7 +25,7 @@ function Banner() {
             <p className="mt-4 sm:mt-6 md:mt-8 font-medium text-xs sm:text-sm md:text-base lg:text-lg text-left">
               Lets work together to elevate your business to new heights.
             </p>
-            <Link href="/">
+            <Link href="/contact">
               <button className="text-xs sm:text-sm md:text-base lg:text-lg px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-600 md:inline-block">
                 Contact us!
               </button>
@@ -48,7 +48,7 @@ function Banner() {
           <div className="w-full md:w-[45vw]">
             <img
               className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[630px] mt-5 mx-auto fadeInRight"
-              src="/images/bannerImage3.png"
+              src="/images/bannerImage3.webp"
               alt="Banner"
             />
           </div>
