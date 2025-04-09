@@ -25,7 +25,7 @@ function ContactPagePara() {
         strategies, data-driven insights, and measurable results, our dedicated
         team is committed to driving your success. We work hand-in-hand with you
         to unlock your business full potential, ensuring sustainable growth,
-        long-term success, and a clear path forward in todays competitive
+        long-term success, and a clear path forward in today&apos;s competitive
         market{" "}
       </p>
       <Link href="/contact">
