@@ -33,7 +33,7 @@ function ContactForm() {
 
         <div className="flex items-center mt-5">
           <img width="35" height="35" src="https://img.icons8.com/ios/50/FAB005/new-post--v1.png" alt="mail"/>
-          <p className="font-bold md:text-4xl ml-5">Email: info@Orionsols.comm</p>
+          <p className="font-bold md:text-4xl ml-5">Email: info@Orionsols.com</p>
         </div>
 
         <div className="flex items-center mt-5">

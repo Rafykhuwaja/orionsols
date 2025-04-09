@@ -35,11 +35,11 @@ function Banner() {
         <div className="hidden md:flex flex-col fadeInLeft">
           <img src="/bannerTextImage.png"
           className="w-[36vw] top-10 relative"/>
-          <Link href="/contact">
+          {/* <Link href="/contact">
               <button className="text-xs sm:text-sm md:text-base lg:text-lg px-6 py-2 rounded-lg bg-[#ff9c00] mb-10 ml-[2vw] hover:bg-orange-500 hover:border-orange-600 md:inline-block">
                 Contact us!
               </button>
-            </Link>
+            </Link> */}
         </div>
 
         {/* Images Section */}

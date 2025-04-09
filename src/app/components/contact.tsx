@@ -24,7 +24,7 @@ function Contact() {
         your business, no matter the stage. With a combination of proven
         strategies, data-driven insights, and measurable results, our dedicated
         team is committed to driving your success. We work hand-in-hand with you
-        to unlock your businesss full potential, ensuring sustainable growth,
+        to unlock your business full potential, ensuring sustainable growth,
         long-term success, and a clear path forward in todays competitive
         market{" "}
       </p>
