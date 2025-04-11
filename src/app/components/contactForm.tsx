@@ -23,8 +23,8 @@ function ContactForm() {
           Lets Connect
         </h1>
         <p className="mb-4">
-          We&apos;d love to hear from you! Fill out the form below or contact us
-          directly through the details provided.
+        We would love to hear from you! Fill out the form below or contact us directly through the details provided
+
         </p>
         <div className="flex items-center">
           <img width="35" height="35" src="https://img.icons8.com/windows/32/FAB005/phone.png" alt="phone--v1"/>

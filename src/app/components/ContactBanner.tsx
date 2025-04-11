@@ -29,8 +29,7 @@ function ContactBanner() {
           Lets Connect
         </h1>
         <p className="mt-3 sm:mt-4 md:mt-4 font-medium text-sm sm:text-base md:text-lg lg:text-xl max-w-[560px]">
-          We d love to hear from you! Fill out the form below or contact us
-          directly through the details provided.
+        Your feedback matters to us. Please fill out the form below or connect with us directly.
         </p>
       </div>
     </div>
