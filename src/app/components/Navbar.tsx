@@ -8,7 +8,15 @@ import {
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card";
 import { ChevronDown } from "lucide-react";
-import { Phone, Facebook, Instagram, Linkedin, Twitter , Mail , Music2} from "lucide-react";
+import {
+  Phone,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Mail,
+  Music2,
+} from "lucide-react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,31 +29,40 @@ function Navbar() {
     <div className="w-full bg-gray-900">
       <div className="md:flex bg-gray-950 py-4 md:px-[10vw] items-center gap-24 text-[18px] justify-between hidden">
         <div className="flex gap-10">
-
-        <div className="flex gap-3">
-          <Phone color="#ff9c00" />
-          <p className="text-white">(+971) 528 977 529</p>
-        </div>
-        <div className="flex gap-3">
-          <Mail color="#ff9c00" />
-          <p className="text-white">info@Orionsols.com</p>
-        </div>
+          <div className="flex gap-3">
+            <Phone color="#ff9c00" />
+            <p className="text-white">(+971) 528 977 529</p>
+          </div>
+          <a href="mailto:info@Orionsols.com">
+            <div className="flex gap-3">
+              <Mail color="#ff9c00" />
+              <p className="text-white">info@Orionsols.com</p>
+            </div>
+          </a>
         </div>
         <div className="flex gap-10">
-          <Link href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr" target="_blank">
-          <Facebook color="#ff9c00" />
+          <Link
+            href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <Facebook color="#ff9c00" />
           </Link>
-          <Link href="https://www.instagram.com/orionsols_official?igsh=MTN4YXF2emdyNWIybw==" target="_blank">
-          <Instagram color="#ff9c00" />
+          <Link
+            href="https://www.instagram.com/orionsols_official?igsh=MTN4YXF2emdyNWIybw=="
+            target="_blank"
+          >
+            <Instagram color="#ff9c00" />
           </Link>
-          <Link href="https://www.linkedin.com/company/orionsols?trk=profile-position" target="_blank">
-          <Linkedin color="#ff9c00" />
+          <Link
+            href="https://www.linkedin.com/company/orionsols?trk=profile-position"
+            target="_blank"
+          >
+            <Linkedin color="#ff9c00" />
           </Link>
           <Twitter color="#ff9c00" />
           <Link href="https://www.tiktok.com/@orionsols">
-          <Music2 color="#ff9c00"/>
+            <Music2 color="#ff9c00" />
           </Link>
-          
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[10vw] py-4">
