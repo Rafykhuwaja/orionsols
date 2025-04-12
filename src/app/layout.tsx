@@ -49,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="google-site-verification" content="avutSsJPoqgvjuDAvCZCD_hmxJGL1zy_cR4LtEn2fwA" />
         {/* Add Tawk.to Script inside head */}
         <script
           type="text/javascript"

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://orionsols.com
+
+# Sitemaps
+Sitemap: https://orionsols.com/sitemap.xml
