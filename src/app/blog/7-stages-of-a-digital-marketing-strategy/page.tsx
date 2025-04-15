@@ -3,6 +3,11 @@ import Navbar from "@/app/components/Navbar";
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "7 Stages of a Digital Marketing Strategy for Business Growth",
+  description: "Discover the 7 key stages of a digital marketing strategy to boost brand visibility, attract customers, and drive business growth effectively.",
+};
+
 function Page() {
   return (
     <div>
@@ -432,25 +437,7 @@ function Page() {
           <p className="text-lg">
           You can measure success by tracking metrics such as website traffic, conversion rates, social media engagement, and overall ROI.
           </p>
-          <p className="text-lg">
-          <strong>META TITLE :</strong> 7 Stages of a Digital Marketing Strategy for Business Growth
-          </p>
-          <p className="text-lg">
-          <strong>Meta description </strong>:Discover the 7 key stages of a digital marketing strategy to boost brand visibility, attract customers, and drive business growth effectively.
-          </p>
-          <p className="text-lg">
-          <strong>URL :</strong> 7-stages-of-a-digital-marketing-strategy </p>
-          <p className="text-lg">
-          <strong>Featured image</strong></p>
-          <div className="mb-8 flex justify-center mt-10 ">
-            <Image
-              src="/images/digitalmarketingblog/digitalmarketing3.jpeg"
-              alt="Digital Marketing Strategy"
-              className="h-auto rounded-md shadow-lg md:w-1/2"
-              width={1000}
-              height={1000}
-            />
-          </div>
+         
 
         </div>
       </div>
