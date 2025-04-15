@@ -45,6 +45,14 @@ const cardData = [
       "In today's fast-paced digital world, embracing digital marketing strategies is essential for trade development...",
     link: "/blog/tradedevelopement",
   },
+  {
+    imgSrc: "/images/digitalmarketingblog/digitalmarketing.jpeg",
+    subtitle: "Digital Marketing Strategy",
+    title: "How to Develop a Top-Notch Digital Marketing Strategy",
+    description:
+      "developing a digital marketing strategy, digital marketing plan, digital marketing channels, online marketing ...",
+    link: "/blog/digitalmarketingstrategy",
+  },
 ];
 const Card: React.FC<CardProps> = ({
   imgSrc,
