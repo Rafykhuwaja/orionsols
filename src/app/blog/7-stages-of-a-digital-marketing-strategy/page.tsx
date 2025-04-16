@@ -117,7 +117,7 @@ function Page() {
             choose those who suit your objectives and your audience tilt.
           </p>
           <p className="text-lg">
-            The most common digital marketing channels are SEO, PPC
+            The most common <a className="underline" href="https://www.orionsols.com/services">digital marketing channels</a> are SEO, PPC
             advertisement, email marketing, social media and content marketing.
             All these channels serve a specific objective in coming in front of
             you and confusing their audience. For example, SEO plays an
@@ -413,7 +413,7 @@ function Page() {
             -term success through a constantly changing digital scenario.
           </p>
           <p className="text-lg">
-            Finding partners such as Orionsols may give technical information
+            Finding partners such as <a className="underline" href="https://www.orionsols.com/">Orionsols</a> may give technical information
             and advice to strengthen and correct your strategy for companies
             that seek your online marketing efforts. His knowledge and expertise
             in their industry, with their inevitable solutions, guide the
