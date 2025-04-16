@@ -12,6 +12,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/digitalmarketingblog/digitalmarketing3.jpeg",
+    subtitle: "Digital Marketing Strategy",
+    title: "How to Develop a Top-Notch Digital Marketing Strategy",
+    description:
+      "developing a digital marketing strategy, digital marketing plan, digital marketing channels, online marketing ...",
+    link: "/blog/7-stages-of-a-digital-marketing-strategy",
+  },
+  {
     imgSrc: "/images/chatgpt.jpg",
     subtitle: "AI Technology",
     title: "GPT-3.5 vs GPT-4: Which Chat to Use for Your Business Needs?",
@@ -44,14 +52,6 @@ const cardData = [
     description:
       "In today's fast-paced digital world, embracing digital marketing strategies is essential for trade development...",
     link: "/blog/tradedevelopement",
-  },
-  {
-    imgSrc: "/images/digitalmarketingblog/digitalmarketing3.jpeg",
-    subtitle: "Digital Marketing Strategy",
-    title: "How to Develop a Top-Notch Digital Marketing Strategy",
-    description:
-      "developing a digital marketing strategy, digital marketing plan, digital marketing channels, online marketing ...",
-    link: "/blog/7-stages-of-a-digital-marketing-strategy",
   },
 ];
 const Card: React.FC<CardProps> = ({

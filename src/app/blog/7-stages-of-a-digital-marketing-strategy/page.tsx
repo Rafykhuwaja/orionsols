@@ -105,7 +105,7 @@ function Page() {
             <Image
               src="/images/digitalmarketingblog/digitalmarketing.jpeg"
               alt="Digital Marketing Strategy"
-              className="h-auto rounded-md shadow-lg md:w-1/2"
+              className="h-auto rounded-md shadow-lg w-full"
               width={1000}
               height={1000}
             />
@@ -157,7 +157,7 @@ function Page() {
             <Image
               src="/images/digitalmarketingblog/digitalmarketing1.jpeg"
               alt="Digital Marketing Strategy"
-              className="h-auto rounded-md shadow-lg md:w-1/2"
+              className="h-auto rounded-md shadow-lg w-full"
               width={1000}
               height={1000}
             />
@@ -226,7 +226,7 @@ function Page() {
             <Image
               src="/images/digitalmarketingblog/digitalmarketing2.jpeg"
               alt="Digital Marketing Strategy"
-              className="h-auto rounded-md shadow-lg md:w-1/2"
+              className="h-auto rounded-md shadow-lg w-full"
               width={1000}
               height={1000}
             />
@@ -311,7 +311,7 @@ function Page() {
             optimizing your website for better user experience. The ongoing
             adaptation ensures that your strategy is effective and efficient.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#ff9c00] text-3xl font-semibold">
             How to Create a Digital Marketing Strategy
           </h2>
           <p className="text-lg">
@@ -322,7 +322,7 @@ function Page() {
             having defined objectives will keep you on track and will enable you
             to measure your success.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#ff9c00] text-2xl font-semibold">
             Conducting Market and Competitor Research
           </h2>
           <p className="text-lg">
@@ -420,20 +420,20 @@ function Page() {
             Orionsol companies to improve their marketing plan and yield
             tangible results.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">FAQs</h2>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">What are the key elements of a digital marketing strategy?</h2>
+          <h2 className="text-[#ff9c00] text-2xl font-semibold">FAQs</h2>
+          <h2 className="text-[#ff9c00] text-1xl font-semibold">What are the key elements of a digital marketing strategy?</h2>
           <p className="text-lg">
           A digital marketing strategy includes target audience identification, choosing digital channels, content creation, and continuous measurement and optimization.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">How long does it take to see results from a digital marketing strategy?</h2>
+          <h2 className="text-[#ff9c00] text-1xl font-semibold">How long does it take to see results from a digital marketing strategy?</h2>
           <p className="text-lg">
           It typically takes a few months to start seeing noticeable results, depending on the complexity and goals of the strategy.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">Can a small business benefit from a digital marketing strategy?</h2>
+          <h2 className="text-[#ff9c00] text-1xl font-semibold">Can a small business benefit from a digital marketing strategy?</h2>
           <p className="text-lg">
           Yes, small businesses can greatly benefit from a digital marketing strategy by increasing their visibility and reaching new customers.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">How do I measure the success of my digital marketing efforts?</h2>
+          <h2 className="text-[#ff9c00] text-1xl font-semibold">How do I measure the success of my digital marketing efforts?</h2>
           <p className="text-lg">
           You can measure success by tracking metrics such as website traffic, conversion rates, social media engagement, and overall ROI.
           </p>
