@@ -129,10 +129,10 @@ function Page() {
             installation, and therefore you can begin with a few clicks. If
             one-click WordPress installation is not supported on your hosting
             website, then you can install WordPress software from{" "}
-            <a href="http://WordPress.org">
-              WordPress.org
+            <a href="http://WordPress.org" className="mr-[5px]">
+              WordPress.org 
             </a>
-            and set it up manually via FTP (File Transfer Protocol). After the
+             and set it up manually via FTP (File Transfer Protocol). After the
             installation, you can access the dashboard of your site and begin
             personalizing.
           </p>
