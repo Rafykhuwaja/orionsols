@@ -12,6 +12,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/wordpress-website-blog/image2.jpg",
+    subtitle: "wordpress website",
+    title: "How to Build a WordPress Website from Scratch",
+    description:
+      "Learn how to build a WordPress website from scratch in 10 easy steps. Perfect for beginners looking to create ...",
+    link: "/blog/how-to-build-a-wordpress-website",
+  },
+  {
     imgSrc: "/images/digitalmarketingblog/digitalmarketing3.jpeg",
     subtitle: "Digital Marketing Strategy",
     title: "How to Develop a Top-Notch Digital Marketing Strategy",
