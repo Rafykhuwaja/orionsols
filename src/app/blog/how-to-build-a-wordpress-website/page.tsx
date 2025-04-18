@@ -129,7 +129,7 @@ function Page() {
             installation, and therefore you can begin with a few clicks. If
             one-click WordPress installation is not supported on your hosting
             website, then you can install WordPress software from{" "}
-            <a href="http://WordPress.org" className="underline">
+            <a href="http://WordPress.org">
               WordPress.org
             </a>
             and set it up manually via FTP (File Transfer Protocol). After the
@@ -273,8 +273,8 @@ function Page() {
           </h2>
           <p className="text-lg">
             It can be difficult to develop a{" "}
-            <a href="https://www.orionsols.com/services" className="underline">
-              WordPress.site
+            <a href="https://www.orionsols.com/services">
+              WordPress site
             </a>{" "}
             from the ground, but with a systematic process, it is an easy and
             satisfying experience. From selecting proper hosting to theme
