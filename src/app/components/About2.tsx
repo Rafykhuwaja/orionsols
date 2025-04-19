@@ -1,8 +1,13 @@
-import React from "react";
+"use client"
+import { motion } from 'framer-motion';
 
 function About2() {
   return (
-    <div className="px-4 md:px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}          
+    whileInView={{ opacity: 1, y: 0 }}      
+    transition={{ duration: 0.8 }}           
+    viewport={{ once: false, amount: 0.5 }} className="px-4 md:px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
       <div className="w-full md:w-1/2 rounded-lg">
         <div className="bg-[#ff9c00]  w-full rounded-lg fadeInLeft">
           <img
@@ -28,7 +33,7 @@ function About2() {
           visibility, and engage customers more effectively than ever.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,13 +1,29 @@
 'use client'
 import React, { useEffect } from "react";
+import { motion } from 'framer-motion';
+
+
+
+
+
 function WhyChoosUsSection() {
   
   return (
-    <div className="py-10 md:pb-36 md:pt-16 px-4 md:px-10 lg:px-20 bg-gray-900">
+    <div   
+ className="py-10 md:pb-36 md:pt-16 px-4 md:px-10 lg:px-20 bg-gray-900">
     
-      <h1 className="md:text-5xl text-3xl font-bold text-[#ff9c00]">Empowering Brands with Innovative Digital Solutions</h1>
+      <motion.h1 
+      initial={{ opacity: 0, x: 50 }}          
+      whileInView={{ opacity: 1, x: 0 }}      
+      transition={{ duration: 0.8 }}           
+      viewport={{ once: false, amount: 0.5 }}
+      className="md:text-5xl text-3xl font-bold text-[#ff9c00]">Empowering Brands with Innovative Digital Solutions</motion.h1>
       <div className="h-1 w-3/4 md:max-w-5xl bg-[#ff9c00] mt-5 rounded  md:mb-28 mb-14"></div>
-    <div className=" flex flex-col md:flex-row justify-center items-center">
+      <motion.div
+    initial={{ opacity: 0, y: 50 }}          
+    whileInView={{ opacity: 1, y: 0 }}      
+    transition={{ duration: 0.8 }}           
+    viewport={{ once: false, amount: 0.5 }} className=" flex flex-col md:flex-row justify-center items-center">
       <div className="w-full md:w-1/2 rounded-lg">
         <div className="bg-[#ff9c00]  w-full rounded-lg fadeInLeft">
           <img
@@ -31,7 +47,7 @@ function WhyChoosUsSection() {
           lasting connections with your customers.
         </p>
       </div>
-    </div>
+    </motion.div>
     </div>
   );
 }

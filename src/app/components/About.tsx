@@ -1,8 +1,16 @@
+"use client"
 import React from "react";
+import { motion } from 'framer-motion';
+
 
 function About() {
   return (
-    <div className="px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}           // Start from invisible + slight down
+    whileInView={{ opacity: 1, y: 0 }}        // When in viewport, show and move up
+    transition={{ duration: 0.8 }}            // Animation duration
+    viewport={{ once: false, amount: 0.5 }}    // Only animate once, when 30% visible
+   className="px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
       <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:pr-20">
         <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 md:mt-16 mt-10 md:text-5xl">
         Website <br /> Development
@@ -30,7 +38,7 @@ function About() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
