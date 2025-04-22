@@ -1,9 +1,15 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
+import {motion} from "framer-motion"
 
 function ServiceContact() {
   return (
-    <div className="text-center px-4 md:px-10 lg:px-20 py-10 md:py-20 bg-gray-900 text-white flex flex-col items-center">
+    <motion.div 
+      initial={{ opacity: 0, y: 150 }}          
+      whileInView={{ opacity: 1, y: 0 }}      
+      transition={{ duration: 1.5 }}           
+      viewport={{ once: false, amount: 0.2 }} className="text-center px-4 md:px-10 lg:px-20 py-10 md:py-20 bg-gray-900 text-white flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-5">
       Ready to Elevate Your Business?
       </h1>
@@ -16,7 +22,7 @@ function ServiceContact() {
         Contact us
       </button>
       </Link>
-    </div>
+    </motion.div>
   )
 }
 

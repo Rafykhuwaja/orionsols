@@ -1,5 +1,7 @@
+"use client"
 import Link from "next/link";
 import React from "react";
+import {motion} from "framer-motion"
 
 function Banner() {
   return (
@@ -32,34 +34,42 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex flex-col fadeInLeft">
+        <motion.div
+    initial={{ opacity: 0, x: -100 }}          
+    whileInView={{ opacity: 1, x: 0 }}      
+    transition={{ duration: 0.8 }}           
+    viewport={{ once: false, amount: 0.5 }} className="hidden md:flex flex-col ">
           <img src="/bannerTextImage.png"
           className="w-[36vw] top-10 relative"/>
-          {/* <Link href="/contact">
-              <button className="text-xs sm:text-sm md:text-base lg:text-lg px-6 py-2 rounded-lg bg-[#ff9c00] mb-10 ml-[2vw] hover:bg-orange-500 hover:border-orange-600 md:inline-block">
-                Contact us!
-              </button>
-            </Link> */}
-        </div>
+          
+        </motion.div>
 
         {/* Images Section */}
         <div className="flex flex-col-reverse md:flex-row md:w-[66vw]">
           {/* Left Image */}
-          <div className="w-full md:w-[45vw]">
+          <motion.div
+    initial={{ opacity: 0, x: 100 }}          
+    whileInView={{ opacity: 1, x: 0 }}      
+    transition={{ duration: 0.8 }}           
+    viewport={{ once: false, amount: 0.5 }} className="w-full md:w-[45vw]">
             <img
-              className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[630px] mt-5 mx-auto fadeInRight"
+              className="h-[350px] sm:h-[350px] md:h-[350px] lg:h-[500px] xl:h-[630px] mt-5 mx-auto "
               src="/images/bannerImage3.webp"
               alt="Banner"
             />
-          </div>
+          </motion.div>
           {/* Right Image */}
-          <div className="w-full md:w-[27vw]">
+          <motion.div
+    initial={{ opacity: 0, x: 100 }}          
+    whileInView={{ opacity: 1, x: 0 }}      
+    transition={{ duration: 0.8 }}           
+    viewport={{ once: false, amount: 0.5 }} className="w-full md:w-[22vw] relative md:right-[5vw]">
             <img
               src="/images/bannerContent.png"
               alt="Banner Content"
-              className="relative md:top-12 mx-auto fadeInRight"
+              className="relative md:top-12 mx-auto"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

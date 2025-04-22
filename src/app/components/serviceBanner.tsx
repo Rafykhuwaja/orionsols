@@ -1,11 +1,18 @@
+"use client"
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import GetStartedButton from "./animata/button/contact-button";
 
 function ServiceBanner() {
   return (
     <div className="flex flex-col md:flex-row serviceBackground px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0">
       {/* Text Content */}
-      <div className="w-full md:w-1/2 pt-12 sm:pt-20 md:pt-32 fadeInLeft">
+      <motion.div 
+      initial={{ opacity: 0, x:-100 }}          
+      whileInView={{ opacity: 1, x: 0 }}      
+      transition={{ duration: 0.8 }}           
+      viewport={{ once: false, amount: 0.5 }}  className="w-full md:w-1/2 pt-12 sm:pt-20 md:pt-32 ">
         <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 md:mb-10">
           <span className="text-[32px] sm:text-[40px] md:text-[50px] text-[#ff9c00]">
             Grow Your
@@ -37,21 +44,26 @@ function ServiceBanner() {
             Lets work together to elevate your business to new heights.
           </p>
           <Link href="/contact">
-          <button className="text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-800 hover:border-2">
+          {/* <button className="text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 rounded-lg bg-[#ff9c00] my-6 sm:my-8 md:my-10 hover:bg-orange-500 hover:border-orange-800 hover:border-2">
             Contact us!
-          </button>
+          </button> */}
+          <GetStartedButton text="Contact us!" className="text-lg py-3 text-white rounded-lg bg-[#ff9c00] my-10 hover:bg-orange-500"/>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Image Content */}
-      <div className="w-full md:w-1/2 md:pt-5">
+      <motion.div 
+      initial={{ opacity: 0, x: 100 }}          
+      whileInView={{ opacity: 1, x: 0 }}      
+      transition={{ duration: 0.8 }}           
+      viewport={{ once: false, amount: 0.5 }}  className="w-full md:w-1/2 md:pt-5">
         <img
           src="/images/bannerImage1.png"
           alt="image Loading"
-          className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] mx-auto fadeInRight"
+          className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] mx-auto "
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

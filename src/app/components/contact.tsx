@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import {motion} from "framer-motion"
 import { useState } from "react";
+import GetStartedButton from "./animata/button/contact-button";
 
 function Contact() {
  
@@ -14,7 +15,7 @@ function Contact() {
       initial={{ opacity: 0, x: 50 }}          
       whileInView={{ opacity: 1, x: 0 }}      
       transition={{ duration: 0.8 }}           
-      viewport={{ once: false, amount: 0.3 }}>
+      viewport={{ once: false, amount: 0.3  }}>
 
     <div className="text-center px-4 md:px-10 lg:px-20 py-10 md:py-20 bg-gray-900 text-white flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-5 text-[#ff9c00]">
@@ -34,9 +35,10 @@ function Contact() {
         market{" "}
       </p>
       <Link href="/contact">
-      <button className="text-lg px-6 py-3 rounded-lg bg-[#ff9c00] my-10 hover:bg-orange-500 ">
+      {/* <button className="text-lg px-6 py-3 rounded-lg bg-[#ff9c00] my-10 hover:bg-orange-500 ">
         Contact us
-      </button>
+      </button> */}
+      <GetStartedButton text="Contact Us" className="text-lg py-3 text-white rounded-lg bg-[#ff9c00] my-10 hover:bg-orange-500"/>
       </Link>
     </div>
 

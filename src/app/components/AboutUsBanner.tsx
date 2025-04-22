@@ -1,16 +1,26 @@
+"use client"
 import React from "react";
+import {motion} from "framer-motion"
 
 function AboutUsBanner() {
   return (
     <div className="flex flex-col-reverse md:flex-row blog-background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0  w-full ">
-      <div className="w-full md:w-1/2">
+      <motion.div
+            initial={{ opacity: 0, x: -100 }}          
+            whileInView={{ opacity: 1, x: 0 }}      
+            transition={{ duration: 1.5 }}           
+            viewport={{ once: false, amount: 0.5 }} className="w-full md:w-1/2">
         <img
           className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[760px] max-w-full mx-auto fadeInLeft mt-3 md:mt-0"
           src="/images/bannerImage5.png"
           alt="Banner"
         />
-      </div>
-      <div className="w-full md:w-1/2 pt-10 md:pt-32 fadeInRight">
+      </motion.div>
+      <motion.div
+            initial={{ opacity: 0, x: 100 }}          
+            whileInView={{ opacity: 1, x: 0 }}      
+            transition={{ duration: 1.5 }}           
+            viewport={{ once: false, amount: 0.5 }} className="w-full md:w-1/2 pt-10 md:pt-32 ">
         <h1 className="font-black text-3xl md:text-5xl lg:text-7xl md:mt-5">
           <span className="text-[#ff9c00] md:text-[55px]">Where We Do the</span>{" "}
           <br />
@@ -31,7 +41,7 @@ function AboutUsBanner() {
           back, relax, and watch your business thrive. Let us handle the hard
           work while you focus on growth!
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }

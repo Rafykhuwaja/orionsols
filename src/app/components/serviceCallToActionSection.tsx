@@ -1,10 +1,16 @@
+"use client"
+import {motion} from "framer-motion"
 import React from "react";
 
 function ServiceCallToActionSection() {
   return (
     <div>
       <section className="text-gray-300 bg-gray-950 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      <motion.div 
+      initial={{ opacity: 0, y: 150 }}          
+      whileInView={{ opacity: 1, y: 0 }}      
+      transition={{ duration: 1.5 }}           
+      viewport={{ once: false, amount: 0.2 }} className="container px-5 py-24 mx-auto">
           <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +35,7 @@ function ServiceCallToActionSection() {
               updates that demonstrate the value we bring.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

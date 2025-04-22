@@ -1,15 +1,25 @@
+"use client"
+import {motion} from "framer-motion"
 import React from "react";
 import { BookText, Cable, HardDriveUpload, Send } from "lucide-react";
 
 function CustomeWebContent() {
   return (
     <div className=" bg-gray-950 w-full pt-[100px]">
-      <h1 className="text-3xl ml-10 md:text-7xl text-white mt-10 md:ml-52 font-bold">
+      <motion.h1 
+      initial={{ opacity: 0, y: 100 }}          
+      whileInView={{ opacity: 1, y: 0 }}      
+      transition={{ duration: 1.5 }}           
+      viewport={{ once: false, amount: 0.5 }}  className="text-3xl ml-10 md:text-7xl text-white mt-10 md:ml-52 font-bold">
         How It <span className="text-[#ff9c00]">Works</span>
-      </h1>
+      </motion.h1>
 
       <section className="text-gray-300 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <motion.div 
+              initial={{ opacity: 0, y: 150 }}          
+              whileInView={{ opacity: 1, y: 0 }}      
+              transition={{ duration: 1.2 }}           
+              viewport={{ once: false, amount: 0.5 }}  className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
@@ -88,7 +98,7 @@ function CustomeWebContent() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

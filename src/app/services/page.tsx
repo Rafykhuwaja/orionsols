@@ -11,7 +11,7 @@ import CustomeWebContent from '../components/customeWebContent'
 
 function page() {
   return (
-    <div>
+    <div className='bg-gray-950'>
       <Navbar/>
       <ServiceBanner/>
       <CustomeWebContent/>

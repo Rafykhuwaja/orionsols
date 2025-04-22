@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import Footer from "./Footer";
-
+import {motion} from "framer-motion"
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,9 +18,13 @@ function ContactForm() {
       <div className="">
 
     
-        <h1 className="text-[#ff9c00] text-6xl font-extrabold mb-5">
+        <motion.h1
+            initial={{ opacity: 0, y: 70 }}          
+            whileInView={{ opacity: 1, y: 0 }}      
+            transition={{ duration: 0.8 }}           
+            viewport={{ once: false, amount: 0.5 }} className="text-[#ff9c00] text-6xl font-extrabold mb-5">
           Lets Connect
-        </h1>
+        </motion.h1>
         <p className="mb-4">
         We would love to hear from you! Fill out the form below or contact us directly through the details provided
 
@@ -43,7 +46,11 @@ function ContactForm() {
       </div>
       </div>
 
-      <div className="p-6 rounded-lg md:w-1/2 flex justify-center">
+      <motion.div
+          initial={{ opacity: 0, x: 100 }}          
+          whileInView={{ opacity: 1, x: 0 }}      
+          transition={{ duration: 0.8 }}           
+          viewport={{ once: false, amount: 0.5 }} className="p-6 rounded-lg md:w-1/2 flex justify-center">
         <div className="max-w-full p-10 md:ml-8 rounded-xl shadow-2xl md:w-[600px] border-2 border-[#ff9c00]">
           <h2 className="text-2xl font-semibold text-center mb-4 text-[#ff9c00]">
             Contact Us
@@ -107,7 +114,7 @@ function ContactForm() {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

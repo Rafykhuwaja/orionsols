@@ -2,12 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/app/components/ui/hover-card";
-import { ChevronDown } from "lucide-react";
+import { InteractiveHoverButton } from "@/app/components/magicui/interactive-hover-button";
 import {
   Phone,
   Facebook,
@@ -102,19 +97,19 @@ function Navbar() {
         {/* Navigation Links */}
         <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-medium text-lg text-gray-300">
           <li className="hover:text-gray-500">
-            <Link href="/">HOME</Link>
+            <Link href="/"><InteractiveHoverButton>HOME</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/about">ABOUT US</Link>
+            <Link href="/about"><InteractiveHoverButton>ABOUT US</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/services">SERVICES</Link>
+            <Link href="/services"><InteractiveHoverButton>SERVICES</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/contact">CONTACT</Link>
+            <Link href="/contact"><InteractiveHoverButton>CONTACT</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/blog">BLOG</Link>
+            <Link href="/blog"><InteractiveHoverButton>BLOG</InteractiveHoverButton></Link>
           </li>
         </ul>
 

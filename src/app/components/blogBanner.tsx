@@ -1,16 +1,22 @@
+"use client"
 import React from 'react'
+import {motion} from "framer-motion"
 
 function BlogBanner() {
   return (
     <div className="flex flex-col-reverse md:flex-row blog-background px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-white top-0  w-full ">
-      <div className="w-full md:w-1/2">
+      <motion.div 
+            initial={{ opacity: 0, x: -150 }}          
+            whileInView={{ opacity: 1, x: 0 }}      
+            transition={{ duration: 1.5 }}           
+            viewport={{ once: false, amount: 0.2 }} className="w-full md:w-1/2">
         <img
           className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] max-w-full mx-auto fadeInLeft"
           src="/images/bannerImage4.png"
           alt="Banner"
         />
-      </div>
-      <div className="w-full md:w-1/2 pt-10 md:pt-32 fadeInRight">
+      </motion.div>
+      <motion.div className="w-full md:w-1/2 pt-10 md:pt-32 fadeInRight">
         <h1 className="font-black text-3xl md:text-5xl lg:text-7xl md:mt-5">
           <span className='text-[#ff9c00] md:text-[61px]'>WELCOME TO</span> <br /> 
           <span className='text-[5vw] md:text-[83px]'>ORIONSOLS BLOG</span> <br />
@@ -22,7 +28,7 @@ function BlogBanner() {
         <p className="mt-3 pr-0 md:pr-9 text-base md:text-xl md:max-w-[920px]">
           Stay informed with the latest updates, expert advice, and success stories from the tech industry.
         </p>
-      </div>
+      </motion.div>
     </div>
   )
 }

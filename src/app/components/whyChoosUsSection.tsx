@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import { motion } from 'framer-motion';
-
+import { TextAnimate } from "./magicui/text-animate";
 
 
 
@@ -12,12 +12,8 @@ function WhyChoosUsSection() {
     <div   
  className="py-10 md:pb-36 md:pt-16 px-4 md:px-10 lg:px-20 bg-gray-900">
     
-      <motion.h1 
-      initial={{ opacity: 0, x: 50 }}          
-      whileInView={{ opacity: 1, x: 0 }}      
-      transition={{ duration: 0.8 }}           
-      viewport={{ once: false, amount: 0.5 }}
-      className="md:text-5xl text-3xl font-bold text-[#ff9c00]">Empowering Brands with Innovative Digital Solutions</motion.h1>
+      <TextAnimate animation="slideUp" by="word"
+      className="md:text-5xl text-3xl font-bold text-[#ff9c00]">Empowering Brands with Innovative Digital Solutions</TextAnimate>
       <div className="h-1 w-3/4 md:max-w-5xl bg-[#ff9c00] mt-5 rounded  md:mb-28 mb-14"></div>
       <motion.div
     initial={{ opacity: 0, y: 50 }}          

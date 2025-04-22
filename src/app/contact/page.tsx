@@ -8,7 +8,7 @@ import ContactPagePara from '../components/contactpagepara'
 
 function Contactus() {
   return (
-    <div>
+    <div className='bg-gray-950'>
         <Navbar/>
       <ContactBanner/>
       <ContactForm/>
