@@ -51,7 +51,7 @@ const data = [
 
 const CardComponent = () => {
   return (
-    <section id="#services" className="text-gray-600 body-font pt-5">
+    <section id="services" className="text-gray-600 body-font pt-5">
          <TextAnimate
                 animation="slideUp"
                 by="word"
