@@ -1,30 +1,39 @@
-
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import WhyChoosUsSection from "./components/whyChoosUsSection";
 import About from "./components/About";
 import About2 from "./components/About2";
-import Blog from "./components/Blog";
 import Testinominols from "./components/Testinominols";
 import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import WhatsAppPopup from "./components/whatsappPOpUp";
+import AboutusContent from "./components/AboutusContent";
+import CustomeWebContent from "./components/customeWebContent";
+import CardComponent from "./serviceServiceSevtion";
+import CardSection from "./components/BlogCards";
+import ContactForm from "./components/contactForm";
 
 
 export default function Home() {
 
   return (
-    <main className="bg-gray-900">
+    <main>
       <Navbar/>
       <Banner/>
 
       <WhatsAppPopup/>
       
-      <WhyChoosUsSection/>
       <About/>
+      <WhyChoosUsSection/>
       <About2/>
+      
+      <AboutusContent/>
       <Testinominols/>
+      <CustomeWebContent/>
+      <CardComponent/>
+      <CardSection/>
+      <ContactForm/>
+
       <Contact/>
       <Footer/>
     </main>

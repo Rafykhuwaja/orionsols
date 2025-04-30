@@ -1,88 +1,71 @@
 "use client"
 import Image from "next/image"
 import { motion } from "framer-motion";
+import { TextAnimate } from "./components/magicui/text-animate";
+import FlipCard from "./components/animata/card/flip-card";
 const data = [
   {
-    image: "/images/social.jpg",
-
+    image: "/video/SMS.mp4",
     title: "Social Media Management",
+    subtitle: "Building Engagement and Online Presence",
     description:
       "Build a robust presence across platforms like Facebook, Instagram, LinkedIn, and more. We handle everything from content creation to engagement strategies and performance tracking to help you maintain meaningful connections with your audience.",
-    points : {
-        1 : "Regular Posting",
-        2 : "Engagement & Community Building",
-        3 : "Analytics & Performance Reporting"
-    }
   },
   {
-    image: "/images/web.jpg",
+    image: "/video/SEO.mp4",
     title: "Search Engine Optimization (SEO)",
+    subtitle: "Boost Your Visibility on Search Engines",
     description:
       "Increase organic traffic and improve your search rankings through comprehensive on-page and off-page optimization. We focus on keyword research, technical SEO, and continuous performance analysis to keep you ahead of the competition.",
-      points : {
-        1 : "On-Page Optimization",
-        2 : "Technical SEO Audits",
-        3 : "Link Building & Off-Page Strategies"
-    }
   },
-
   {
-    image: "/images/video.jpg",
+    image: "/video/CMS.mp4",
     title: "Content Marketing",
+    subtitle: "Create Value and Drive Conversions",
     description:
       "Engage your audience with high-quality, relevant content that drives conversions. We create tailored strategies with blogs, videos, infographics, and more to boost engagement and improve brand perception.",
-      points : {
-        1 : "Blog & Article Writing",
-        2 : "Video Production",
-        3 : "Visual Graphics & Infographics"
-    }
   },
   {
-    image: "/images/ads.jpg",
+    image: "/video/PPC.mp4",
     title: "Pay-Per-Click Advertising (PPC)",
+    subtitle: "Targeted Ads for Maximum ROI",
     description:
       "Maximize your ROI with strategically targeted ads on Google, Bing, and social platforms. From campaign setup to continuous optimization, we ensure your ads reach the right audience.",
-      points : {
-        1 : "Google Ads & Bing Campaigns",
-        2 : "Social Media Ads",
-        3 : "Continuous Campaign Optimization"
-    }
   },
   {
-    image: "/images/graphic.jpg",
+    image: "/video/GDS.mp4",
     title: "Branding & Graphic Design",
+    subtitle: "Make Your Brand Stand Out",
     description:
       "Create a memorable and impactful brand identity. Our professional logo design, marketing collateral, and branding assets ensure your business stands out and resonates with your target market.",
-      points : {
-        1 : "Logo Design & Brand Identity",
-        2 : "Marketing Collateral (Brochures, Flyers, etc.)",
-        3 : "Visual Branding for Web & Social Media"
-    }
   },
   {
-    image: "/images/ecomerce.jpg",
+    image: "/video/WDS.mp4",
     title: "Web Development",
+    subtitle: "Beautiful, Responsive, and Effective Websites",
     description:
       "We specialize in creating responsive, visually appealing, and user-friendly websites that align with your business goals. Whether you need an eCommerce site or a corporate website, we build solutions that drive conversions.",
-      points : {
-        1 : "Custom Websites & Landing Pages",
-        2 : "eCommerce Development",
-        3 : "User Experience (UX) & User Interface (UI) Design"
-    }
   },
 ];
 
+
 const CardComponent = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-950 pt-5">
+    <section id="#services" className="text-gray-600 body-font pt-5">
+         <TextAnimate
+                animation="slideUp"
+                by="word"
+                className="md:text-4xl text-3xl font-bold text-[#ff9c00] mt-36 text-center"
+              >
+                          
+          Comprehensive Digital Marketing Solutions for Every Business
+              </TextAnimate>
       <motion.div 
       initial={{ opacity: 0, x: 150 }}          
       whileInView={{ opacity: 1, x: 0 }}      
       transition={{ duration: 1.5 }}           
       viewport={{ once: false, amount: 0.8 }}  className="text-center">
-        <h1 className="text-xl md:text-4xl text-[#ff9c00] font-bold mt-5">
-          Comprehensive Digital Marketing Solutions for Every Business
-        </h1>
+        
         <p className="mt-4 text-white">
           At Orionsols, we offer a complete suite of services designed to help you grow, engage, and convert customers. Explore our core offerings below:
         </p>
@@ -95,7 +78,7 @@ const CardComponent = () => {
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
             viewport={{ once: false, amount: 0.2 }} key={item.title} className="p-4">
-              <div className="card border-2 border-[#ff9c00] border-opacity-60 rounded-lg overflow-hidden">
+              {/* <div className="card border-2 border-[#ff9c00] border-opacity-60 rounded-lg overflow-hidden">
                 <Image
                   className="card-image"
                   src={item.image}
@@ -115,7 +98,14 @@ const CardComponent = () => {
                     <p>{item.points[3]}</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <FlipCard
+  description={item.description}
+  image={item.image}
+  rotate="x"
+  subtitle={item.subtitle}
+  title={item.title}
+/>
             </motion.div>
           ))}
         </div>

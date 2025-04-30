@@ -21,9 +21,9 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full bg-gray-900">
-      <div className="md:flex bg-gray-950 py-4 md:px-[10vw] items-center gap-24 text-[18px] justify-between hidden">
-        <div className="flex gap-10">
+    <div className="w-full">
+      <div className="md:flex  py-4 md:px-[8vw] items-center gap-24 text-[18px] justify-between hidden bg-gray-950">
+        <div className="flex gap-10 ">
           <div className="flex gap-3">
             <Phone color="#ff9c00" />
             <p className="text-white">(+971) 528 977 529</p>
@@ -60,7 +60,7 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[10vw] py-4">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-[8vw] py-7">
         {/* Logo and Hamburger Menu */}
         <div className="flex justify-between items-center w-full md:w-auto">
           <Link href="/">
@@ -97,19 +97,19 @@ function Navbar() {
         {/* Navigation Links */}
         <ul className="hidden md:flex md:flex-row items-center gap-4 md:gap-10 font-medium text-lg text-gray-300">
           <li className="hover:text-gray-500">
-            <Link href="/"><InteractiveHoverButton>HOME</InteractiveHoverButton></Link>
+            <Link href="#home"><InteractiveHoverButton>HOME</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/about"><InteractiveHoverButton>ABOUT US</InteractiveHoverButton></Link>
+            <a href="#about"><InteractiveHoverButton>ABOUT US</InteractiveHoverButton></a>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/services"><InteractiveHoverButton>SERVICES</InteractiveHoverButton></Link>
+            <Link href="#services"><InteractiveHoverButton>SERVICES</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/contact"><InteractiveHoverButton>CONTACT</InteractiveHoverButton></Link>
+            <Link href="#contact"><InteractiveHoverButton>CONTACT</InteractiveHoverButton></Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/blog"><InteractiveHoverButton>BLOG</InteractiveHoverButton></Link>
+            <Link href="#blog"><InteractiveHoverButton>BLOG</InteractiveHoverButton></Link>
           </li>
         </ul>
 
@@ -127,26 +127,26 @@ function Navbar() {
 
       {/* Mobile Menu (Dropdown with Animation) */}
       <div
-        className={`md:hidden bg-gray-800 overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="flex flex-col items-start px-10 gap-5 font-medium text-gray-300 py-4">
           <li className="hover:text-gray-500">
-            <Link href="/">HOME</Link>
+            <Link href="#home">HOME</Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/about">ABOUT US</Link>
+            <Link href="#about">ABOUT US</Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/services">SERVICES</Link>
+            <Link href="#services">SERVICES</Link>
           </li>
 
           <li>
-            <Link href="/contact">CONTACT</Link>
+            <Link href="#contact">CONTACT</Link>
           </li>
           <li className="hover:text-gray-500">
-            <Link href="/blog">BLOG</Link>
+            <Link href="#blog">BLOG</Link>
           </li>
         </ul>
       </div>

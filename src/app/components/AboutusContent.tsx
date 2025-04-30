@@ -6,20 +6,20 @@ import {motion} from "framer-motion"
 
 function AboutusContent() {
   return (
-    <div className=" bg-gray-950 w-full pt-[50px]">
-      <div className="md:px-40 text-start px-10">
+    <div id="about" className="w-full pt-[50px] md:px-[10vw] px-4">
+      <div className="text-start ">
       <motion.h1
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.5 }} className="text-3xl md:text-7xl text-white md:my-10 my-5 font-bold">
+            viewport={{ once: false, amount: 0.5 }} className="text-3xl md:text-7xl text-center text-white md:my-10 my-5 font-bold">
           Our <span className="text-[#ff9c00]">Philosophy</span>
         </motion.h1>
         <motion.p
             initial={{ opacity: 0, x: 70 }}          
             whileInView={{ opacity: 1, x: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.5 }} className="text-gray-300 md:text-xl">
+            viewport={{ once: false, amount: 0.5 }} className="text-gray-300 md:text-xl text-center">
           At Orionsols, our mission is to assist entrepreneurs and business
           owners in creating successful online stores with minimal hassle
           through our e-commerce outsourcing services. We understand the
@@ -33,23 +33,13 @@ function AboutusContent() {
           serving your customers.
         </motion.p>
       </div>
-      <motion.h1
-            initial={{ opacity: 0, y: 70 }}          
-            whileInView={{ opacity: 1, y: 0 }}      
-            transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.5 }} className="text-3xl md:text-7xl text-white md:my-10 my-5 font-bold md:px-40 text-start px-10">
-          Our Satisfied <span className="text-[#ff9c00]">Client</span>
-        </motion.h1>
-      <div className="py-7">
-        <InfiniteMovingCardsDemo />
-      </div>
       <div>
         <section className=" body-font">
         <motion.h1
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.5 }} className="text-3xl ml-10 md:text-7xl text-white my-10 md:ml-52 font-bold">
+            viewport={{ once: false, amount: 0.5 }} className="text-3xl text-center md:text-7xl text-white my-10 font-bold">
           Our <span className="text-[#ff9c00]">Heritage</span>
         </motion.h1>
           <div className="container px-4 py-24 mx-auto text-gray-400">

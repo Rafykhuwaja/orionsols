@@ -13,7 +13,7 @@ function Page() {
     <div>
       <Navbar />
 
-      <div className="bg-gray-950 text-white md:px-[200px] md:py-[100px] px-3 py-6">
+      <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
         <h1 className="text-[#ff9c00] md:text-5xl text-3xl font-bold mb-6">
           How to Develop a Top-Notch Digital Marketing Strategy
         </h1>

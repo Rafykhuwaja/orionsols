@@ -12,6 +12,12 @@
     transform: translateX(0);
   }
 }
+#background{
+  background-image: url("/images/background_full_web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position:center;
+}
 
 .fadeInLeft {
   animation: fadeInLeft 1s forwards;
@@ -56,12 +62,12 @@
   animation: moveUpDown 3s ease-in-out infinite;
 }
 
-.background{
+/* .background{
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
-}
+} */
 .serviceBackground{
   background-image: url("/images/background4.jpg");
   background-repeat: no-repeat;

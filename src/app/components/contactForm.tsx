@@ -13,7 +13,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-between lg:py-20 md:px-8 bg-gray-950">
+    <div id="contact" className="flex flex-col md:flex-row md:justify-between lg:py-20 md:px-[10vw]">
       <div className="md:w-1/2 text-white p-6">
       <div className="">
 

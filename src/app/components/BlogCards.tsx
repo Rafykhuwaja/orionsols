@@ -1,7 +1,9 @@
+"use client"
 import { link } from "fs";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 interface CardProps {
   imgSrc: string;
   subtitle: string;
@@ -70,7 +72,11 @@ const Card: React.FC<CardProps> = ({
   link,
 }) => {
   return (
-    <div className="xl:w-1/4 md:w-1/2 p-4">
+      <motion.div
+            initial={{ opacity: 0, y: 50 }}           
+            whileInView={{ opacity: 1, y: 0 }}        
+            transition={{ duration: 0.8 }}            
+            viewport={{ once: false, amount: 0.5 }}  className="xl:w-1/4 md:w-1/2 p-4">
       <Link href={link}>
         <div className="p-6 rounded-lg bg-gray-950 border-2 border-[#ff9c00] blogcard transform transition-transform duration-500 ease-in-out hover:rounded-none hover:translate-y-2">
           <Image
@@ -89,20 +95,24 @@ const Card: React.FC<CardProps> = ({
           <p className="leading-relaxed text-base">{description}</p>
         </div>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
 const CardSection = () => {
   return (
-    <section className="text-gray-600 body-font blog-bg">
+    <section id="blog" className="text-gray-600 body-font blog-bg">
       <div className="container py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
-          <div className="w-full mb-6 lg:mb-0">
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}           
+        whileInView={{ opacity: 1, y: 0 }}        
+        transition={{ duration: 0.8 }}            
+        viewport={{ once: false, amount: 0.5 }}  className="w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl md:text-4xl font-extrabold text-center title-font mb-2 text-[#ff9c00]">
               BLOGS
             </h1>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-wrap">
           {cardData.map((card, index) => (

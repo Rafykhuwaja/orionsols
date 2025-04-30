@@ -4,34 +4,31 @@ import { motion } from 'framer-motion';
 function About2() {
   return (
     <motion.div
-    initial={{ opacity: 0, y: 50 }}          
-    whileInView={{ opacity: 1, y: 0 }}      
-    transition={{ duration: 0.8 }}           
-    viewport={{ once: false, amount: 0.5 }} className="px-4 md:px-10 lg:px-20 flex flex-col md:flex-row justify-center items-center py-10 md:py-36  bg-gray-900">
-      <div className="w-full md:w-1/2 rounded-lg">
-        <div className="bg-[#ff9c00]  w-full rounded-lg fadeInLeft">
-          <img
-            src="/images/Image3.jpg"
-            alt=""
-            className="w-full h-auto rounded-lg relative bottom-4 md:bottom-8 right-4 md:right-8"
-          />
-        </div>
-      </div>
-      <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:ml-7">
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: false, amount: 0.5 }} className="px-4 md:px-[10vw] flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36 md:mt-16 ">
+      <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:pr-20">
         <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
-        Creative Content
+          Graphic Designing
         </h1>
         <p className="text-gray-300 md:text-xl">
-          At Orionsols, we provide you with high-quality, engaging, and
-          SEO-optimized content tailored to resonate with your specific
-          audience. Our team ensures that every piece of content not only tells
-          your brand story but also strengthens your brand voice, helping you
-          stand out in the digital landscape. We focus on delivering content
-          that captures attention, drives traffic, and fosters meaningful
-          connections, all while improving your search engine rankings. With our
-          creative content solutions, your brand can build trust, increase
-          visibility, and engage customers more effectively than ever.
+          At Orionsols, we design powerful visuals that capture attention and communicate your brands identity clearly. From logos and social media posts to brochures and website graphics, our design work is tailored to reflect your brands style, values, and goals. We focus on creating professional, eye-catching designs that not only look great but also serve a purpose — whether it is to inform, engage, or convert. With Orionsols, your brands visuals will leave a lasting impression across all platforms, helping you build recognition, trust, and impact in the digital world.
         </p>
+      </div>
+      <div className="w-full md:w-1/2 rounded-lg overflow-hidden">
+        <div className=" w-full rounded-lg fadeInLeft">
+          <video
+            src="/video/videoEditing.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-auto rounded-lg relative scale-150  object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </motion.div>
   );

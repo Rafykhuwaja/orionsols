@@ -1,12 +1,13 @@
 "use client"
 import Link from "next/link";
 import React from "react";
-import {motion} from "framer-motion"
-
+import { motion } from "framer-motion"
+import OrbitingItems3D from "./list/orbiting-items-3-d";
+import Image from "next/image";
 function Banner() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row background px-4 sm:px-8 md:px-5 lg:px-10 xl:px-10 text-white top-0 w-full md:z-[-1]">
+      <div id="home" className="flex flex-col md:flex-row px-4 sm:px-8 md:px-[7vw] text-white top-0 w-full md:z-[-1]">
         {/* Text Section */}
         <div className="w-full md:w-[27vw] pt-12 sm:pt-20 md:pt-32 fadeInLeft md:text-left md:hidden">
           <div className="font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 md:mb-12">
@@ -35,19 +36,20 @@ function Banner() {
           </div>
         </div>
         <motion.div
-    initial={{ opacity: 0, x: -100 }}          
-    whileInView={{ opacity: 1, x: 0 }}      
-    transition={{ duration: 0.8 }}           
-    viewport={{ once: false, amount: 0.5 }} className="hidden md:flex flex-col ">
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false, amount: 0.5 }} className="hidden md:flex flex-col w-[50vw]">
           <img src="/bannerTextImage.png"
-          className="w-[36vw] top-10 relative"/>
-          
+            className="w-[33vw] top-10 relative" />
+
         </motion.div>
 
         {/* Images Section */}
-        <div className="flex flex-col-reverse md:flex-row md:w-[66vw]">
+        <div className="flex flex-col-reverse md:flex-row ">
+ 
           {/* Left Image */}
-          <motion.div
+          {/* <motion.div
     initial={{ opacity: 0, x: 100 }}          
     whileInView={{ opacity: 1, x: 0 }}      
     transition={{ duration: 0.8 }}           
@@ -57,9 +59,9 @@ function Banner() {
               src="/images/bannerImage3.webp"
               alt="Banner"
             />
-          </motion.div>
+          </motion.div> */}
           {/* Right Image */}
-          <motion.div
+          {/* <motion.div
     initial={{ opacity: 0, x: 100 }}          
     whileInView={{ opacity: 1, x: 0 }}      
     transition={{ duration: 0.8 }}           
@@ -69,7 +71,22 @@ function Banner() {
               alt="Banner Content"
               className="relative md:top-12 mx-auto"
             />
-          </motion.div>
+          </motion.div> */}
+          <OrbitingItems3D
+            duration={25}
+            items={[
+              <Image src="/icons/vecteezy_3d-social-media-icons-google_9428333.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/vecteezy_3d-twitter-icon-logo_18885089.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/vecteezy_a-blue-and-white-link-icon-on-a-flat-shape_60380478.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/vecteezy_facebook-icon-transparent-background_47750224.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/vecteezy_glossy-instagram-3d-render-icon_9673727.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/vecteezy_glossy-tik-tok-icon-3d-render_9826612.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+
+            ]}
+            className="md:left-[13vw]"
+            radiusX={120}
+            radiusY={30}
+            tiltAngle={330} />
         </div>
       </div>
     </div>

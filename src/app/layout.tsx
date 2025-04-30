@@ -69,7 +69,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={lato.className}>{children}</body>
+      <body id="background" className={lato.className}>{children}</body>
     </html>
   );
 }

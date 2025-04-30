@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -19,6 +20,10 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        filter: {
+          "blur-20": "blur(20px)",
+          "blur-25": "blur(25px)",
+           },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -64,11 +69,18 @@ const config: Config = {
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' },
+          
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
+        "pop-blob": {
+          "0%": { transform: "scale(1)" },
+          "33%": { transform: "scale(1.2)" },
+          "66%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },},
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-40px)' },
         },
+      
         scroll: {
           to: {
             transform: 'translate(calc(-50% - 0.5rem))',
@@ -79,6 +91,8 @@ const config: Config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        float: 'float 3s ease-in-out infinite',
+        "pop-blob": "pop-blob 5s infinite",
       },
     },
   },

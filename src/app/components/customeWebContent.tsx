@@ -5,12 +5,12 @@ import { BookText, Cable, HardDriveUpload, Send } from "lucide-react";
 
 function CustomeWebContent() {
   return (
-    <div className=" bg-gray-950 w-full pt-[100px]">
+    <div className="w-full pt-[100px]">
       <motion.h1 
       initial={{ opacity: 0, y: 100 }}          
       whileInView={{ opacity: 1, y: 0 }}      
       transition={{ duration: 1.5 }}           
-      viewport={{ once: false, amount: 0.5 }}  className="text-3xl ml-10 md:text-7xl text-white mt-10 md:ml-52 font-bold">
+      viewport={{ once: false, amount: 0.5 }}  className="text-3xl  md:text-7xl text-white mt-10  text-center font-bold">
         How It <span className="text-[#ff9c00]">Works</span>
       </motion.h1>
 

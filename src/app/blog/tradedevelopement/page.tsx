@@ -6,7 +6,7 @@ function Page() {
   return (
     <div>
       <Navbar/>
-    <div className='bg-gray-950 text-white md:px-[200px] md:py-[100px] px-3 py-6'>
+    <div className=' text-white md:px-[200px] md:py-[100px] px-3 py-6'>
       
       
 
