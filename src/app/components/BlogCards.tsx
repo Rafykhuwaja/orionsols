@@ -14,6 +14,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/SEO-mistake-blog/image3.jpg",
+    subtitle: "SEO mistakes ",
+    title: "10 SEO Mistakes to Avoid and How to Fix Them",
+    description:
+      "search engine algorithms, SEO technology, high returns on investment, Google Keyword Planner, reputable...",
+    link: "/blog/How-to-avoid-seo-mistakes-and-how-to-fix-them",
+  },
+  {
     imgSrc: "/images/wordpress-website-blog/image2.jpg",
     subtitle: "wordpress website",
     title: "How to Build a WordPress Website from Scratch",
