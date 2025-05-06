@@ -31,18 +31,18 @@ function ContactForm() {
 
         </p>
         <div className="flex items-center">
-          <Image width="35" height="35" src="https://img.icons8.com/windows/32/b8a9fe/phone.png" alt="phone--v1"/>
-          <p className="font-bold md:text-4xl ml-5">Phone: (+971) 528 977 529</p>
+          <img width="35" height="35" src="https://img.icons8.com/windows/32/b8a9fe/phone.png" alt="phone--v1"/>
+          <p className="font-bold md:text-2xl ml-5">Phone: (+971) 528 977 529</p>
         </div>
 
         <div className="flex items-center mt-5">
-          <Image width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/new-post--v1.png" alt="mail"/>
-          <p className="font-bold md:text-4xl ml-5">Email: info@Orionsols.com</p>
+          <img width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/new-post--v1.png" alt="mail"/>
+          <p className="font-bold md:text-2xl ml-5">Email: info@Orionsols.com</p>
         </div>
 
         <div className="flex items-center mt-5">
-          <Image width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/marker--v1.png" alt="marker--v1"/>
-          <p className="font-bold md:text-4xl ml-5">Address: Ascote Park Place office 401,Dubai</p>
+          <img width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/marker--v1.png" alt="marker--v1"/>
+          <p className="font-bold md:text-2xl ml-5">Address: Ascote Park Place office 401,Dubai</p>
         </div>
       </div>
       </div>
