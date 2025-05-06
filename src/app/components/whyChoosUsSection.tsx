@@ -11,7 +11,7 @@ function WhyChooseUsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.5 }}
-        className="flex flex-col md:flex-row justify-center items-center md:pb-36 px-4"
+        className="flex flex-col md:flex-row justify-center items-center md:pb-36"
       >
         {/* Video Section */}
         <div className="w-full md:w-1/2 rounded-lg overflow-hidden">

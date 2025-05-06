@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import WhyChoosUsSection from "./components/whyChoosUsSection";
 import About from "./components/About";
 import About2 from "./components/About2";
-import Testinominols from "./components/Testinominols";
+// import Testinominols from "./components/Testinominols";
 import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import WhatsAppPopup from "./components/whatsappPOpUp";
@@ -17,7 +17,7 @@ import ContactForm from "./components/contactForm";
 export default function Home() {
 
   return (
-    <main className="px-4 md:px-[12vw]">
+    <main  className="md:px-[12vw] p-4 w-[100vw]">
       <Navbar/>
       <Banner/>
 
@@ -28,7 +28,7 @@ export default function Home() {
       <About2/>
       
       <AboutusContent/>
-      <Testinominols/>
+      {/* <Testinominols/> */}
       <CustomeWebContent/>
       <CardComponent/>
       <CardSection/>

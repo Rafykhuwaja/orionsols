@@ -24,7 +24,7 @@ function ContactForm() {
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 0.8 }}           
             viewport={{ once: false, amount: 0.5 }} className="text-white text-6xl font-extrabold mb-5">
-          Lets <span className="text-[#b8a9fe]">Connect</span>
+          Lets  <br /><span className="text-[#b8a9fe]">Connect</span>
         </motion.h1>
         <p className="mb-4">
         We would love to hear from you! Fill out the form below or contact us directly through the details provided
