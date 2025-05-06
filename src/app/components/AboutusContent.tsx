@@ -13,7 +13,7 @@ function AboutusContent() {
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
             viewport={{ once: false, amount: 0.5 }} className="text-3xl md:text-7xl text-center text-white md:my-10 my-5 font-bold">
-          Our <span className="text-[#ff9c00]">Philosophy</span>
+          Our <span className="text-[#b8a9fe]">Philosophy</span>
         </motion.h1>
         <motion.p
             initial={{ opacity: 0, x: 70 }}          
@@ -40,7 +40,7 @@ function AboutusContent() {
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
             viewport={{ once: false, amount: 0.5 }} className="text-3xl text-center md:text-7xl text-white my-10 font-bold">
-          Our <span className="text-[#ff9c00]">Heritage</span>
+          Our <span className="text-[#b8a9fe]">Heritage</span>
         </motion.h1>
           <div className="container px-4 py-24 mx-auto text-gray-400">
             <div className="flex flex-wrap justify-between -m-4 gap-3">
@@ -48,15 +48,15 @@ function AboutusContent() {
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.1 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#ff9c00] rounded-md">
+            viewport={{ once: false, amount: 0.1 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#b8a9fe] rounded-md">
                 <div className="h-full text-center">
-                  <h1 className="text-3xl text-[#ff9c00] font-bold mb-6">B2B Marketplace</h1>
+                  <h1 className="text-3xl text-[#b8a9fe] font-bold mb-6">B2B Marketplace</h1>
                   <p className="leading-relaxed">
                     Started off as one of the many B2B Marketplaces enabling
                     companies to connect with other organizations and conduct
                     business in one place, buying and selling products.
                   </p>
-                  <span className="inline-block h-1 w-10 rounded bg-[#ff9c00] mt-6 mb-4" />
+                  <span className="inline-block h-1 w-10 rounded bg-[#b8a9fe] mt-6 mb-4" />
 
                   <p className="text-gray-500">2005 - 2016</p>
                 </div>
@@ -65,14 +65,14 @@ function AboutusContent() {
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.5 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#ff9c00] rounded-md">
+            viewport={{ once: false, amount: 0.5 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#b8a9fe] rounded-md">
                 <div className="h-full text-center">
-                  <h1 className="text-3xl text-[#ff9c00] font-bold mb-6">Digital Agency
+                  <h1 className="text-3xl text-[#b8a9fe] font-bold mb-6">Digital Agency
                   </h1>
                   <p className="leading-relaxed">
                   Adding another feather in the cap, moved on to serve as a digital agency to outsource your digital marketing efforts, with various digital solutions.
                   </p>
-                  <span className="inline-block h-1 w-10 rounded bg-[#ff9c00] mt-6 mb-4" />
+                  <span className="inline-block h-1 w-10 rounded bg-[#b8a9fe] mt-6 mb-4" />
 
                   <p className="text-gray-500">2017 - 2019</p>
                 </div>
@@ -81,16 +81,16 @@ function AboutusContent() {
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 1.5 }}           
-            viewport={{ once: false, amount: 0.9 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#ff9c00] rounded-md">
+            viewport={{ once: false, amount: 0.9 }} className="lg:w-[31%] lg:mb-0 mb-6 mx-3 md:mx-0 p-4 border-2 border-[#b8a9fe] rounded-md">
                 <div className="h-full text-center">
-                  <h1 className="text-3xl text-[#ff9c00] font-bold mb-6">Ecom Automation</h1>
+                  <h1 className="text-3xl text-[#b8a9fe] font-bold mb-6">Ecom Automation</h1>
                   <p className="leading-relaxed">
                     Reaching the heights, became the e-com automation provider,
                     where we help entrepreneurs and business owners achieve
                     success in the competitive world of e-commerce with our
                     Done-For-You services.
                   </p>
-                  <span className="inline-block h-1 w-10 rounded bg-[#ff9c00] mt-6 mb-4" />
+                  <span className="inline-block h-1 w-10 rounded bg-[#b8a9fe] mt-6 mb-4" />
 
                   <p className="text-gray-500">2020 - Onwards</p>
                 </div>

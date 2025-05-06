@@ -42,10 +42,10 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="px-4 py-10 md:px-[10vw] md:py-20">
+    <div className=" py-10  md:py-20">
       <div className="text-center">
-        <p className="text-white text-3xl font-bold">Client Testimonials</p>
-        <h1 className="text-3xl md:text-4xl font-extrabold my-3 text-[#ff9c00]">
+        <p className="text-white text-4xl font-bold">Client Testimonials</p>
+        <h1 className="text-3xl md:text-4xl font-extrabold my-3 text-[#b8a9fe]">
           What Our Clients Are Saying
         </h1>
         <div className="p-8">

@@ -55,7 +55,7 @@ const CardComponent = () => {
          <TextAnimate
                 animation="slideUp"
                 by="word"
-                className="md:text-4xl text-3xl font-bold text-[#ff9c00] mt-36 text-center"
+                className="md:text-4xl text-3xl font-bold text-[#b8a9fe] mt-36 text-center"
               >
                           
           Comprehensive Digital Marketing Solutions for Every Business

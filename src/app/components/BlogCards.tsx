@@ -86,7 +86,7 @@ const Card: React.FC<CardProps> = ({
             transition={{ duration: 0.8 }}            
             viewport={{ once: false, amount: 0.5 }}  className="xl:w-1/4 md:w-1/2 p-4">
       <Link href={link}>
-        <div className="p-6 rounded-lg bg-gray-950 border-2 border-[#ff9c00] blogcard transform transition-transform duration-500 ease-in-out hover:rounded-none hover:translate-y-2">
+        <div className="p-6 rounded-lg bg-gray-950 border-2 border-[#b8a9fe] blogcard transform transition-transform duration-500 ease-in-out hover:rounded-none hover:translate-y-2">
           <Image
             className="h-40 rounded w-full object-cover object-center mb-6 blogcard-image"
             src={imgSrc}
@@ -94,7 +94,7 @@ const Card: React.FC<CardProps> = ({
             height={1000}
             width={1000}
           />
-          <h3 className="tracking-widest text-[#ff9c00] text-xs font-medium title-font">
+          <h3 className="tracking-widest text-[#b8a9fe] text-xs font-medium title-font">
             {subtitle}
           </h3>
           <h2 className="text-lg text-gray-400 font-medium title-font mb-4">
@@ -109,7 +109,7 @@ const Card: React.FC<CardProps> = ({
 
 const CardSection = () => {
   return (
-    <section id="blog" className="text-gray-600 body-font blog-bg">
+    <section id="blog" className="text-gray-600 body-font">
       <div className="container py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
         <motion.div
@@ -117,7 +117,7 @@ const CardSection = () => {
         whileInView={{ opacity: 1, y: 0 }}        
         transition={{ duration: 0.8 }}            
         viewport={{ once: false, amount: 0.5 }}  className="w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl md:text-4xl font-extrabold text-center title-font mb-2 text-[#ff9c00]">
+            <h1 className="sm:text-3xl text-2xl md:text-4xl font-extrabold text-center title-font mb-2 text-[#b8a9fe]">
               BLOGS
             </h1>
           </motion.div>

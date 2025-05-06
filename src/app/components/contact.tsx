@@ -18,7 +18,7 @@ function Contact() {
       viewport={{ once: false, amount: 0.3  }}>
 
     <div id="" className="text-center px-4 md:px-10 lg:px-20 py-10 md:py-20 text-white flex flex-col items-center">
-      <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-5 text-[#ff9c00]">
+      <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-5 text-[#b8a9fe]">
         Ready to Take Your Marketing <br /> to the Next Level?
       </h1>
 

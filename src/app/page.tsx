@@ -17,7 +17,7 @@ import ContactForm from "./components/contactForm";
 export default function Home() {
 
   return (
-    <main>
+    <main className="px-4 md:px-[12vw]">
       <Navbar/>
       <Banner/>
 

@@ -7,9 +7,9 @@ function About2() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: false, amount: 0.5 }} className="px-4 md:px-[10vw] flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36 md:mt-16 ">
+      viewport={{ once: false, amount: 0.5 }} className=" flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36 md:mt-16 ">
       <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:pr-20">
-        <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
+        <h1 className="text-3xl  text-[#b8a9fe] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
           Graphic Designing
         </h1>
         <p className="text-gray-300 md:text-xl">

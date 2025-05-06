@@ -12,11 +12,12 @@
     transform: translateX(0);
   }
 }
-#background{
+#background {
   background-image: url("/images/background_full_web.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-position:center;
+  overflow-x: hidden;
 }
 
 .fadeInLeft {
@@ -53,12 +54,11 @@
   animation: bounce 1s infinite;
 }
 
-*{
+* {
   font-family: Helvetica, sans-serif;
 }
 
 .animated-object {
-  
   animation: moveUpDown 3s ease-in-out infinite;
 }
 
@@ -68,28 +68,28 @@
   background-size: cover; 
   background-position: center;
 } */
-.serviceBackground{
+.serviceBackground {
   background-image: url("/images/background4.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
-.ContactBackground{
+.ContactBackground {
   background-image: url("/images/background3.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
-.blog-background{
+.blog-background {
   background-image: url("/images/background2.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
-.blog-bg{
+.blog-bg {
   background-image: url("/images/blogBg.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
 
@@ -140,7 +140,7 @@
 
 /* Gradient overlay for the card */
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +165,6 @@
 .card:hover .card-title {
   visibility: hidden;
 }
-
 
 /* Responsive styles */
 @media (min-width: 768px) {
@@ -200,13 +199,12 @@
   background-position: 0%;
 }
 
-
-.blogcard-image{
+.blogcard-image {
   background-color: black;
   opacity: 0.7;
 }
 
-.blogcard:hover .blogcard-image{
+.blogcard:hover .blogcard-image {
   opacity: 1;
 }
 
@@ -270,8 +268,6 @@
   transform: rotate(180deg);
   transition: transform 0.3s ease; /* Add smooth transition */
 }
-
-
 
 /* Keyframes for the animation */
 @keyframes moveUpDown {
@@ -348,4 +344,3 @@
     @apply bg-background text-foreground;
   }
 }
-

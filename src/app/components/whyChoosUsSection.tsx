@@ -11,7 +11,7 @@ function WhyChooseUsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.5 }}
-        className="flex flex-col md:flex-row justify-center items-center md:px-[11vw] md:pb-36 px-4"
+        className="flex flex-col md:flex-row justify-center items-center md:pb-36 px-4"
       >
         {/* Video Section */}
         <div className="w-full md:w-1/2 rounded-lg overflow-hidden">
@@ -31,7 +31,7 @@ function WhyChooseUsSection() {
 
         {/* Text Content */}
         <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:ml-7" data-aos="zoom-in-up">
-          <h1 className="text-3xl text-[#ff9c00] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
+          <h1 className="text-3xl text-[#b8a9fe] font-extrabold mb-5 mt-16 md:mt-10 md:text-5xl md:pr-20">
             Social Media <br /> Marketing
           </h1>
           <p className="text-gray-300 md:text-xl">

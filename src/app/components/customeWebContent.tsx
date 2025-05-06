@@ -11,7 +11,7 @@ function CustomeWebContent() {
       whileInView={{ opacity: 1, y: 0 }}      
       transition={{ duration: 1.5 }}           
       viewport={{ once: false, amount: 0.5 }}  className="text-3xl  md:text-7xl text-white mt-10  text-center font-bold">
-        How It <span className="text-[#ff9c00]">Works</span>
+        How It <span className="text-[#b8a9fe]">Works</span>
       </motion.h1>
 
       <section className="text-gray-300 body-font">
@@ -21,15 +21,15 @@ function CustomeWebContent() {
               transition={{ duration: 1.2 }}           
               viewport={{ once: false, amount: 0.5 }}  className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#b8a9fe] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <Send
                   className=" rounded w-full object-cover object-center mb-6"
-                  color="#ff9c00"
+                  color="#b8a9fe"
                   size={80}
                 />
 
-                <h2 className="text-lg text-[#ff9c00] font-medium title-font mb-4 text-center">
+                <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
                   Planning
                 </h2>
                 <p className="leading-relaxed text-base text-center">
@@ -40,15 +40,15 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#b8a9fe] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <BookText
                   className=" rounded w-full object-cover object-center mb-6"
-                  color="#ff9c00"
+                  color="#b8a9fe"
                   size={80}
                 />
 
-                <h2 className="text-lg text-[#ff9c00] font-medium title-font mb-4 text-center">
+                <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
                   Research
                 </h2>
                 <p className="leading-relaxed text-base text-center">
@@ -59,15 +59,15 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#b8a9fe] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <Cable
                   className=" rounded w-full object-cover object-center mb-6"
-                  color="#ff9c00"
+                  color="#b8a9fe"
                   size={80}
                 />
 
-                <h2 className="text-lg text-[#ff9c00] font-medium title-font mb-4 text-center">
+                <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
                   Optimization
                 </h2>
                 <p className="leading-relaxed text-base text-center">
@@ -78,15 +78,15 @@ function CustomeWebContent() {
                 </p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#ff9c00] border-2 border-transparent rounded-3xl">
+            <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#b8a9fe] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
                 <HardDriveUpload
                   className=" rounded w-full object-cover object-center mb-6"
-                  color="#ff9c00"
+                  color="#b8a9fe"
                   size={80}
                 />
 
-                <h2 className="text-lg text-[#ff9c00] font-medium title-font mb-4 text-center">
+                <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
                   Results
                 </h2>
                 <p className="leading-relaxed text-base text-center">

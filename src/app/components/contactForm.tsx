@@ -13,7 +13,7 @@ function ContactForm() {
   };
 
   return (
-    <div id="contact" className="flex flex-col md:flex-row md:justify-between lg:py-20 md:px-[10vw]">
+    <div id="contact" className="flex flex-col md:flex-row md:justify-between lg:py-20">
       <div className="md:w-1/2 text-white p-6">
       <div className="">
 
@@ -22,25 +22,25 @@ function ContactForm() {
             initial={{ opacity: 0, y: 70 }}          
             whileInView={{ opacity: 1, y: 0 }}      
             transition={{ duration: 0.8 }}           
-            viewport={{ once: false, amount: 0.5 }} className="text-[#ff9c00] text-6xl font-extrabold mb-5">
-          Lets Connect
+            viewport={{ once: false, amount: 0.5 }} className="text-white text-6xl font-extrabold mb-5">
+          Lets <span className="text-[#b8a9fe]">Connect</span>
         </motion.h1>
         <p className="mb-4">
         We would love to hear from you! Fill out the form below or contact us directly through the details provided
 
         </p>
         <div className="flex items-center">
-          <img width="35" height="35" src="https://img.icons8.com/windows/32/FAB005/phone.png" alt="phone--v1"/>
+          <img width="35" height="35" src="https://img.icons8.com/windows/32/b8a9fe/phone.png" alt="phone--v1"/>
           <p className="font-bold md:text-4xl ml-5">Phone: (+971) 528 977 529</p>
         </div>
 
         <div className="flex items-center mt-5">
-          <img width="35" height="35" src="https://img.icons8.com/ios/50/FAB005/new-post--v1.png" alt="mail"/>
+          <img width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/new-post--v1.png" alt="mail"/>
           <p className="font-bold md:text-4xl ml-5">Email: info@Orionsols.com</p>
         </div>
 
         <div className="flex items-center mt-5">
-          <img width="35" height="35" src="https://img.icons8.com/ios/50/FAB005/marker--v1.png" alt="marker--v1"/>
+          <img width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/marker--v1.png" alt="marker--v1"/>
           <p className="font-bold md:text-4xl ml-5">Address: Ascote Park Place office 401,Dubai</p>
         </div>
       </div>
@@ -51,8 +51,8 @@ function ContactForm() {
           whileInView={{ opacity: 1, x: 0 }}      
           transition={{ duration: 0.8 }}           
           viewport={{ once: false, amount: 0.5 }} className="p-6 rounded-lg md:w-1/2 flex justify-center">
-        <div className="max-w-full p-10 md:ml-8 rounded-xl shadow-2xl md:w-[600px] border-2 border-[#ff9c00]">
-          <h2 className="text-2xl font-semibold text-center mb-4 text-[#ff9c00]">
+        <div className="max-w-full p-10 md:ml-8 rounded-xl shadow-2xl md:w-[600px] border-2 border-[#b8a9fe]">
+          <h2 className="text-2xl font-semibold text-center mb-4 text-[#b8a9fe]">
             Contact Us
           </h2>
           <form onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ function ContactForm() {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border border-[#ff9c00] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eecf45] focus:border-[#eecf45]"
+                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="John Doe"
                 required
               />
@@ -85,7 +85,7 @@ function ContactForm() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border bg-gray-800 border-[#ff9c00] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eecf45] focus:border-[#eecf45]"
+                className="mt-1 block w-full px-3 py-2 border bg-gray-800 border-[#b8a9fe] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="john@example.com"
                 required
               />
@@ -101,14 +101,14 @@ function ContactForm() {
                 id="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border border-[#ff9c00] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#eecf45] focus:border-[#eecf45]"
+                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#9a83ff] focus:border-[#917bf3]"
                 placeholder="Your message here..."
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-[#ff9c00] text-white font-semibold rounded-md hover:bg-[#eecf45] focus:outline-none focus:ring-2 focus:ring-[#eecf45] focus:ring-opacity-50"
+              className="w-full py-2 px-4 bg-[#b8a9fe] text-white font-semibold rounded-md hover:bg-[#9883f8] focus:outline-none focus:ring-2 focus:ring-[#9681f3] focus:ring-opacity-50"
             >
               Send Message
             </button>

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lato } from "next/font/google";
-const lato = Lato({
+import { Raleway } from "next/font/google";
+const lato = Raleway({
   weight:'400',
   display:'swap',
-  subsets:['latin']
+  subsets:['cyrillic']
 })
 
 
@@ -71,5 +71,5 @@ export default function RootLayout({
       </head>
       <body id="background" className={lato.className}>{children}</body>
     </html>
-  );
+  ); 
 }

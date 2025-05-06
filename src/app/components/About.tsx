@@ -7,15 +7,15 @@ import { TextAnimate } from "./magicui/text-animate";
 
 function About() {
   return (
-    <section className=" md:pb-36 md:p-2 px-4 md:px-[11vw] flex flex-col items-center justify-center">
+    <section className=" md:pb-36 md:p-2 flex flex-col items-center justify-center">
       <TextAnimate
         animation="slideUp"
         by="word"
-        className="md:text-5xl text-3xl font-bold text-[#ff9c00] mt-36"
+        className="md:text-5xl text-3xl font-bold text-[#b8a9fe] mt-36"
       >
         Empowering Brands with Innovative Digital Solutions
       </TextAnimate>
-      <div className="h-1 w-3/4 md:max-w-5xl bg-[#ff9c00] mt-5 rounded md:mb-28 mb-14" />
+      <div className="h-1 w-3/4 md:max-w-5xl bg-[#b8a9fe] mt-5 rounded md:mb-28 mb-14" />
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}           
@@ -24,10 +24,10 @@ function About() {
         viewport={{ once: false, amount: 0.5 }}    
         className="flex flex-col-reverse md:flex-row justify-center items-center py-10 md:py-36 ">
         <div className="w-full md:w-1/2 relative bottom-8 fadeInRight md:pr-20">
-          <h1 className="text-3xl  text-[#ff9c00] font-extrabold mb-5 md:mt-16 mt-10 md:text-5xl">
+          <h1 className="text-3xl  text-[#b8a9fe] font-extrabold mb-5 md:mt-16 mt-10 md:text-5xl">
             Website Development
           </h1>
-          <p className="text-gray-300 md:text-xl">
+          <p className="text-gray-300 md:text-sm lg:text-base">
             At Orionsols, we specialize in creating responsive, user-friendly, and
             visually stunning websites that are designed to capture the true
             essence of your brand. Our team combines creative design with
