@@ -16,10 +16,10 @@ function CustomeWebContent() {
 
       <section className="text-gray-300 body-font">
         <motion.div 
-              initial={{ opacity: 0, y: 150 }}          
+              initial={{ opacity: 0, y: 50 }}          
               whileInView={{ opacity: 1, y: 0 }}      
               transition={{ duration: 1.2 }}           
-              viewport={{ once: false, amount: 0.5 }}  className="container px-5 py-24 mx-auto">
+              viewport={{ once: false, amount: 0.1 }}  className="container px-5 py-24">
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4 hover:border-2 hover:border-[#b8a9fe] border-2 border-transparent rounded-3xl">
               <div className=" p-6 rounded-lg">
