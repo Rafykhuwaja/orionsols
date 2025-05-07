@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Raleway } from "next/font/google";
 import TawkTo from "./components/TawlkToo";
+import Navbar from "./components/Navbar";
 const lato = Raleway({
   weight:'400',
   display:'swap',
@@ -54,7 +55,9 @@ export default function RootLayout({
         {/* Add Tawk.to Script inside head */}
       
       </head>
-      <body id="background" className={lato.className}>{children}
+      <body id="background" className={lato.className}>
+      <Navbar/>
+        {children}
         <TawkTo/>
       </body>
     </html>

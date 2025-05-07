@@ -21,7 +21,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full  relative bottom-10">
+    <div className=" relative bottom-10 md:px-[12vw] p-4 w-[100vw]">
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Logo and Hamburger Menu */}
         <div className="flex justify-between items-center w-full md:w-auto">

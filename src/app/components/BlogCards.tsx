@@ -14,6 +14,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/brandingblog/image3.jpg",
+    subtitle: "Branding",
+    title: "Branding strategies, small business, branding tactics,Small business brand ",
+    description:
+      "6 Branding Tactics Every Small Business Should Use...",
+    link: "/blog/6-branding-tactics-for-small-business",
+  },
+  {
     imgSrc: "/images/SEO-mistake-blog/image3.jpg",
     subtitle: "SEO mistakes ",
     title: "10 SEO Mistakes to Avoid and How to Fix Them",
@@ -36,40 +44,6 @@ const cardData = [
     description:
       "developing a digital marketing strategy, digital marketing plan, digital marketing channels, online marketing ...",
     link: "/blog/7-stages-of-a-digital-marketing-strategy",
-  },
-  {
-    imgSrc: "/images/chatgpt.jpg",
-    subtitle: "AI Technology",
-    title: "GPT-3.5 vs GPT-4: Which Chat to Use for Your Business Needs?",
-    description:
-      "As artificial intelligence continues to evolve, businesses are faced with the challenge of choosing the ri.. ",
-    link: "/blog/aitechnology",
-  },
-
-  {
-    imgSrc: "/images/digitalmarketing.jpg",
-    subtitle: "Digital Marketing",
-    title: "Maximizing Your Brand Capacity with Social Media and SEO",
-    description:
-      "In today's digital age, leveraging social media and SEO strategies is essential for maximizing your brand.. ",
-    link: "/blog/socialmedia",
-  },
-
-  {
-    imgSrc: "/images/marketingstrategy.jpg",
-    subtitle: "Marketing Strategy",
-    title: "Enhance Your Brand with an Excellent Campaign Strategy",
-    description:
-      "Crafting an excellent campaign strategy is key to enhancing your brand and achieving your business goals. ..",
-    link: "/blog/marketingstrategy",
-  },
-  {
-    imgSrc: "/images/tradedevelopement.avif",
-    subtitle: "Trade Development",
-    title: "Embrace of Digital Marketing Strategies for Trade Development",
-    description:
-      "In today's fast-paced digital world, embracing digital marketing strategies is essential for trade development...",
-    link: "/blog/tradedevelopement",
   },
 ];
 const Card: React.FC<CardProps> = ({

@@ -1,12 +1,10 @@
 import Footer from '@/app/components/Footer'
-import Navbar from '@/app/components/Navbar'
 import React from 'react'
 import Image from 'next/image'
 
 function Page() {
   return (
     <div>
-      <Navbar/>
     <div className=' text-white md:px-[200px] md:py-[100px] px-3 py-6'>
    
       <h1 className='text-[#ff9c00] md:text-5xl text-3xl font-bold mb-6'>

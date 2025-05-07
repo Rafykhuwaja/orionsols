@@ -1,5 +1,4 @@
 import Footer from "@/app/components/Footer";
-import Navbar from "@/app/components/Navbar";
 import React from "react";
 import Image from "next/image";
 
@@ -11,10 +10,9 @@ export const metadata = {
 function Page() {
   return (
     <div>
-      <Navbar />
 
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
-        <h1 className="text-[#ff9c00] md:text-5xl text-3xl font-bold mb-6">
+        <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           How to Develop a Top-Notch Digital Marketing Strategy
         </h1>
 
@@ -29,7 +27,7 @@ function Page() {
             process of planning a digital marketing plan that resonates with
             your audience, drives engagement, and creates conversion
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             What Is a Digital Marketing Strategy?
           </h2>
           <p className="text-lg">
@@ -48,7 +46,7 @@ function Page() {
           marketing campaigns innovative and timely. A good strategy acts to run
           the message of your brand, provides continuity, and increases the
           decision making through insights and data for evaluation.
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Why Have a Digital Marketing Strategy?
           </h2>
           <p className="text-lg">
@@ -72,7 +70,7 @@ function Page() {
             campaigns, you can stand out of the crowd and get a good online
             appearance.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Key Components of a Digital Marketing Strategy
           </h2>
           <p className="text-lg">
@@ -81,7 +79,7 @@ function Page() {
             productive plan in the concert that achieves results. Let us check
             each of these pieces in more detail.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Target Audience Identification
           </h2>
           <p className="text-lg">
@@ -130,7 +128,7 @@ function Page() {
             target audiences, while email marketing helps you promote and
             promote customer relationships over the long term.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Content Creation and Distribution
           </h2>
           <p className="text-lg">
@@ -149,7 +147,7 @@ function Page() {
             strategy helps your content achieve visibility to run traffic and
             conversions.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             How to Identify Your Target Audience: Demographics and
             Psychographics
           </h2>
@@ -169,7 +167,7 @@ function Page() {
             material and campaign that appeals to your audience and addresses
             their needs.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Demographic Factors
           </h2>
           <p className="text-lg">
@@ -186,7 +184,7 @@ function Page() {
             working professionals; Then your primary channels can be linked and
             email marketing.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Psychographic Factors
           </h2>
           <p className="text-lg">
@@ -203,7 +201,7 @@ function Page() {
             the behavior of consumers, so that you can produce more relevant and
             personal materials.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Using Data to Create Detailed Buyer Personas
           </h2>
           <p className="text-lg">
@@ -219,7 +217,7 @@ function Page() {
             buyers. This helps improve engagement, improve conversions and
             attach to customers.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             7 Stages of a Digital Marketing Strategy
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -237,7 +235,7 @@ function Page() {
             implemented. The next seven phases capture the most important stages
             to create an overall digital marketing strategy.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 1: Research and Data Collection
           </h2>
           <p className="text-lg">
@@ -249,7 +247,7 @@ function Page() {
             about the preferences, behavior and pain points of your target
             audiences.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 2: Goal Setting and Objective Definition
           </h2>
           <p className="text-lg">
@@ -260,7 +258,7 @@ function Page() {
             having defined objectives will keep you on track and will enable you
             to measure your success.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 3: Channel Selection
           </h2>
           <p className="text-lg">
@@ -272,7 +270,7 @@ function Page() {
             platform has its own strength, so choose those who fit your
             objectives and target audiences.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 4: Content Creation and Marketing
           </h2>
           <p className="text-lg">
@@ -282,7 +280,7 @@ function Page() {
             infographics, and so on. After producing the material, plan a
             distribution method to reach the right audience at the right time.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 5: Campaign Execution
           </h2>
           <p className="text-lg">
@@ -292,7 +290,7 @@ function Page() {
             means that advertising, scheduling posts, and ensuring that your
             content is adapted to every platform.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 6: Analytics and Performance Tracking
           </h2>
           <p className="text-lg">
@@ -301,7 +299,7 @@ function Page() {
             ROI to determine how well your campaigns are doing. This information
             will inform you what is correct and what adjustment requires.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Stage 7: Optimization and Refinement
           </h2>
           <p className="text-lg">
@@ -311,7 +309,7 @@ function Page() {
             optimizing your website for better user experience. The ongoing
             adaptation ensures that your strategy is effective and efficient.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             How to Create a Digital Marketing Strategy
           </h2>
           <p className="text-lg">
@@ -322,7 +320,7 @@ function Page() {
             having defined objectives will keep you on track and will enable you
             to measure your success.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Conducting Market and Competitor Research
           </h2>
           <p className="text-lg">
@@ -330,7 +328,7 @@ function Page() {
             consumers. This will give you a good understanding of trends in the
             market and will also help you to see development opportunities.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Setting Clear, Measurable Goals
           </h2>
           <p className="text-lg">
@@ -338,7 +336,7 @@ function Page() {
             (specific, average, achieving, relevant and time to time). This will
             enable you to keep your goals clear and stay on the track.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Choosing the Right Platforms and Tools
           </h2>
           <p className="text-lg">
@@ -346,7 +344,7 @@ function Page() {
             objectives and audiences. Spend money on devices that enable you to
             successfully implement, monitor and customize your campaigns.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Creating a Content and Communication Plan
           </h2>
           <p className="text-lg">
@@ -354,7 +352,7 @@ function Page() {
             produce, the channels you will use to disseminate it, and how often
             you will post.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Planning Your Budget and Resources
           </h2>
           <p className="text-lg">
@@ -363,7 +361,7 @@ function Page() {
             staffing, investing in software, and reserving money for paid
             advertising.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Benefits of a Well-Planned Digital Marketing Strategy
           </h2>
           <p className="text-lg">
@@ -371,7 +369,7 @@ function Page() {
             visibility, enhances engagement, and maximizes conversion into a
             fast online world.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Improved Audience Targeting
           </h2>
           <p className="text-lg">
@@ -379,7 +377,7 @@ function Page() {
             define and target the right audiences, leading to better campaigns
             and more engagement.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Better ROI Through Optimized Campaigns
           </h2>
           <p className="text-lg">
@@ -387,7 +385,7 @@ function Page() {
             maximize your return to investment and see more and more results for
             less effort.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Enhanced Brand Presence and Recognition
           </h2>
           <p className="text-lg">
@@ -395,7 +393,7 @@ function Page() {
             maximize brand recognition and easily create an average online
             appearance to reach potential customers more efficiently.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Ability to Measure and Adjust in Real-Time
           </h2>
           <p className="text-lg">
@@ -403,7 +401,7 @@ function Page() {
             the performance of the campaign in real time. Thus, companies can
             adjust and customize their strategies faster for maximum return.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">Conclusion</h2>
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">Conclusion</h2>
           <p className="text-lg">
             Creating an extraordinary digital marketing strategy is important
             for companies who want to succeed in today&apos;s digital age. You can
@@ -420,20 +418,20 @@ function Page() {
             Orionsol companies to improve their marketing plan and yield
             tangible results.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">FAQs</h2>
-          <h2 className="text-[#ff9c00] text-1xl font-semibold">What are the key elements of a digital marketing strategy?</h2>
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">FAQs</h2>
+          <h2 className="text-[#b8a9fe] text-1xl font-semibold">What are the key elements of a digital marketing strategy?</h2>
           <p className="text-lg">
           A digital marketing strategy includes target audience identification, choosing digital channels, content creation, and continuous measurement and optimization.
           </p>
-          <h2 className="text-[#ff9c00] text-1xl font-semibold">How long does it take to see results from a digital marketing strategy?</h2>
+          <h2 className="text-[#b8a9fe] text-1xl font-semibold">How long does it take to see results from a digital marketing strategy?</h2>
           <p className="text-lg">
           It typically takes a few months to start seeing noticeable results, depending on the complexity and goals of the strategy.
           </p>
-          <h2 className="text-[#ff9c00] text-1xl font-semibold">Can a small business benefit from a digital marketing strategy?</h2>
+          <h2 className="text-[#b8a9fe] text-1xl font-semibold">Can a small business benefit from a digital marketing strategy?</h2>
           <p className="text-lg">
           Yes, small businesses can greatly benefit from a digital marketing strategy by increasing their visibility and reaching new customers.
           </p>
-          <h2 className="text-[#ff9c00] text-1xl font-semibold">How do I measure the success of my digital marketing efforts?</h2>
+          <h2 className="text-[#b8a9fe] text-1xl font-semibold">How do I measure the success of my digital marketing efforts?</h2>
           <p className="text-lg">
           You can measure success by tracking metrics such as website traffic, conversion rates, social media engagement, and overall ROI.
           </p>

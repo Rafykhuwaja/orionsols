@@ -1,11 +1,9 @@
 import Footer from '@/app/components/Footer'
-import Navbar from '@/app/components/Navbar'
 import React from 'react'
 import Image from 'next/image'
 function Page() {
   return (
     <div>
-      <Navbar/>
     <div className=' text-white md:px-[200px] md:py-[100px] px-3 py-6'>
       
       

@@ -1,5 +1,4 @@
 import Footer from "@/app/components/Footer";
-import Navbar from "@/app/components/Navbar";
 import React from "react";
 import Image from "next/image";
 
@@ -31,10 +30,9 @@ export const metadata = {
 function Page() {
   return (
     <div>
-      <Navbar />
 
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
-        <h1 className="text-[#ff9c00] md:text-5xl text-3xl font-bold mb-6">
+        <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           How to Build a WordPress Website from Scratch
         </h1>
 
@@ -64,7 +62,7 @@ function Page() {
           marketing campaigns innovative and timely. A good strategy acts to run
           the message of your brand, provides continuity, and increases the
           decision making through insights and data for evaluation.
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             What Is WordPress?
           </h2>
           {/* Image Placeholder */}
@@ -92,7 +90,7 @@ function Page() {
             plugin-friendly, with unlimited adaptation options. It is also very
             scalable, so it can expand with you because your needs change.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Key Elements of a WordPress Website
           </h2>
           <p className="text-lg">
@@ -102,7 +100,7 @@ function Page() {
             and theme to plugins and SEOs, each piece fits into a site that
             shines.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Domain Name and Web Hosting
           </h2>
           <p className="text-lg">
@@ -120,7 +118,7 @@ function Page() {
             automatic backup and SSL certificates. Most hosting companies have
             WordPress-specific plans, which can make the setup simple and sharp.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             WordPress Installation
           </h2>
           <p className="text-lg">
@@ -142,7 +140,7 @@ function Page() {
             technical hindrances. Following installation, you will have access
             to instantly install themes, plugins, and materials.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Themes and Design
           </h2>
           <p className="text-lg">
@@ -159,7 +157,7 @@ function Page() {
             also contain demo materials that you can become accustomed to and
             understand how the theme works before inserting your own content.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Plugins and Functionality
           </h2>
           <p className="text-lg">
@@ -177,7 +175,7 @@ function Page() {
             it is necessary that they are not high with add-ons, as they reduce
             the site, decrease performance.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Content and Optimization
           </h2>
           <p className="text-lg">
@@ -198,7 +196,7 @@ function Page() {
             adding meta details, using the titles correctly, and adapting
             images.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Benefits of Using WordPress
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -217,7 +215,7 @@ function Page() {
             SEO capabilities, WordPress offers unlimited possibilities to
             establish a successful online appearance.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Easy to Use and Beginner-Friendly
           </h2>
           <p className="text-lg">
@@ -228,7 +226,7 @@ function Page() {
             platform helps you post the content, upload the picture, and
             customize your site without any effort.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Highly Customizable with Themes and Plugins
           </h2>
           <p className="text-lg">
@@ -237,7 +235,7 @@ function Page() {
             making a simple blog to a complex online store, WordPress has themes
             and plugins that can customize any aspect of your site.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             SEO-Friendly for Better Rankings
           </h2>
           <p className="text-lg">
@@ -247,7 +245,7 @@ function Page() {
             such as Yoast SEO provide even more equipment to customize your
             content and help you in increasing your search engine ranking.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Scalable for Growth and Business Expansion
           </h2>
           <p className="text-lg">
@@ -258,7 +256,7 @@ function Page() {
             to full ecommerce sites, so it is a great option for businesses and
             individuals that intend to make their online appearance over time.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Strong Community Support and Regular Updates
           </h2>
           <p className="text-lg">
@@ -268,7 +266,7 @@ function Page() {
             keeps your WordPress site safe and current with the latest features
             and enhancements.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Strong Community Support and Regular Updates
           </h2>
           <p className="text-lg">
@@ -281,7 +279,7 @@ function Page() {
             customization and SEO optimization, every step takes you one step
             closer to the functional and professional site.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 1: Choose a Domain Name and Web Hosting
           </h2>
           <p className="text-lg">
@@ -291,7 +289,7 @@ function Page() {
             choosing a web host, go for a company that has decent uptime, solid
             security, and good customer care.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 2: Install WordPress on Your Hosting Provider
           </h2>
           <p className="text-lg">
@@ -300,7 +298,7 @@ function Page() {
             installation, which is simple and crisp. After the setup, you can
             reach your WordPress dashboard and start modifying your website.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 3: Select and Customize a Theme
           </h2>
           <p className="text-lg">
@@ -310,7 +308,7 @@ function Page() {
             accommodate layout, color scheme, fonts, and more to design a site
             that represents your business or individual brand.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 4: Install Essential Plugins for Functionality
           </h2>
           <p className="text-lg">
@@ -320,7 +318,7 @@ function Page() {
             improvement. Plugins enable you to deliver extra functionality on
             your site without custom coding.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 5: Create Essential Pages (Homepage, About, Contact, Blog,
             etc.)
           </h2>
@@ -331,7 +329,7 @@ function Page() {
             the foundation of your website and they should have all the
             information for visitors.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 6: Set Up Website Navigation and Menus
           </h2>
           <p className="text-lg">
@@ -341,7 +339,7 @@ function Page() {
             will enhance the user experience and enable visitors to detect the
             material they are looking for.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 7: Publish Content and Optimize for SEO
           </h2>
           <p className="text-lg">
@@ -352,7 +350,7 @@ function Page() {
             such as the Yoast SEO, which will help you optimize the material for
             the search engine visibility.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 8: Secure Your Website and Implement Backups
           </h2>
           <p className="text-lg">
@@ -361,7 +359,7 @@ function Page() {
             addition, set up automatic backup so that you can restore your site
             in case of loss of data or other problems.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 9: Test Your Website Before Going Live
           </h2>
           <p className="text-lg">
@@ -370,7 +368,7 @@ function Page() {
             that your site is mobile friendly. Testing your site before taking
             it live will allow you to detect and repair any issue in a snap.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Step 10: Launch and Maintain Your WordPress Website
           </h2>
           <p className="text-lg">
@@ -380,7 +378,7 @@ function Page() {
             website&apos;s performance and make appropriate changes to make your site
             operate smoothly.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Tips for a Successful WordPress Website
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -398,7 +396,7 @@ function Page() {
             selecting the proper plugins to optimizing performance and security,
             these tips are a must to make your site shine and succeed.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Choose a Reliable Hosting Provider for Speed and Security
           </h2>
           <p className="text-lg">
@@ -406,7 +404,7 @@ function Page() {
             safety of your site. Choose a hosting provider with quick servers,
             safe options, and good support.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Use a Mobile-Friendly and Fast-Loading Theme
           </h2>
           <p className="text-lg">
@@ -415,7 +413,7 @@ function Page() {
             to a subject that quickly loads the user experience and search
             engine ranking.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Keep Plugins and WordPress Updated to Prevent Issues
           </h2>
           <p className="text-lg">
@@ -423,7 +421,7 @@ function Page() {
             slow performance. Update your plugins and WordPress core regularly
             so that your website is safe and working.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Focus on SEO and Content Quality for Better Visibility
           </h2>
           <p className="text-lg">
@@ -432,7 +430,7 @@ function Page() {
             such as Yoast SEO to improve your site&apos;s appearance in the search
             engine rankings.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Regularly Backup Your Website to Avoid Data Loss
           </h2>
           <p className="text-lg">
@@ -440,7 +438,7 @@ function Page() {
             automatic backup to ensure that you can restore your website in no
             time if anything is wrong.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Challenges When Building a WordPress Website
           </h2>
           <p className="text-lg">
@@ -450,7 +448,7 @@ function Page() {
             enable you to deal with them efficiently and design a smooth,
             high-performing site.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Choosing the Right Theme and Plugins
           </h2>
           <p className="text-lg">
@@ -459,7 +457,7 @@ function Page() {
             your site and choose a subject that will suit your needs. Be a
             picker with plugins to avoid slow site loading and safety risks.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Website Speed and Performance Issues
           </h2>
           <p className="text-lg">
@@ -467,7 +465,7 @@ function Page() {
             Customize your images, place a caching plugin, and select a quality
             hosting provider so that your site is rapidly loaded.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Security Risks and Potential Hacking
           </h2>
           <p className="text-lg">
@@ -475,7 +473,7 @@ function Page() {
             install safety plugins, and update your WordPress version and
             plugins regularly.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Learning Curve for Beginners
           </h2>
           <p className="text-lg">
@@ -484,7 +482,7 @@ function Page() {
             tutorial, manual, and vibrant support community so that you can
             guide.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">Conclusion</h2>
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">Conclusion</h2>
           <p className="text-lg">
             It would appear to be a great amount of work when creating a
             WordPress site from scratch, but through the right materials and
@@ -499,10 +497,10 @@ function Page() {
             utilize professional tools to create a professional and
             high-performing WordPress website at ease.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Frequently Asked Questions
           </h2>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             How Much Does It Cost to Build a WordPress Website?
           </h2>
           <p className="text-lg">
@@ -511,7 +509,7 @@ function Page() {
             can expect to spend anywhere from $50 to $500 per year, depending on
             your needs.
           </p>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             Can I Build a WordPress Website Without Coding Skills?
           </h2>
           <p className="text-lg">
@@ -520,7 +518,7 @@ function Page() {
             and plugins allow you to customize your site without writing any
             code.
           </p>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             What Are the Best Plugins for Beginners?
           </h2>
           <p className="text-lg">
@@ -528,7 +526,7 @@ function Page() {
             engine optimization, Akismet for spam protection, and Elementor for
             drag-and-drop page building.
           </p>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             How Can I Improve My Website&apos;s SEO?
           </h2>
           <p className="text-lg">
@@ -536,7 +534,7 @@ function Page() {
             fast load times, and use SEO plugins like Yoast SEO to help you
             optimize your site for better search engine visibility.
           </p>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             What Should I Do If My Website Breaks After an Update?
           </h2>
           <p className="text-lg">

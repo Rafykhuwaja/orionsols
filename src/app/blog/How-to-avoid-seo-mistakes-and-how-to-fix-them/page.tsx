@@ -1,5 +1,4 @@
 import Footer from "@/app/components/Footer";
-import Navbar from "@/app/components/Navbar";
 import React from "react";
 import Image from "next/image";
 
@@ -33,10 +32,9 @@ export const metadata = {
 function Page() {
   return (
     <div>
-      <Navbar />
 
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
-        <h1 className="text-[#ff9c00] md:text-5xl text-3xl font-bold mb-6">
+        <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           10 SEO Mistakes to Avoid and How to Fix Them
         </h1>
 
@@ -60,7 +58,7 @@ function Page() {
             experienced marketer, this guide will help you improve your website
             and prevent your SEO efforts from being wasted.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Benefits of Avoiding SEO Mistakes
           </h2>
           {/* Image Placeholder */}
@@ -79,7 +77,7 @@ function Page() {
             you can drive consistent traffic and build long-term digital
             success.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Improving Rankings and Visibility
           </h2>
           <p className="text-lg">
@@ -94,7 +92,7 @@ function Page() {
             SEO technology can place your content in front of the right people
             and make your brand more visible and attractive.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Enhancing User Experience
           </h2>
           <p className="text-lg">
@@ -109,7 +107,7 @@ function Page() {
             these elements help better rank, producing a cycle that benefits
             both your SEO and your audience experience.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Boosting Organic Traffic
           </h2>
           <p className="text-lg">
@@ -124,7 +122,7 @@ function Page() {
             traffic increases, you have an opportunity for conversion and
             business development.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Increasing ROI on Marketing Efforts
           </h2>
           <p className="text-lg">
@@ -139,7 +137,7 @@ function Page() {
             they spend more or less at regular advertising expenses with more
             traffic, leads, and sales.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Top 10 SEO Mistakes to Avoid
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -156,7 +154,7 @@ function Page() {
             might be making some common SEO mistakes that are quietly sabotaging
             your success.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Ignoring Mobile Optimization
           </h2>
           <p className="text-lg">
@@ -175,7 +173,7 @@ function Page() {
             smartphones. This is important in today&apos;s digital scenario, where
             mobile traffic is a large percentage of all online activities.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Not Using Proper Keyword Research
           </h2>
           <p className="text-lg">
@@ -195,7 +193,7 @@ function Page() {
             approach, your site will rank for words that run highly relevant
             traffic, which will eventually lead to increased conversions
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Duplicate Content Across Pages
           </h2>
           <p className="text-lg">
@@ -212,7 +210,7 @@ function Page() {
             website to check for duplicate material regularly is important to
             ensure that your content is original and is not damaging your SEO.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Poor Internal Linking Structure
           </h2>
           <p className="text-lg">
@@ -230,7 +228,7 @@ function Page() {
             user experience by directing users to other related content on your
             website.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Missing or Poor Meta Descriptions and Titles
           </h2>
           <p className="text-lg">
@@ -247,7 +245,7 @@ function Page() {
             and description get users to click through to your site more,
             bringing more organic traffic.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Not Optimizing Images
           </h2>
           <p className="text-lg">
@@ -266,7 +264,7 @@ function Page() {
             SEO, and accessibility to users of all means.
           </p>
 
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Slow Page Speed
           </h2>
           <p className="text-lg">
@@ -283,7 +281,7 @@ function Page() {
             experience, make the visitors more interactive, and push your
             website up the rankings in search engines.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Broken Links and 404 Errors
           </h2>
           <p className="text-lg">
@@ -300,7 +298,7 @@ function Page() {
             identify broken links and correct them to reconstruct them on the
             respective pages or to remove them.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Ignoring Local SEO for Local Businesses
           </h2>
           <p className="text-lg">
@@ -320,7 +318,7 @@ function Page() {
             to rank in local search results, bring more local customers, and
             generate foot traffic to your business
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Failing to Update Old Content
           </h2>
           <p className="text-lg">
@@ -337,7 +335,7 @@ function Page() {
             a new publication date to provide it with a renewed boost in search
             rankings.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             How to Fix These SEO Mistakes?
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -355,7 +353,7 @@ function Page() {
             than you think.{" "}
           </p>
 
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Optimizing for Mobile Responsiveness
           </h2>
           <p className="text-lg">
@@ -365,7 +363,7 @@ function Page() {
             all platforms. Use Google&apos;s mobile-friendly tests, such as tools to
             detect and correct any mobile issues.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Performing In-Depth Keyword Research
           </h2>
           <p className="text-lg">
@@ -375,7 +373,7 @@ function Page() {
             when searching. Apply these keywords within your content, meta
             title, and details to increase the ranking systematically.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Eliminating Duplicate Content
           </h2>
           <p className="text-lg">
@@ -385,7 +383,7 @@ function Page() {
             kind. Periodically audit your website for duplicate content to avoid
             damaging your SEO.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Building a Logical Internal Link Structure
           </h2>
           <p className="text-lg">
@@ -395,7 +393,7 @@ function Page() {
             pages being linked to. An evident internal linking structure
             enhances SEO as well as user experience.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Crafting Unique Meta Titles and Descriptions
           </h2>
           <p className="text-lg">
@@ -405,7 +403,7 @@ function Page() {
             description can help promote the CTR and visibility of your website
             to a great extent.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Optimizing Image Size and Alt Text
           </h2>
           <p className="text-lg">
@@ -415,7 +413,7 @@ function Page() {
             useful for speeding up pages and increasing your search visibility
             in images.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Improving Site Speed
           </h2>
           <p className="text-lg">
@@ -425,7 +423,7 @@ function Page() {
             hosting company to ensure that your website is quickly loaded to
             all.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Regularly Audit and Fix Broken Links
           </h2>
           <p className="text-lg">
@@ -435,7 +433,7 @@ function Page() {
             them entirely. The maintenance, especially the recurring one,
             ensures your site is still SEO-friendly and user-friendly.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Setting Up and Optimizing Google Business Profile{" "}
           </h2>
           <p className="text-lg">
@@ -445,7 +443,7 @@ function Page() {
             rank better on local searches, and request customers to write
             reviews to increase your reputation.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Failing to Update Old Updating and Refreshing Existing Content
           </h2>
           <p className="text-lg">
@@ -454,7 +452,7 @@ function Page() {
             republish the post with a new date. This may provide your old blog
             posts with a new search ranking boost.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Challenges When Fixing SEO Mistakes
           </h2>
           <p className="text-lg">
@@ -462,7 +460,7 @@ function Page() {
             threads holding your site back. Even small missteps can have a big
             impact on rankings, traffic, and overall online visibility.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Technical Knowledge Gaps
           </h2>
           <p className="text-lg">
@@ -471,7 +469,7 @@ function Page() {
             technical issues, it will be useful to have an expert do them for
             you or research these components further on the web.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Keeping Up with Algorithm Changes
           </h2>
           <p className="text-lg">
@@ -481,7 +479,7 @@ function Page() {
             ranking position. Subscribe to SEO blogs and newspapers to be aware
             of the updates.{" "}
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Resource Constraints
           </h2>
           <p className="text-lg">
@@ -491,7 +489,7 @@ function Page() {
             will be a good investment because it will be rewarded with higher
             traffic and conversion.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">Conclusion</h2>
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">Conclusion</h2>
           <p className="text-lg">
             Discovering and correcting SEO errors is important for enhancing
             your website&apos;s rankings and organic traffic. Correcting common
@@ -517,10 +515,10 @@ function Page() {
             intervention and customized strategies can ensure that you avoid the
             pitfalls of SEO and achieve long-term success in the online world.
           </p>
-          <h2 className="text-[#ff9c00] text-3xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-3xl font-semibold">
             Frequently Asked Questions (FAQs)
           </h2>
-          <h2 className="text-[#ff9c00] text-xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-xl font-semibold">
             What are the most common SEO mistakes for beginners?
           </h2>
           <p className="text-lg">
@@ -528,7 +526,7 @@ function Page() {
             optimization, not conducting thorough keyword research, and
             neglecting the importance of meta titles and descriptions.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             How often should I audit my website for SEO issues?
           </h2>
           <p className="text-lg">
@@ -537,7 +535,7 @@ function Page() {
             audits will help you catch issues early and keep your site
             optimized..
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Can fixing SEO mistakes improve rankings quickly?
           </h2>
           <p className="text-lg">
@@ -545,7 +543,7 @@ function Page() {
             show quick results. However, SEO is a long-term strategy, and other
             fixes may take more time to reflect in rankings.
           </p>
-          <h2 className="text-[#ff9c00] text-2xl font-semibold">
+          <h2 className="text-[#b8a9fe] text-2xl font-semibold">
             Do I need paid tools to fix SEO mistakes?
           </h2>
           <p className="text-lg">

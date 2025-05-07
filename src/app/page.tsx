@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main  className="md:px-[12vw] p-4 w-[100vw]">
-      <Navbar/>
+      
       <Banner/>
 
       <WhatsAppPopup/>
