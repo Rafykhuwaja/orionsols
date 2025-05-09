@@ -33,7 +33,7 @@ export const metadata = {
 function Page() {
   return (
     <div>
-      <Navbar2/>
+      <Navbar2 />
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
         <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           Social Media Funnels – What They Are and How to Build One
@@ -45,8 +45,8 @@ function Page() {
             companies are making more and more use of social media platforms to
             bring in, interact with, and convert consumers. Posting on social
             media by itself does not guarantee success. To make the best use of
-            social media&apos;s potency, companies must have a robust strategy that
-            directs prospective consumers through different phases of their
+            social media&apos;s potency, companies must have a robust strategy
+            that directs prospective consumers through different phases of their
             buying process. That&apos;s where Social Media Funnels step in.
           </p>
           <div className="mb-8 flex justify-center mt-10 ">
@@ -82,6 +82,40 @@ function Page() {
             What Are Social Media Funnels?
           </h2>
           <p className="text-lg">
+            A Social Media Funnel is a process-oriented plan that charts the
+            process that a potential buyer follows from seeing your brand for
+            the first time to finally purchasing and becoming an ambassador. The
+            funnel&apos;s system has numerous stages that need various types of
+            content and strategies to drive prospects through the funnel to
+            conversion.
+          </p>
+          <p className="text-lg">
+            Beginning at the top of the funnel, the purpose is to connect with a
+            large audience and create brand awareness. As customer&apos;s journey
+            further down the funnel, they become more at ease with your product
+            or service and create an interest. Near the bottom of the funnel,
+            the purpose is to make them paying customers and eventually
+            supporters of the brand.
+          </p>
+          <p className="text-lg">
+            A well-designed Social Media Funnel makes sure that content and
+            engagement are customized to the interests and behavior of potential
+            customers at each step, enhancing the overall chances of conversion
+            as well as strengthening customer relationships.
+          </p>
+          <h2 className="text-[#b8a9fe] text-3xl font-bold mb-6">
+          Stages of a Social Media Funnel
+          </h2>
+          <div className="mb-8 flex justify-center mt-10 ">
+            <Image
+              src="/images/social-media-funnels-blog/image3.avif"
+              alt="Social Media funnels"
+              className="h-auto rounded-md shadow-lg w-full"
+              width={1000}
+              height={1000}
+            />
+          </div>
+          <p className="text-lg">
             Understanding the stages of a Social Media Funnel is essential to
             effectively guide your audience from discovery to decision. Each
             stage plays a specific role in nurturing relationships and moving
@@ -98,10 +132,10 @@ function Page() {
             In order to generate awareness, there is a need to foreground
             content that enlightens, engages, and stimulates people. This may be
             in the form of blog posts, videos, images, and social media posts
-            that bring to view your brand&apos;s value proposition. You can also use
-            paid social ads to have a substantial influence on this phase, as
-            you target a wider crowd that would have otherwise not known about
-            your brand.
+            that bring to view your brand&apos;s value proposition. You can also
+            use paid social ads to have a substantial influence on this phase,
+            as you target a wider crowd that would have otherwise not known
+            about your brand.
           </p>
           <p className="text-lg">
             At the awareness stage, your content must appeal to the wants,
@@ -165,10 +199,10 @@ function Page() {
         <p className="text-lg">
           To drive conversions higher, ensure that your content has strong
           calls-to-action (CTAs). These can include discount rates, limited-time
-          promotions, or even a clear &apos;Buy Now&apos; button so users can easily
-          finalize their purchase. The process of conversion must be seamless
-          and straightforward—any friction might result in cart abandonment or
-          lost sales.
+          promotions, or even a clear &apos;Buy Now&apos; button so users can
+          easily finalize their purchase. The process of conversion must be
+          seamless and straightforward—any friction might result in cart
+          abandonment or lost sales.
         </p>
         <p className="text-lg">
           This is also the period when retargeting advertisements can be very
@@ -275,19 +309,20 @@ function Page() {
         </h2>
         <p className="text-lg">
           The initial step when designing a Social Media Funnel is to identify
-          your target audience. Know who they are, what they&apos;re interested in,
-          what problems they&apos;re facing, and where they&apos;re hanging out on the
-          internet. Utilize your understanding of your audiences and your social
-          media platforms&apos; information to further build out your ideal customer
-          profile. This enables you to produce content that resonates with them
-          and enables you to design your funnel to suit their specific needs.
+          your target audience. Know who they are, what they&apos;re interested
+          in, what problems they&apos;re facing, and where they&apos;re hanging
+          out on the internet. Utilize your understanding of your audiences and
+          your social media platforms&apos; information to further build out
+          your ideal customer profile. This enables you to produce content that
+          resonates with them and enables you to design your funnel to suit
+          their specific needs.
         </p>
         <h2 className="text-[#b8a9fe] text-xl font-bold mb-6">
           Setting Your Funnel Goals
         </h2>
         <p className="text-lg">
-          Before creating content, it&apos;s important to know specific goals for
-          every stage of your Social Media Funnel. Whether to increase
+          Before creating content, it&apos;s important to know specific goals
+          for every stage of your Social Media Funnel. Whether to increase
           awareness, generate leads, or make sales, knowing the specific goals
           will allow you to monitor the performance of your funnel and adjust it
           accordingly.
@@ -308,11 +343,12 @@ function Page() {
           Optimizing Landing Pages
         </h2>
         <p className="text-lg">
-          Your landing pages are where you&apos;re making your conversions, so they
-          have to be optimized to the highest degree possible. Your landing page
-          needs to load fast, load well on mobile, and have a clean, compelling
-          call-to-action. Make sure your messaging aligns with content that you
-          published on social media so the user experience is seamless.
+          Your landing pages are where you&apos;re making your conversions, so
+          they have to be optimized to the highest degree possible. Your landing
+          page needs to load fast, load well on mobile, and have a clean,
+          compelling call-to-action. Make sure your messaging aligns with
+          content that you published on social media so the user experience is
+          seamless.
         </p>
         <h2 className="text-[#b8a9fe] text-xl font-bold mb-6">
           Setting Up Tracking & Analytics
@@ -371,8 +407,8 @@ function Page() {
         <p className="text-lg">
           These tools are meant to assist you in creating sales funnels and
           landing pages that convert. Both of these tools enable you to create
-          and optimize landing pages specific to your funnel&apos;s purpose, making
-          the process more conversion-friendly.
+          and optimize landing pages specific to your funnel&apos;s purpose,
+          making the process more conversion-friendly.
         </p>
         <h2 className="text-[#b8a9fe] text-xl font-bold mb-6">
           Social Media Schedulers
@@ -397,8 +433,8 @@ function Page() {
         </h2>
         <p className="text-lg">
           Platforms like Facebook Pixel that specialize in retargeting allow you
-          to target users who&apos;ve engaged with your business but aren&apos;t yet
-          converted. Retargeting ads will remind prospects of your offer and
+          to target users who&apos;ve engaged with your business but aren&apos;t
+          yet converted. Retargeting ads will remind prospects of your offer and
           push them towards taking action.
         </p>
         <h2 className="text-[#b8a9fe] text-2xl font-bold mb-6">
