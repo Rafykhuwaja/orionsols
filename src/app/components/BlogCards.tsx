@@ -14,6 +14,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/social-media-funnels-blog/image2.avif",
+    subtitle: "Social media funnels",
+    title: "Social Media Funnels to Boost Leads and Revenue",
+    description:
+      " Convert followers into customers with proven strategies using social media funnels to grow engagement..",
+    link: "/blog/how-to-build-social-media-funnels",
+  },
+  {
     imgSrc: "/images/brandingblog/image3.jpg",
     subtitle: "Branding",
     title: "Branding strategies, small business, branding tactics,Small business brand ",

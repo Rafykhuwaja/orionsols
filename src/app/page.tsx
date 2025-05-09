@@ -17,8 +17,8 @@ import ContactForm from "./components/contactForm";
 export default function Home() {
 
   return (
-    <main  className="md:px-[12vw] p-4 w-[100vw]">
-      
+    <main  className="md:px-[12vw] px-4 w-[100vw]">
+      <Navbar/>
       <Banner/>
 
       <WhatsAppPopup/>

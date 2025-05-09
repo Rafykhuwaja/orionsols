@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer";
 import React from "react";
 import Image from "next/image";
+import Navbar2 from "@/app/components/Navbar2";
 
 export const metadata = {
   title: "6 Must-Know Branding Tactics for Small Businesses",
@@ -32,6 +33,7 @@ export const metadata = {
 function Page() {
   return (
     <div>
+      <Navbar2/>
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
         <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           6 Branding Tactics Every Small Business Should Use
@@ -179,7 +181,7 @@ function Page() {
           </p>
           <p className="text-lg">
             Begin with the design of a{" "}
-            <a href="https://www.canva.com/logos/templates/">
+            <a className="underline" href="https://www.canva.com/logos/templates/">
               professional logo
             </a>{" "}
             to represent your brand&apos;s identity and values. This is what your
@@ -208,7 +210,7 @@ function Page() {
             Start creating an easy-to-use website that communicates your brand
             values, services, and products. Make your site mobile-friendly, as
             most of the web traffic comes from mobile phones. Make your site SEO{" "}
-            <a href="https://www.orionsols.com/blog/How-to-avoid-seo-mistakes-and-how-to-fix-them">
+            <a className="underline" href="https://www.orionsols.com/blog/How-to-avoid-seo-mistakes-and-how-to-fix-them">
               (search engine optimization)
             </a>{" "}
             optimized so that this search ranks well into engine results so that
@@ -409,7 +411,7 @@ function Page() {
             differentiates you in the marketplace. Keep your brand authentic,
             consistent, and customer-centered, and you will achieve awards such
             as increased customer loyalty, high sales, and long-term success.
-            <a href="https://www.orionsols.com/">Orionsols</a> is a perfect case of how a well-formulated brand can reach
+            <a className="underline" href="https://www.orionsols.com">Orionsols</a> is a perfect case of how a well-formulated brand can reach
             its audience and achieve significant results, a brand one should see
             in the competitive marketplace.
           </p>

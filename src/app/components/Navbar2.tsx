@@ -13,7 +13,7 @@ import {
   Music2
 } from "lucide-react";
 
-function Navbar() {
+function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <>
       {/* Main Navbar */}
-      <div className=" w-full">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-[12vw] w-full">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-4">
           {/* Logo and Hamburger Menu */}
           <div className="flex justify-between items-center w-full md:w-auto">
@@ -70,27 +70,27 @@ function Navbar() {
           {/* Navigation Links - Desktop */}
           <ul className="hidden md:flex md:flex-row items-center gap-2 md:gap-2 font-bold text-gray-300 flex-grow justify-center">
             <li>
-              <Link href="#home">
+              <Link href="/">
                 <InteractiveHoverButton>HOME</InteractiveHoverButton>
               </Link>
             </li>
             <li>
-              <Link href="#about">
+              <Link href="/">
                 <InteractiveHoverButton>ABOUT US</InteractiveHoverButton>
               </Link>
             </li>
             <li>
-              <Link href="#services">
+              <Link href="/">
                 <InteractiveHoverButton>SERVICES</InteractiveHoverButton>
               </Link>
             </li>
             <li>
-              <Link href="#contact">
+              <Link href="/">
                 <InteractiveHoverButton>CONTACT</InteractiveHoverButton>
               </Link>
             </li>
             <li>
-              <Link href="#blog">
+              <Link href="/">
                 <InteractiveHoverButton>BLOG</InteractiveHoverButton>
               </Link>
             </li>
@@ -150,19 +150,19 @@ function Navbar() {
         >
           <ul className="flex flex-col items-start px-6 gap-5 font-medium text-gray-300 py-4">
               <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="#home" onClick={handleLinkClick}>HOME</Link>
+                <Link href="/" onClick={handleLinkClick}>HOME</Link>
               </li>
               <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="#about" onClick={handleLinkClick}>ABOUT US</Link>
+                <Link href="/" onClick={handleLinkClick}>ABOUT US</Link>
               </li>
               <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="#services" onClick={handleLinkClick}>SERVICES</Link>
+                <Link href="/" onClick={handleLinkClick}>SERVICES</Link>
               </li>
               <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="#contact" onClick={handleLinkClick}>CONTACT</Link>
+                <Link href="/" onClick={handleLinkClick}>CONTACT</Link>
               </li>
               <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="#blog" onClick={handleLinkClick}>BLOG</Link>
+                <Link href="/" onClick={handleLinkClick}>BLOG</Link>
               </li>
               
               {/* Social icons in mobile menu */}
@@ -225,4 +225,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;

@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer";
 import React from "react";
 import Image from "next/image";
+import Navbar2 from "@/app/components/Navbar2";
 
 export const metadata = {
   title: "7 Stages of a Digital Marketing Strategy for Business Growth",
@@ -10,7 +11,7 @@ export const metadata = {
 function Page() {
   return (
     <div>
-
+      <Navbar2/>
       <div className=" text-white md:px-[200px] md:py-[100px] px-3 py-6">
         <h1 className="text-[#b8a9fe] md:text-5xl text-3xl font-bold mb-6">
           How to Develop a Top-Notch Digital Marketing Strategy
