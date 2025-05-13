@@ -14,7 +14,7 @@ interface CardProps {
 
 const cardData = [
   {
-    imgSrc: "/images/VideoEditingBlog/image1.jpeg",
+    imgSrc: "/images/VideoEditingBlog/Image1.jpeg",
     subtitle: "Video editing",
     title: "7 Common Video Editing Mistakes & How to Avoid Them",
     description:
