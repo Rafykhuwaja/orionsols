@@ -6,7 +6,7 @@ import OrbitingItems3D from "./list/orbiting-items-3-d";
 import Image from "next/image";
 function Banner() {
   return (
-    <div className="relative bottom-20">
+    <div className="">
       <div id="home" className="flex flex-col px-4 sm:px-8 text-white top-0 w-full md:z-[-1]  ">
      <h1 className="text-center font-semibold text-4xl lg:text-6xl mt-10 mb-10">Take Your Business to the <span className="text-[#b8a9fe]">New Height</span> <br />with <span className="text-[#b8a9fe]">Orionsols</span> </h1>
       

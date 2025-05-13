@@ -14,6 +14,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/VideoEditingBlog/image1.jpeg",
+    subtitle: "Video editing",
+    title: "7 Common Video Editing Mistakes & How to Avoid Them",
+    description:
+      " digital market, video editing errors, SEO, common video editing mistakes..",
+    link: "/blog/common-mistakes-of-video-editing",
+  },
+  {
     imgSrc: "/images/social-media-funnels-blog/image2.avif",
     subtitle: "Social media funnels",
     title: "Social Media Funnels to Boost Leads and Revenue",

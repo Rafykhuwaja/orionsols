@@ -10,8 +10,17 @@ import {
   Linkedin,
   Twitter,
   Mail,
-  Music2
+  Music2,
+  ChevronDown
 } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +90,23 @@ function Navbar() {
             </li>
             <li>
               <Link href="#services">
-                <InteractiveHoverButton>SERVICES</InteractiveHoverButton>
+{/* 
+                <DropdownMenu>
+  <DropdownMenuTrigger> */}
+                <InteractiveHoverButton><div className="flex">SERVICES
+                   {/* <ChevronDown/> */}
+                   </div></InteractiveHoverButton>
+    
+  {/* </DropdownMenuTrigger>
+  <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] ">
+    <DropdownMenuItem className="font-bold">Website Developement</DropdownMenuItem>
+    <DropdownMenuItem className="font-bold">Graphic Design</DropdownMenuItem>
+    <DropdownMenuItem className="font-bold">Video Editing</DropdownMenuItem>
+    <DropdownMenuItem className="font-bold">Social Media Management</DropdownMenuItem>
+    <DropdownMenuItem className="font-bold">Search Engine Optimization</DropdownMenuItem>
+    <DropdownMenuItem className="font-bold">Content writing</DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu> */}
               </Link>
             </li>
             <li>
