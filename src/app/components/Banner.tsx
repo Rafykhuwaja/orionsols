@@ -14,12 +14,12 @@ function Banner() {
           <OrbitingItems3D
             duration={25}
             items={[
-              <Image src="/icons/vecteezy_3d-social-media-icons-google_9428333.png" alt="icon" fill key="banana" className="h-12 w-12" />,
-              <Image src="/icons/vecteezy_3d-twitter-icon-logo_18885089.png" alt="icon" fill key="banana" className="h-12 w-12" />,
-              <Image src="/icons/vecteezy_a-blue-and-white-link-icon-on-a-flat-shape_60380478.png" alt="icon" fill key="banana" className="h-12 w-12" />,
-              <Image src="/icons/vecteezy_facebook-icon-transparent-background_47750224.png" alt="icon" fill key="banana" className="h-12 w-12" />,
-              <Image src="/icons/vecteezy_glossy-instagram-3d-render-icon_9673727.png" alt="icon" fill key="banana" className="h-12 w-12" />,
-              <Image src="/icons/vecteezy_glossy-tik-tok-icon-3d-render_9826612.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/google.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/linkedin.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/instagram.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/facebook.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/x.png" alt="icon" fill key="banana" className="h-12 w-12" />,
+              <Image src="/icons/tiktok.png" alt="icon" fill key="banana" className="h-12 w-12" />,
 
             ]}
             className=""
