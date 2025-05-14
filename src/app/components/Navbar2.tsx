@@ -90,7 +90,7 @@ function Navbar2() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/blog">
                 <InteractiveHoverButton>BLOG</InteractiveHoverButton>
               </Link>
             </li>

@@ -115,7 +115,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="#blog">
+              <Link href="/blog">
                 <InteractiveHoverButton>BLOG</InteractiveHoverButton>
               </Link>
             </li>

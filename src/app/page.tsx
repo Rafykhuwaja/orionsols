@@ -10,7 +10,6 @@ import WhatsAppPopup from "./components/whatsappPOpUp";
 import AboutusContent from "./components/AboutusContent";
 import CustomeWebContent from "./components/customeWebContent";
 import CardComponent from "./serviceServiceSevtion";
-import CardSection from "./components/BlogCards";
 import ContactForm from "./components/contactForm";
 
 
@@ -31,7 +30,6 @@ export default function Home() {
       {/* <Testinominols/> */}
       <CustomeWebContent/>
       <CardComponent/>
-      <CardSection/>
       <ContactForm/>
 
       <Contact/>
