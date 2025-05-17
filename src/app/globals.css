@@ -22,78 +22,10 @@
   width: 100vw;
 }
 
-.fadeInLeft {
-  animation: fadeInLeft 1s forwards;
-}
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-.fadeInRight {
-  animation: fadeInRight 1s forwards;
-}
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-7%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-.myAnimate:hover {
-  animation: bounce 1s infinite;
-}
 
-* {
-  font-family: Helvetica, sans-serif;
-}
-
-.animated-object {
-  animation: moveUpDown 3s ease-in-out infinite;
-}
-
-/* .background{
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center;
-} */
-.serviceBackground {
-  background-image: url("/images/background4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.ContactBackground {
-  background-image: url("/images/background3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.blog-background {
-  background-image: url("/images/background2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.blog-bg {
-  background-image: url("/images/blogBg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /* CSS changes */
 /* Base styles for the card */
@@ -182,24 +114,8 @@
     max-width: 400px; /* Adjust as needed */
   }
 }
-/* CSS for the animation */
-.animate-button {
-  background: linear-gradient(to right, #ff6a00 50%, #ff9c00 50%);
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 0.5s ease;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: none; /* Remove outline on focus */
-}
 
-.animate-button:hover {
-  background-position: 0%;
-}
+
 
 .blogcard-image {
   background-color: black;
@@ -229,60 +145,14 @@
   transition: background-size 0.3s, color 0.3s;
 }
 
-.blogcard:hover {
-  background-size: 100% 100%; /* Fill from bottom to top */
-  color: white;
-}
 
-.card-image {
-  width: 100%;
-  height: auto;
-  transition: filter 0.3s, transform 0.3s;
-  filter: brightness(60%); /* Initial black shade */
-}
 
-.blogcard:hover .card-image {
-  filter: brightness(100%); /* Brighten image on hover */
-  transform: scale(1.05); /* Slight zoom on hover */
-}
 
-.card-subtitle,
-.card-title,
-.card-description {
-  transition: color 0.3s;
-  color: #ffffff; /* Initial text color */
-}
 
-.blogcard:hover .card-subtitle,
-.blogcard:hover .card-title,
-.blogcard:hover .card-description {
-  color: #333; /* Text color on hover */
-}
 
-.smooth-transition {
-  transition: all 0.8s ease-in-out;
-}
-.smooth-transition:hover {
-  position: relative;
-  bottom: 15px;
-}
-.services-hover:hover svg {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease; /* Add smooth transition */
-}
 
 /* Keyframes for the animation */
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0); /* Start at normal position */
-  }
-  50% {
-    transform: translateY(-30px); /* Move 30px up */
-  }
-  100% {
-    transform: translateY(0); /* End at normal position */
-  }
-}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

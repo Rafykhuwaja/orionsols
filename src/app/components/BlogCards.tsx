@@ -14,11 +14,19 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/seo-blog/Image1.jpeg",
+    subtitle: "What Is Search Engine Visibility & Why It Matters",
+    title: "Search Engine Visibility",
+    description:
+      "Learn what search engine visibility means, how it impacts your website’s traffic, and why improving...",
+    link: "/blog/what-is-search-engine-visibility",
+  },
+  {
     imgSrc: "/images/VideoEditingBlog/Image1.jpeg",
     subtitle: "Video editing",
     title: "7 Common Video Editing Mistakes & How to Avoid Them",
     description:
-      " digital market, video editing errors, SEO, common video editing mistakes..",
+      "digital market, video editing errors, SEO, common video editing mistakes..",
     link: "/blog/common-mistakes-of-video-editing",
   },
   {
@@ -26,7 +34,7 @@ const cardData = [
     subtitle: "Social media funnels",
     title: "Social Media Funnels to Boost Leads and Revenue",
     description:
-      " Convert followers into customers with proven strategies using social media funnels to grow engagement..",
+      "Convert followers into customers with proven strategies using social media funnels to grow engagement..",
     link: "/blog/how-to-build-social-media-funnels",
   },
   {
