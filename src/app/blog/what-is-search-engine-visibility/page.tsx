@@ -67,7 +67,7 @@ function Page() {
           </p>
           <div className="mb-8 flex justify-center mt-10 ">
             <Image
-              src="/images/seo-blog/Image2.jpeg"
+              src="/images/seo-blog/image2.jpeg"
               alt="Search Engine Visibility"
               className="h-auto rounded-md shadow-lg w-full"
               width={1000}
@@ -162,7 +162,7 @@ function Page() {
           </p>
           <div className="mb-8 flex justify-center mt-10 ">
             <Image
-              src="/images/seo-blog/Image3.jpeg"
+              src="/images/seo-blog/image3.jpeg"
               alt="Search Engine Visibility"
               className="h-auto rounded-md shadow-lg w-full"
               width={1000}
@@ -214,7 +214,7 @@ function Page() {
           </h2>
           <div className="mb-8 flex justify-center mt-10 ">
             <Image
-              src="/images/seo-blog/Image4.jpeg"
+              src="/images/seo-blog/image4.jpeg"
               alt="Search Engine Visibility"
               className="h-auto rounded-md shadow-lg w-full"
               width={1000}

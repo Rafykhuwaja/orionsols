@@ -14,7 +14,7 @@ interface CardProps {
 
 const cardData = [
   {
-    imgSrc: "/images/seo-blog/Image1.jpeg",
+    imgSrc: "/images/seo-blog/image1.jpeg",
     subtitle: "What Is Search Engine Visibility & Why It Matters",
     title: "Search Engine Visibility",
     description:
