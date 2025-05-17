@@ -88,7 +88,7 @@ function Page() {
           </h2>
           <p className="text-lg">
             The instant advantage of powerful search engine exposure is more
-            visitors. When you&apos;re at the top of searches, you can't help but get
+            visitors. When you&apos;re at the top of searches, you can&apos;t help but get
             more people visiting. And these aren&apos;t random clicks in the least
             either—these are individuals already on the lookout for your
             product, service, or content. Stronger visibility equates to
