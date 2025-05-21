@@ -10,8 +10,10 @@ import {
   Linkedin,
   Twitter,
   Mail,
-  Music2
+  Music2,
+  ChevronDown
 } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 
 function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -80,9 +82,45 @@ function Navbar2() {
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <InteractiveHoverButton>SERVICES</InteractiveHoverButton>
-              </Link>
+            
+                <DropdownMenu>
+                  <DropdownMenuTrigger>
+                    <div className="flex">
+                      SERVICES
+                      <ChevronDown />
+                    </div>
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] text-gray-900 rounded-lg shadow-md z-50 ">
+                    <Link href="/website-developement">
+                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                        Website Developement
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href="/graphic-design">
+                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                        Graphic Design
+                      </DropdownMenuItem>
+                    </Link>
+                    
+                    <Link href="/social-media-marketing">
+                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                        Social Media Management
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href="/ppc">
+                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                        Search Engine Optimization
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href="/creative-content">
+                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                        Content writing
+                      </DropdownMenuItem>
+                    </Link>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+             
             </li>
             <li>
               <Link href="/">
