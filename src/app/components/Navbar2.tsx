@@ -11,9 +11,14 @@ import {
   Twitter,
   Mail,
   Music2,
-  ChevronDown
+  ChevronDown,
 } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
 
 function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,45 +87,48 @@ function Navbar2() {
               </Link>
             </li>
             <li>
-            
-                <DropdownMenu>
-                  <DropdownMenuTrigger>
-                    <div className="flex">
-                      SERVICES
-                      <ChevronDown />
-                    </div>
-                  </DropdownMenuTrigger>
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <div className="flex">
+                    SERVICES
+                    <ChevronDown />
+                  </div>
+                </DropdownMenuTrigger>
 
-                  <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] text-gray-900 rounded-lg shadow-md z-50 ">
-                    <Link href="/website-developement">
-                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
-                        Website Developement
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/graphic-design">
-                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
-                        Graphic Design
-                      </DropdownMenuItem>
-                    </Link>
-                    
-                    <Link href="/social-media-marketing">
-                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
-                        Social Media Management
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/ppc">
-                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
-                        Search Engine Optimization
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/creative-content">
-                      <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
-                        Content writing
-                      </DropdownMenuItem>
-                    </Link>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-             
+                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] text-gray-900 rounded-lg shadow-md z-50 ">
+                  <Link href="/website-developement">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Website Developement
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/graphic-design">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Graphic Design
+                    </DropdownMenuItem>
+                  </Link>
+
+                  <Link href="/social-media-marketing">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Social Media Management
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/seo">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Search Engine Optimization
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/creative-content">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Content writing
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/ppc">
+                    <DropdownMenuItem className="font-bold hover:bg-white px-2 rounded-md">
+                      Pay Per Click
+                    </DropdownMenuItem>
+                  </Link>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </li>
             <li>
               <Link href="/">
@@ -168,9 +176,9 @@ function Navbar2() {
               >
                 <Twitter size={20} color="#b8a9fe" />
               </Link>
-              <Link 
+              <Link
                 href="https://www.tiktok.com/@orionsols"
-                target="_blank" 
+                target="_blank"
                 className="hover:opacity-75 transition-opacity hover:scale-110"
                 aria-label="TikTok"
               >
@@ -187,78 +195,84 @@ function Navbar2() {
           }`}
         >
           <ul className="flex flex-col items-start px-6 gap-5 font-medium text-gray-300 py-4">
-              <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="/" onClick={handleLinkClick}>HOME</Link>
-              </li>
-              <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="/" onClick={handleLinkClick}>ABOUT US</Link>
-              </li>
-              <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="/" onClick={handleLinkClick}>SERVICES</Link>
-              </li>
-              <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="/" onClick={handleLinkClick}>CONTACT</Link>
-              </li>
-              <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-                <Link href="/" onClick={handleLinkClick}>BLOG</Link>
-              </li>
-              
-              {/* Social icons in mobile menu */}
-              <li className="w-full pt-2">
-                <p className="text-sm text-gray-400 mb-3">Follow Us:</p>
-                <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr"
-                    target="_blank"
-                    aria-label="Facebook"
-                  >
-                    <Facebook size={22} color="#b8a9fe" />
-                  </Link>
-                  <Link
-                    href="https://www.instagram.com/orionsols_official?igsh=MTN4YXF2emdyNWIybw=="
-                    target="_blank"
-                    aria-label="Instagram"
-                  >
-                    <Instagram size={22} color="#b8a9fe" />
-                  </Link>
-                  <Link
-                    href="https://www.linkedin.com/company/orionsols?trk=profile-position"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin size={22} color="#b8a9fe" />
-                  </Link>
-                  <Link
-                    href="#"
-                    aria-label="Twitter"
-                  >
-                    <Twitter size={22} color="#b8a9fe" />
-                  </Link>
-                  <Link 
-                    href="https://www.tiktok.com/@orionsols"
-                    target="_blank"
-                    aria-label="TikTok"
-                  >
-                    <Music2 size={22} color="#b8a9fe" />
-                  </Link>
-                </div>
-              </li>
-              
-              {/* Contact info in mobile menu */}
-              <li className="w-full pt-2">
-                <div className="flex items-center gap-2 mb-2">
-                  <Phone size={16} color="#b8a9fe" />
-                  <p className="text-sm text-gray-300">(+971) 528 977 529</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail size={16} color="#b8a9fe" />
-                  <p className="text-sm text-gray-300">info@Orionsols.com</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
+              <Link href="/" onClick={handleLinkClick}>
+                HOME
+              </Link>
+            </li>
+            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
+              <Link href="/" onClick={handleLinkClick}>
+                ABOUT US
+              </Link>
+            </li>
+            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
+              <Link href="/" onClick={handleLinkClick}>
+                SERVICES
+              </Link>
+            </li>
+            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
+              <Link href="/" onClick={handleLinkClick}>
+                CONTACT
+              </Link>
+            </li>
+            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
+              <Link href="/" onClick={handleLinkClick}>
+                BLOG
+              </Link>
+            </li>
+
+            {/* Social icons in mobile menu */}
+            <li className="w-full pt-2">
+              <p className="text-sm text-gray-400 mb-3">Follow Us:</p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={22} color="#b8a9fe" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/orionsols_official?igsh=MTN4YXF2emdyNWIybw=="
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={22} color="#b8a9fe" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/orionsols?trk=profile-position"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={22} color="#b8a9fe" />
+                </Link>
+                <Link href="#" aria-label="Twitter">
+                  <Twitter size={22} color="#b8a9fe" />
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@orionsols"
+                  target="_blank"
+                  aria-label="TikTok"
+                >
+                  <Music2 size={22} color="#b8a9fe" />
+                </Link>
+              </div>
+            </li>
+
+            {/* Contact info in mobile menu */}
+            <li className="w-full pt-2">
+              <div className="flex items-center gap-2 mb-2">
+                <Phone size={16} color="#b8a9fe" />
+                <p className="text-sm text-gray-300">(+971) 528 977 529</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail size={16} color="#b8a9fe" />
+                <p className="text-sm text-gray-300">info@Orionsols.com</p>
+              </div>
+            </li>
+          </ul>
         </div>
-      
+      </div>
     </>
   );
 }

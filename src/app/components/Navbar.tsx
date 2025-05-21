@@ -114,7 +114,7 @@ function Navbar() {
                         Social Media Management
                       </DropdownMenuItem>
                     </Link>
-                    <Link href="/ppc">
+                    <Link href="/seo">
                       <DropdownMenuItem className="font-bold">
                         Search Engine Optimization
                       </DropdownMenuItem>
@@ -122,6 +122,11 @@ function Navbar() {
                     <Link href="/creative-content">
                       <DropdownMenuItem className="font-bold">
                         Content writing
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link href="/ppc">
+                      <DropdownMenuItem className="font-bold">
+                        Pay Per Click
                       </DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>
