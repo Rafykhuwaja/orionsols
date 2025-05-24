@@ -14,6 +14,14 @@ interface CardProps {
 
 const cardData = [
   {
+    imgSrc: "/images/ppc-compaign-blog/image2.jpg",
+    subtitle: "PPC Campaign Management: A Complete Success Guide",
+    title: "PPC campaign management",
+    description:
+      "Discover proven tactics in our PPC Campaign Management guide. Learn to plan, execute, and optimize...",
+    link: "/blog/ppc-campaign-management-full-guide",
+  },
+  {
     imgSrc: "/images/seo-blog/image1.jpeg",
     subtitle: "What Is Search Engine Visibility & Why It Matters",
     title: "Search Engine Visibility",
