@@ -13,6 +13,14 @@ interface CardProps {
 }
 
 const cardData = [
+    {
+    imgSrc: "/images/e-commorce-blog/image4.jpg",
+    subtitle: "E-Commerce Marketing for Small Businesses in Dubai",
+    title: "E-Commerce Marketing",
+    description:
+      "Discover effective e-commerce marketing tactics to help small businesses in Dubai grow online,...",
+    link: "/blog/ecommerce-marketing-for-small-business",
+  },
   {
     imgSrc: "/images/ppc-compaign-blog/image2.jpg",
     subtitle: "PPC Campaign Management: A Complete Success Guide",
