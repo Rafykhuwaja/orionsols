@@ -4,32 +4,31 @@ import Image from "next/image";
 import Navbar2 from "@/app/components/Navbar2";
 
 export const metadata = {
-  title: "7 Common Video Editing Mistakes & How to Avoid Them",
+  title: "E-Commerce Marketing: Strategies & Opportunities in Dubai",
   description:
-    "Avoid beginner pitfalls! Discover 7 common video editing mistakes and learn simple tips to fix them for smoother, more professional-looking videos.",
+    "Unlock the full potential of E-Commerce Marketing in Dubai with smart strategies, digital campaigns, and tactics tailored for growth in a competitive market.",
   keywords: [
-    "video editing mistakes",
-    "video editing tips",
-    "beginner video editing",
-    "professional video editing",
-    "common editing errors",
-    "how to edit videos",
-    "video content improvement",
-    "video production",
+    "E-Commerce Marketing",
+    "smart marketing strategy",
+    "E-Commerce Marketing in Dubai",
+    "Digital marketing campaigns",
+    "E-Commerce Marketing Tactics",
+    "e-commerce marketing opportunities in Dubai"
   ],
   openGraph: {
-    title: "7 Common Video Editing Mistakes & How to Avoid Them",
+    title: "E-Commerce Marketing in Dubai: Strategies for Growth",
     description:
-      "Improve your editing skills by avoiding these 7 common mistakes. Learn practical solutions to make your videos look polished and professional.",
-    type: "video.other",
+      "Discover how to use smart marketing strategies and digital campaigns to boost your e-commerce business in Dubai. Explore the best tactics and new opportunities.",
+    type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Avoid These 7 Video Editing Mistakes",
+    title: "E-Commerce Marketing in Dubai: Smart Strategies That Work",
     description:
-      "Learn how to fix common video editing mistakes with easy tips and techniques. Perfect for beginners looking to create better content.",
+      "Explore powerful e-commerce marketing tactics and growth opportunities in Dubai. Learn how to run smart digital campaigns that drive results.",
   },
 };
+
 
 function Page() {
   return (
