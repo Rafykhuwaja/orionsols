@@ -28,28 +28,24 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close menu when clicking on navigation links
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
 
   return (
     <>
-      {/* Main Navbar */}
-      <div className=" w-full">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-4">
-          {/* Logo and Hamburger Menu */}
+      <div className="w-full">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-4 md:mb-10">
           <div className="flex justify-between items-center w-full md:w-auto">
             <Link href="/">
               <Image
                 src="/images/orionsols_logo.png"
                 width={1000}
                 height={1000}
-                className="w-[180px] sm:w-[220px] md:w-[250px]"
+                className="w-[120px] sm:w-[180px] md:w-[220px] lg:w-[250px]"
                 alt="orionsols"
               />
             </Link>
-            {/* Hamburger Menu Icon (Mobile Only) */}
             <div className="md:hidden flex items-center gap-3">
               <button
                 onClick={toggleMenu}
@@ -75,8 +71,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Navigation Links - Desktop */}
-          <ul className="hidden md:flex md:flex-row items-center gap-2 md:gap-2 font-bold text-gray-300 flex-grow justify-center">
+          <ul className="hidden md:flex md:flex-row items-center gap-2 md:gap-4 font-bold text-gray-300 flex-grow justify-center text-sm sm:text-base md:text-lg">
             <li>
               <Link href="#home">
                 <InteractiveHoverButton>HOME</InteractiveHoverButton>
@@ -88,50 +83,47 @@ function Navbar() {
               </Link>
             </li>
             <li>
-            
-                <DropdownMenu>
-                  <DropdownMenuTrigger>
-                    <div className="flex">
-                      SERVICES
-                      <ChevronDown />
-                    </div>
-                  </DropdownMenuTrigger>
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <div className="flex">
+                    SERVICES
+                    <ChevronDown />
+                  </div>
+                </DropdownMenuTrigger>
 
-                  <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] ">
-                    <Link href="/website-developement">
-                      <DropdownMenuItem className="font-bold">
-                        Website Developement
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/graphic-design">
-                      <DropdownMenuItem className="font-bold">
-                        Graphic Design
-                      </DropdownMenuItem>
-                    </Link>
-                    
-                    <Link href="/social-media-marketing">
-                      <DropdownMenuItem className="font-bold">
-                        Social Media Management
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/seo">
-                      <DropdownMenuItem className="font-bold">
-                        Search Engine Optimization
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/creative-content">
-                      <DropdownMenuItem className="font-bold">
-                        Content writing
-                      </DropdownMenuItem>
-                    </Link>
-                    <Link href="/ppc">
-                      <DropdownMenuItem className="font-bold">
-                        Pay Per Click
-                      </DropdownMenuItem>
-                    </Link>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-             
+                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe]">
+                  <Link href="/website-developement">
+                    <DropdownMenuItem className="font-bold">
+                      Website Developement
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/graphic-design">
+                    <DropdownMenuItem className="font-bold">
+                      Graphic Design
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/social-media-marketing">
+                    <DropdownMenuItem className="font-bold">
+                      Social Media Management
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/seo">
+                    <DropdownMenuItem className="font-bold">
+                      Search Engine Optimization
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/creative-content">
+                    <DropdownMenuItem className="font-bold">
+                      Content writing
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="/ppc">
+                    <DropdownMenuItem className="font-bold">
+                      Pay Per Click
+                    </DropdownMenuItem>
+                  </Link>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </li>
             <li>
               <Link href="#contact">
@@ -145,7 +137,6 @@ function Navbar() {
             </li>
           </ul>
 
-          {/* Social Icons - Desktop */}
           <div className="hidden md:flex items-center text-white">
             <div className="flex gap-2 lg:gap-4">
               <Link
@@ -191,7 +182,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
             isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
@@ -224,7 +214,6 @@ function Navbar() {
               </Link>
             </li>
 
-            {/* Social icons in mobile menu */}
             <li className="w-full pt-2">
               <p className="text-sm text-gray-400 mb-3">Follow Us:</p>
               <div className="flex flex-wrap gap-4">
@@ -262,7 +251,6 @@ function Navbar() {
               </div>
             </li>
 
-            {/* Contact info in mobile menu */}
             <li className="w-full pt-2">
               <div className="flex items-center gap-2 mb-2">
                 <Phone size={16} color="#b8a9fe" />
