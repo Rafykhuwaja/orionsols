@@ -5,7 +5,6 @@ import About from "./components/About";
 import About2 from "./components/About2";
 // import Testinominols from "./components/Testinominols";
 import Contact from "./components/contact";
-import Footer from "./components/Footer";
 import WhatsAppPopup from "./components/whatsappPOpUp";
 import AboutusContent from "./components/AboutusContent";
 import CustomeWebContent from "./components/customeWebContent";
@@ -33,7 +32,7 @@ export default function Home() {
       <ContactForm/>
 
       <Contact/>
-      <Footer/>
+      
     </main>
   );
 }

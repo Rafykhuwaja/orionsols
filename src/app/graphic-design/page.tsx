@@ -12,7 +12,7 @@ export default function GraphicDesignService() {
   return (
     <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw]">
+      <div className="md:px-[12vw] px-4 w-[100vw] mt-5">
         {/* Hero Section */}
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
@@ -33,23 +33,18 @@ export default function GraphicDesignService() {
                   Empower your brand with stunning visuals that stand out, connect with audiences, and leave a lasting impression.
                 </p>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 relative"
-              >
-                <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/graphic-design.jpg"
-                    alt="Graphic Design Services"
-                    layout="fill"
-                    objectFit="cover"
-                    priority
-                  />
-                </div>
-              </motion.div>
+              <div className="relative h-64 sm:h-72 md:h-96 md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+                {/* Loading placeholder */}
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+
+                <Image
+                  src="/images/graphic-design.jpg"
+                  alt="Professional Website Development"
+                  layout="fill"
+                  objectFit="cover"
+                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -34,8 +34,17 @@ function Navbar() {
 
   return (
     <>
-      <div className="w-full">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-4 md:mb-10">
+      {/* Backdrop overlay for mobile menu */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/95 z-30 md:hidden"
+          onClick={handleLinkClick}
+        />
+      )}
+
+      {/* Fixed navbar for mobile, relative for desktop */}
+      <div className="w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-50 border-b border-gray-800/50 md:border-none">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-2  px-4 md:px-0">
           <div className="flex justify-between items-center w-full md:w-auto">
             <Link href="/">
               <Image
@@ -49,24 +58,31 @@ function Navbar() {
             <div className="md:hidden flex items-center gap-3">
               <button
                 onClick={toggleMenu}
-                className="text-gray-300 focus:outline-none p-2"
+                className="text-gray-300 hover:text-white focus:outline-none p-2 transition-colors duration-200"
                 aria-label="Menu"
                 aria-expanded={isMenuOpen}
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  ></path>
-                </svg>
+                <div className="w-6 h-6 flex flex-col justify-center items-center">
+                  <span
+                    className={`bg-current block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                      isMenuOpen
+                        ? "rotate-45 translate-y-1"
+                        : "-translate-y-0.5"
+                    }`}
+                  ></span>
+                  <span
+                    className={`bg-current block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                      isMenuOpen ? "opacity-0" : "opacity-100"
+                    }`}
+                  ></span>
+                  <span
+                    className={`bg-current block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                      isMenuOpen
+                        ? "-rotate-45 -translate-y-1"
+                        : "translate-y-0.5"
+                    }`}
+                  ></span>
+                </div>
               </button>
             </div>
           </div>
@@ -182,12 +198,15 @@ function Navbar() {
           </div>
         </div>
 
+        {/* Mobile menu with improved positioning and backdrop */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`md:hidden fixed top-[100%] left-0 right-0 bg-black/98 backdrop-blur-md transition-all duration-300 ease-in-out z-40 ${
+            isMenuOpen
+              ? "max-h-screen opacity-100 translate-y-0"
+              : "max-h-0 opacity-0 -translate-y-2"
+          } overflow-hidden`}
         >
-          <ul className="flex flex-col items-start px-6 gap-5 font-medium text-gray-300 py-4">
+          <ul className="flex flex-col items-start px-6 gap-5 font-medium text-gray-300 py-6 max-h-[calc(100vh-100px)] overflow-y-auto">
             <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
               <Link href="#home" onClick={handleLinkClick}>
                 HOME
@@ -198,10 +217,54 @@ function Navbar() {
                 ABOUT US
               </Link>
             </li>
-            <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-              <Link href="#services" onClick={handleLinkClick}>
-                SERVICES
-              </Link>
+            <li className="w-full border-b border-gray-800 pb-2">
+              <div className="space-y-2">
+                <p className="text-gray-300 font-medium">SERVICES</p>
+                <div className="pl-4 space-y-2">
+                  <Link
+                    href="/website-developement"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Website Development
+                  </Link>
+                  <Link
+                    href="/graphic-design"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Graphic Design
+                  </Link>
+                  <Link
+                    href="/social-media-marketing"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Social Media Management
+                  </Link>
+                  <Link
+                    href="/seo"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Search Engine Optimization
+                  </Link>
+                  <Link
+                    href="/creative-content"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Content Writing
+                  </Link>
+                  <Link
+                    href="/ppc"
+                    onClick={handleLinkClick}
+                    className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    Pay Per Click
+                  </Link>
+                </div>
+              </div>
             </li>
             <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
               <Link href="#contact" onClick={handleLinkClick}>
@@ -209,7 +272,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-              <Link href="#blog" onClick={handleLinkClick}>
+              <Link href="/blog" onClick={handleLinkClick}>
                 BLOG
               </Link>
             </li>
@@ -264,6 +327,9 @@ function Navbar() {
           </ul>
         </div>
       </div>
+
+      {/* Spacer to prevent content from going under fixed navbar on mobile */}
+      <div className="h-[88px] md:h-0"></div>
     </>
   );
 }

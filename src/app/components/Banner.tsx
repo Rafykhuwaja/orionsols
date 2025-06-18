@@ -9,7 +9,7 @@ function Banner() {
   return (
     <div className="relative w-full h-screen">
       <div id="home" className="relative flex flex-col px-4 sm:px-8 text-white w-full h-full justify-center items-center">
-        <h1 className="text-center font-semibold text-4xl lg:text-6xl mt-10 mb-10">
+        <h1 className="text-center font-semibold text-4xl lg:text-6xl mt-20 md:mt-5 mb-10">
           Take Your Business to the <span className="text-[#b8a9fe]">New Height</span> <br />with <span className="text-[#b8a9fe]">Orionsols</span>
         </h1>
         <OrbitingItems3D

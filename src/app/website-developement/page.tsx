@@ -12,7 +12,7 @@ export default function WebsiteDevelopmentService() {
   return (
     <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw]">
+      <div className="md:px-[12vw] px-4 w-[100vw] md:mt-5">
         {/* Hero Section */}
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
@@ -31,27 +31,24 @@ export default function WebsiteDevelopmentService() {
                 </h1>
                 <p className="text-lg md:text-xl mb-8">
                   Your site is more than an internet brochure - it makes your
-                  business connect with potential buyers, partners, and customers.
+                  business connect with potential buyers, partners, and
+                  customers.
                 </p>
-          
               </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 relative"
-              >
-                <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/webdev3.jpg"
-                    alt="Professional Website Development"
-                    layout="fill"
-                    objectFit="cover"
-                    priority
-                  />
-                </div>
-              </motion.div>
+            
+              <div className="relative h-64 sm:h-72 md:h-96 md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+                {/* Loading placeholder */}
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+
+                <Image
+                  src="/images/webdev3.jpg"
+                  alt="Professional Website Development"
+                  layout="fill"
+                  objectFit="cover"
+                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+                />
+              </div>
+            
             </div>
           </div>
         </section>
@@ -67,15 +64,16 @@ export default function WebsiteDevelopmentService() {
           >
             <p className="text-gray-300 text-lg leading-relaxed">
               Your site is the foundation of your online existence, and how it
-              looks and functions can contribute significantly to your company&apos;s
-              image. At Orionsols, we are experts in providing top-oriented
-              website development services that are not only visually attractive,
-              but are strategically designed to achieve your business objectives.
-              From concept to final product, we aim to develop user-friendly
-              websites that promote the reliability of your brand and produce
-              outstanding results. Whether you are a startup or an established
-              business, we are here to help you create a website that stands out
-              in today&apos;s competitive online marketplace.
+              looks and functions can contribute significantly to your
+              company&apos;s image. At Orionsols, we are experts in providing
+              top-oriented website development services that are not only
+              visually attractive, but are strategically designed to achieve
+              your business objectives. From concept to final product, we aim to
+              develop user-friendly websites that promote the reliability of
+              your brand and produce outstanding results. Whether you are a
+              startup or an established business, we are here to help you create
+              a website that stands out in today&apos;s competitive online
+              marketplace.
             </p>
           </motion.div>
         </section>
@@ -131,9 +129,9 @@ export default function WebsiteDevelopmentService() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  You have seconds to grab visitors&apos; attention. A well-designed
-                  website engages users immediately and encourages them to explore
-                  further.
+                  You have seconds to grab visitors&apos; attention. A
+                  well-designed website engages users immediately and encourages
+                  them to explore further.
                 </p>
               </motion.div>
             </div>
@@ -172,8 +170,8 @@ export default function WebsiteDevelopmentService() {
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
                     We begin by understanding your business goals, target
-                    audience, and competitive landscape to create a strategic plan
-                    for your website.
+                    audience, and competitive landscape to create a strategic
+                    plan for your website.
                   </p>
                 </div>
               </motion.div>
@@ -384,8 +382,8 @@ export default function WebsiteDevelopmentService() {
                       User Experience Focus
                     </h3>
                     <p className="text-gray-300">
-                      We prioritize creating intuitive, engaging user experiences
-                      that convert visitors into customers.
+                      We prioritize creating intuitive, engaging user
+                      experiences that convert visitors into customers.
                     </p>
                   </div>
                   <div className="p-6 rounded-lg shadow-sm">
@@ -394,7 +392,8 @@ export default function WebsiteDevelopmentService() {
                     </h3>
                     <p className="text-gray-300">
                       Our relationship doesn&apos;t end at launch. We provide
-                      continuous support to ensure your website remains effective.
+                      continuous support to ensure your website remains
+                      effective.
                     </p>
                   </div>
                   <div className="p-6 rounded-lg shadow-sm">
@@ -432,8 +431,8 @@ export default function WebsiteDevelopmentService() {
               className="text-xl max-w-3xl mx-auto mb-8"
             >
               Your website is your digital identity—make it count. Contact
-              Orionsols today and let&apos;s build a site that drives results and
-              reflects your brand perfectly.
+              Orionsols today and let&apos;s build a site that drives results
+              and reflects your brand perfectly.
             </motion.p>
           </div>
         </section>
