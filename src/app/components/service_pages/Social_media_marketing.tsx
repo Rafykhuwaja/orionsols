@@ -1,16 +1,13 @@
 "use client";
 import React from "react";
-import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import { Share2, Target, BarChart4, Users } from "lucide-react";
-import Navbar2 from "../components/Navbar2";
-import Footer from "../components/Footer";
+import Navbar2 from "../../components/Navbar2";
 import { motion } from "framer-motion";
 
-export default function SocialMediaMarketingService() {
+function Social_media_marketing() {
   return (
-    <div>
+      <div>
       <Navbar2 />
       <div className="md:px-[12vw] px-4 w-[100vw] mt-5">
         {/* Hero Section */}
@@ -434,8 +431,10 @@ export default function SocialMediaMarketingService() {
             </motion.p>
           </div>
         </section>
-        <Footer />
+   
       </div>
     </div>
-  );
+  )
 }
+
+export default Social_media_marketing

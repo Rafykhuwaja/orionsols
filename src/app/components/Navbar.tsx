@@ -108,32 +108,32 @@ function Navbar() {
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe]">
-                  <Link href="/website-developement">
+                  <Link href="/web-design-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Website Developement
                     </DropdownMenuItem>
                   </Link>
-                  <Link href="/graphic-design">
+                  <Link href="/graphic-design-company-dubai">
                     <DropdownMenuItem className="font-bold">
                       Graphic Design
                     </DropdownMenuItem>
                   </Link>
-                  <Link href="/social-media-marketing">
+                  <Link href="/social-media-marketing-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Social Media Management
                     </DropdownMenuItem>
                   </Link>
-                  <Link href="/seo">
+                  <Link href="/seo-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Search Engine Optimization
                     </DropdownMenuItem>
                   </Link>
-                  <Link href="/creative-content">
+                  <Link href="/content-writing-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Content writing
                     </DropdownMenuItem>
                   </Link>
-                  <Link href="/ppc">
+                  <Link href="/ppc-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Pay Per Click
                     </DropdownMenuItem>
@@ -222,7 +222,7 @@ function Navbar() {
                 <p className="text-gray-300 font-medium">SERVICES</p>
                 <div className="pl-4 space-y-2">
                   <Link
-                    href="/website-developement"
+                    href="/web-design-agency-dubai"
                     onClick={handleLinkClick}
                     className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
@@ -236,28 +236,28 @@ function Navbar() {
                     Graphic Design
                   </Link>
                   <Link
-                    href="/social-media-marketing"
+                    href="/graphic-design-company-dubai"
                     onClick={handleLinkClick}
                     className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
                     Social Media Management
                   </Link>
                   <Link
-                    href="/seo"
+                    href="/seo-agency-dubai"
                     onClick={handleLinkClick}
                     className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
                     Search Engine Optimization
                   </Link>
                   <Link
-                    href="/creative-content"
+                    href="/content-writing-agency-dubai"
                     onClick={handleLinkClick}
                     className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
                     Content Writing
                   </Link>
                   <Link
-                    href="/ppc"
+                    href="/ppc-agency-dubai"
                     onClick={handleLinkClick}
                     className="block text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >

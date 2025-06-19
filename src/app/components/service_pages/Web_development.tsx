@@ -4,13 +4,16 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Monitor, Layout, ShoppingBag, RefreshCw, Award } from "lucide-react";
-import Navbar2 from "../components/Navbar2";
-import Footer from "../components/Footer";
+import Navbar2 from "../../components/Navbar2";
+import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 
-export default function WebsiteDevelopmentService() {
+
+
+function Web_development() {
   return (
     <div>
+         <div>
       <Navbar2 />
       <div className="md:px-[12vw] px-4 w-[100vw] md:mt-5">
         {/* Hero Section */}
@@ -437,8 +440,11 @@ export default function WebsiteDevelopmentService() {
           </div>
         </section>
 
-        <Footer />
+
       </div>
     </div>
-  );
+    </div>
+  )
 }
+
+export default Web_development

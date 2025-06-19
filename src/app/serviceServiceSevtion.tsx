@@ -11,7 +11,7 @@ const data = [
     subtitle: "Building Engagement and Online Presence",
     description:
       "Build a robust presence across platforms like Facebook, Instagram, LinkedIn, and more. We handle everything from content creation to engagement strategies and performance tracking to help you maintain meaningful connections with your audience.",
-    URL: "/social-media-marketing"
+    URL: "/social-media-marketing-agency-dubai"
   
     },
   {
@@ -20,7 +20,7 @@ const data = [
     subtitle: "Boost Your Visibility on Search Engines",
     description:
       "Increase organic traffic and improve your search rankings through comprehensive on-page and off-page optimization. We focus on keyword research, technical SEO, and continuous performance analysis to keep you ahead of the competition.",
-    URL:"/seo",
+    URL:"/seo-agency-dubai",
   },
   {
     image: "/video/CMS.mp4",
@@ -28,7 +28,7 @@ const data = [
     subtitle: "Create Value and Drive Conversions",
     description:
       "Engage your audience with high-quality, relevant content that drives conversions. We create tailored strategies with blogs, videos, infographics, and more to boost engagement and improve brand perception.",
-    URL:"/creative-content",
+    URL:"/content-writing-agency-dubai",
     
   },
   {
@@ -37,7 +37,7 @@ const data = [
     subtitle: "Targeted Ads for Maximum ROI",
     description:
       "Maximize your ROI with strategically targeted ads on Google, Bing, and social platforms. From campaign setup to continuous optimization, we ensure your ads reach the right audience.",
-    URL:"/ppc",
+    URL:"/ppc-agency-dubai",
      },
   {
     image: "/video/GDS.mp4",
@@ -45,7 +45,7 @@ const data = [
     subtitle: "Make Your Brand Stand Out",
     description:
       "Create a memorable and impactful brand identity. Our professional logo design, marketing collateral, and branding assets ensure your business stands out and resonates with your target market.",
-    URL:"/graphic-design",  
+    URL:"/graphic-design-company-dubai",  
     },
   {
     image: "/video/WDS.mp4",
@@ -53,7 +53,7 @@ const data = [
     subtitle: "Beautiful, Responsive, and Effective Websites",
     description:
       "We specialize in creating responsive, visually appealing, and user-friendly websites that align with your business goals. Whether you need an eCommerce site or a corporate website, we build solutions that drive conversions.",
-    URL:"/website-developement",
+    URL:"/web-design-agency-dubai",
     },
 ];
 
