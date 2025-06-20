@@ -28,14 +28,16 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e:any) => {
+    // Prevent the click event from bubbling up to the backdrop
+    e.stopPropagation();
     setIsMenuOpen(false);
   };
 
   return (
     <>
       {/* Fixed navbar container */}
-      <div className="w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-50 border-b border-gray-800/50 md:border-none max-w-full overflow-hidden  md:bg-transparent">
+      <div className="w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-50 border-b border-gray-800/50 max-w-full overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-2 px-4 md:px-10 w-full">
           <div className="flex justify-between items-center w-full md:w-auto">
             <Link href="/">
@@ -50,7 +52,7 @@ function Navbar() {
             <div className="md:hidden flex items-center gap-3">
               <button
                 onClick={toggleMenu}
-                className="text-gray-300 hover:text-white focus:outline-none p-2 transition-colors duration-200 z-50 relative"
+                className="text-white hover:text-gray-300 focus:outline-none p-2 transition-colors duration-200 z-50 relative"
                 aria-label="Menu"
                 aria-expanded={isMenuOpen}
               >
@@ -80,30 +82,29 @@ function Navbar() {
           </div>
 
           {/* Desktop menu */}
-          <ul className="hidden md:flex md:flex-row items-center gap-2 md:gap-4 font-bold text-gray-300 flex-grow justify-center text-sm sm:text-base md:text-lg">
+          <ul className="hidden md:flex md:flex-row items-center gap-2 md:gap-4 font-bold text-white flex-grow justify-center text-sm sm:text-base md:text-lg">
             <li>
-              <Link href="#home">
+              <Link href="/#home">
                 <InteractiveHoverButton>HOME</InteractiveHoverButton>
               </Link>
             </li>
             <li>
-              <Link href="#about">
+              <Link href="/#about">
                 <InteractiveHoverButton>ABOUT US</InteractiveHoverButton>
               </Link>
             </li>
             <li>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <div className="flex">
+                  <div className="flex text-white">
                     SERVICES
                     <ChevronDown />
                   </div>
                 </DropdownMenuTrigger>
-
-                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe]">
+                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] text-black">
                   <Link href="/web-design-agency-dubai">
                     <DropdownMenuItem className="font-bold">
-                      Website Developement
+                      Website Development
                     </DropdownMenuItem>
                   </Link>
                   <Link href="/graphic-design-company-dubai">
@@ -123,7 +124,7 @@ function Navbar() {
                   </Link>
                   <Link href="/content-writing-agency-dubai">
                     <DropdownMenuItem className="font-bold">
-                      Content writing
+                      Content Writing
                     </DropdownMenuItem>
                   </Link>
                   <Link href="/ppc-agency-dubai">
@@ -135,7 +136,7 @@ function Navbar() {
               </DropdownMenu>
             </li>
             <li>
-              <Link href="#contact">
+              <Link href="/#contact">
                 <InteractiveHoverButton>CONTACT</InteractiveHoverButton>
               </Link>
             </li>
@@ -196,92 +197,108 @@ function Navbar() {
       {/* Mobile menu backdrop */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 md:hidden"
+          className="fixed inset-0 z-40 md:hidden bg-black/50"
           onClick={handleLinkClick}
         />
       )}
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed left-0 right-0 bg-black/100 backdrop-blur-md transition-all duration-300 ease-in-out z-45 border-t border-gray-800/50 ${
+        className={`md:hidden fixed left-0 right-0 bg-black/90 backdrop-blur-md transition-all duration-300 ease-in-out z-50 border-t border-gray-800/50 ${
           isMenuOpen
             ? "top-[88px] max-h-[calc(100vh-88px)] opacity-100 visible"
             : "top-[88px] max-h-0 opacity-0 invisible"
         } overflow-hidden`}
       >
-        <ul className="flex flex-col items-start px-6 gap-5 font-medium text-gray-300 py-6 max-h-[calc(100vh-120px)] overflow-y-auto">
-          <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-            <Link className="text-white block py-1" href="#home" onClick={handleLinkClick}>
+        <ul className="flex flex-col items-start px-6 gap-5 font-medium text-white py-6 max-h-[calc(100vh-120px)] overflow-y-auto">
+          <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
+            <Link
+              href="/#home"
+              onClick={handleLinkClick}
+              className="text-white block py-1"
+            >
               HOME
             </Link>
           </li>
-          <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="#about" onClick={handleLinkClick}>
+          <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
+            <Link
+              href="/#about"
+              onClick={handleLinkClick}
+              className="block py-1"
+            >
               ABOUT US
             </Link>
           </li>
           <li className="w-full border-b border-gray-800 pb-2">
             <div className="space-y-2">
-              <p className="text-gray-300 font-medium py-1">SERVICES</p>
+              <p className="text-white font-medium py-1">SERVICES</p>
               <div className="pl-4 space-y-2">
                 <Link
                   href="/web-design-agency-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Website Development
                 </Link>
                 <Link
                   href="/graphic-design-company-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Graphic Design
                 </Link>
                 <Link
                   href="/social-media-marketing-agency-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Social Media Management
                 </Link>
                 <Link
                   href="/seo-agency-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Search Engine Optimization
                 </Link>
                 <Link
                   href="/content-writing-agency-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Content Writing
                 </Link>
                 <Link
                   href="/ppc-agency-dubai"
                   onClick={handleLinkClick}
-                  className="block text-sm text-gray-400 hover:text-gray-300 transition-colors py-1"
+                  className="block text-sm text-gray-200 hover:text-white transition-colors py-1"
                 >
                   Pay Per Click
                 </Link>
               </div>
             </div>
           </li>
-          <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="#contact" onClick={handleLinkClick}>
+          <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
+            <Link
+              href="/#contact"
+              onClick={handleLinkClick}
+              className="block py-1"
+            >
               CONTACT
             </Link>
           </li>
-          <li className="hover:text-gray-500 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="/blog" onClick={handleLinkClick}>
+          <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
+            <Link
+              href="/blog"
+              onClick={handleLinkClick}
+              className="block py-1"
+            >
               BLOG
             </Link>
           </li>
 
           <li className="w-full pt-2">
-            <p className="text-sm text-gray-400 mb-3">Follow Us:</p>
+            <p className="text-sm text-gray-200 mb-3">Follow Us:</p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="https://www.facebook.com/share/18SDa3NGi1/?mibextid=wwXIfr"
@@ -307,7 +324,11 @@ function Navbar() {
               >
                 <Linkedin size={22} color="#b8a9fe" />
               </Link>
-              <Link href="#" aria-label="Twitter" className="hover:scale-110 transition-transform">
+              <Link
+                href="#"
+                aria-label="Twitter"
+                className="hover:scale-110 transition-transform"
+              >
                 <Twitter size={22} color="#b8a9fe" />
               </Link>
               <Link
@@ -324,11 +345,11 @@ function Navbar() {
           <li className="w-full pt-2">
             <div className="flex items-center gap-2 mb-2">
               <Phone size={16} color="#b8a9fe" />
-              <p className="text-sm text-gray-300">(+971) 528 977 529</p>
+              <p className="text-sm text-gray-200">(+971) 528 977 529</p>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={16} color="#b8a9fe" />
-              <p className="text-sm text-gray-300">info@Orionsols.com</p>
+              <p className="text-sm text-gray-200">info@Orionsols.com</p>
             </div>
           </li>
         </ul>

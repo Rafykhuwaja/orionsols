@@ -28,14 +28,15 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e:any) => {
+    e.stopPropagation();
     setIsMenuOpen(false);
   };
 
   return (
     <>
       {/* Fixed navbar container */}
-      <div className="w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-50 border-b border-gray-800/50 md:border-none max-w-full overflow-hidden  md:bg-transparent">
+      <div className="w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-50 border-b border-gray-800/50 max-w-full overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto py-2 px-4 md:px-10 w-full">
           <div className="flex justify-between items-center w-full md:w-auto">
             <Link href="/">
@@ -99,8 +100,7 @@ function Navbar() {
                     <ChevronDown />
                   </div>
                 </DropdownMenuTrigger>
-
-                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe]">
+                <DropdownMenuContent className="px-3 py-3 bg-[#b8a9fe] text-black">
                   <Link href="/web-design-agency-dubai">
                     <DropdownMenuItem className="font-bold">
                       Website Development
@@ -196,27 +196,35 @@ function Navbar() {
       {/* Mobile menu backdrop */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 md:hidden "
+          className="fixed inset-0 z-40 md:hidden bg-black/50"
           onClick={handleLinkClick}
         />
       )}
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed left-0 right-0 bg-black/100 backdrop-blur-lg transition-all duration-300 ease-in-out z-45 border-t border-gray-800/50 ${
+        className={`md:hidden fixed left-0 right-0 bg-black/90 backdrop-blur-md transition-all duration-300 ease-in-out z-50 border-t border-gray-800/50 ${
           isMenuOpen
             ? "top-[88px] max-h-[calc(100vh-88px)] opacity-100 visible"
             : "top-[88px] max-h-0 opacity-0 invisible"
         } overflow-hidden`}
       >
-        <ul className="flex flex-col items-start px-6 gap-5 font-bold text-white py-6 max-h-[calc(100vh-120px)] overflow-y-auto">
+        <ul className="flex flex-col items-start px-6 gap-5 font-medium text-white py-6 max-h-[calc(100vh-120px)] overflow-y-auto">
           <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
-            <Link className="text-white block py-1 z-50" href="/" onClick={handleLinkClick}>
+            <Link
+              href="/"
+              onClick={handleLinkClick}
+              className="text-white block py-1"
+            >
               HOME
             </Link>
           </li>
           <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="/#about" onClick={handleLinkClick}>
+            <Link
+              href="/#about"
+              onClick={handleLinkClick}
+              className="text-white block py-1"
+            >
               ABOUT US
             </Link>
           </li>
@@ -270,12 +278,20 @@ function Navbar() {
             </div>
           </li>
           <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="/#contact" onClick={handleLinkClick}>
+            <Link
+              href="/#contact"
+              onClick={handleLinkClick}
+              className="text-white block py-1"
+            >
               CONTACT
             </Link>
           </li>
           <li className="hover:text-gray-300 w-full border-b border-gray-800 pb-2">
-            <Link className="block py-1" href="/blog" onClick={handleLinkClick}>
+            <Link
+              href="/blog"
+              onClick={handleLinkClick}
+              className="text-white block py-1"
+            >
               BLOG
             </Link>
           </li>
@@ -307,7 +323,11 @@ function Navbar() {
               >
                 <Linkedin size={22} color="#b8a9fe" />
               </Link>
-              <Link href="#" aria-label="Twitter" className="hover:scale-110 transition-transform">
+              <Link
+                href="#"
+                aria-label="Twitter"
+                className="hover:scale-110 transition-transform"
+              >
                 <Twitter size={22} color="#b8a9fe" />
               </Link>
               <Link

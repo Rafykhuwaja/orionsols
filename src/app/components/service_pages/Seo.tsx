@@ -40,14 +40,16 @@ function Seo() {
                   measurable results.
                 </p>
               </motion.div>
-             <div className="relative h-64 sm:h-72 md:h-96 md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+             <div className="relative h-full md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
                 {/* Loading placeholder */}
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
 
                 <Image
                   src="/images/seo.jpg"
                   alt="Professional Website Development"
-                  layout="fill"
+                  layout="responsive"
+        width={700}
+        height={475}
                   objectFit="cover"
                   className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
                 />
