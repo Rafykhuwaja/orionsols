@@ -85,7 +85,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body id="background" className={lato.className}>
+      <body id="background" className={`${lato.className} responsive-container no-scroll`}>
         {children}
         <Footer/>
         <SpeedInsights />

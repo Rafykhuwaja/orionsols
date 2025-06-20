@@ -46,7 +46,8 @@ export const metadata = {
 export default function Home() {
 
   return (
-    <main  className="md:px-[12vw] px-4 w-[100vw]">
+    <main className="w-full max-w-full overflow-x-hidden">
+      <div className="md:px-[12vw] px-4 w-full">
       <Navbar/>
       <Banner/>
 
@@ -63,7 +64,7 @@ export default function Home() {
       <ContactForm/>
 
       <Contact/>
-      
+      </div>
     </main>
   );
 }
