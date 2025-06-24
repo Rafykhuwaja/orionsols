@@ -28,7 +28,11 @@ export const metadata = {
       "Stand out with professional design by Orionsols. Logos, branding, and custom visuals tailored to your business.",
   },
   alternates: {
-    canonical: "https://orionsols.com/graphic-design-company-dubai",
+    canonical: "https://www.orionsols.com/graphic-design-company-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

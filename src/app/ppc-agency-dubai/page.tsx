@@ -28,7 +28,11 @@ export const metadata = {
       "Run smarter PPC campaigns and get faster results with data-driven strategies from Orionsols.",
   },
   alternates: {
-    canonical: "https://orionsols.com/ppc-agency-dubai",
+    canonical: "https://www.orionsols.com/ppc-agency-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

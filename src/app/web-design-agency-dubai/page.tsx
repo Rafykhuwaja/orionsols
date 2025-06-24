@@ -28,9 +28,14 @@ export const metadata = {
       "Build stunning, user-focused websites with Orionsols. Discover our top-rated web design services in Dubai.",
   },
   alternates: {
-    canonical: "https://orionsols.com/web-design-agency-dubai",
+    canonical: "https://www.orionsols.com/web-design-agency-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
+
 
 
 

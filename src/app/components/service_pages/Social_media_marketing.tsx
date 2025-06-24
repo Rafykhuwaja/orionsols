@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 function Social_media_marketing() {
   return (
-      <div>
+    <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw] mt-5">
+      <div className="md:px-[12vw] px-4 w-[100vw] mt-10">
         {/* Hero Section */}
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
@@ -31,20 +31,27 @@ function Social_media_marketing() {
                   builds meaningful connections and drives measurable results.
                 </p>
               </motion.div>
-             <div className="relative h-full md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
-                {/* Loading placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+              <motion.div
+                initial={{ opacity: 1, x: 120 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: false, amount: 0.5 }}
+                className="md:w-1/2 w-full"
+              >
+                <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+                  {/* Loading placeholder */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
 
-                <Image
-                  src="/images/socialmedia1.jpg"
-                  alt="Professional Website Development"
-                  layout="responsive"
-        width={700}
-        height={475}
-                  objectFit="cover"
-                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
-                />
-              </div>
+                  <Image
+                    src="/images/socialmedia1.jpg"
+                    alt="Social Media Marketing Services"
+                    width={700}
+                    height={500}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+                    priority
+                  />
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -59,15 +66,16 @@ function Social_media_marketing() {
             className="container mx-auto px-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              In today&apos;s digital era, social media is at the heart of modern
-              marketing. Whether you&apos;re a small startup or a large enterprise,
-              platforms like Instagram, Facebook, and LinkedIn are where your
-              audience lives—and where your brand needs to be. At Orionsols,
-              we know how to make social media work for your business. Our
-              team doesn&apos;t just post content—we build real connections between
-              your brand and your audience. With smart strategies, engaging
-              content, and targeted campaigns, we help you grow your
-              community, increase visibility, and generate real results.
+              In today&apos;s digital era, social media is at the heart of
+              modern marketing. Whether you&apos;re a small startup or a large
+              enterprise, platforms like Instagram, Facebook, and LinkedIn are
+              where your audience lives—and where your brand needs to be. At
+              Orionsols, we know how to make social media work for your
+              business. Our team doesn&apos;t just post content—we build real
+              connections between your brand and your audience. With smart
+              strategies, engaging content, and targeted campaigns, we help you
+              grow your community, increase visibility, and generate real
+              results.
             </p>
           </motion.div>
         </section>
@@ -187,8 +195,9 @@ function Social_media_marketing() {
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
                     Our content team designs visuals, videos, and copy that
-                    reflect your brand&apos;s voice and connect with your followers.
-                    We craft high-quality content that engages and converts.
+                    reflect your brand&apos;s voice and connect with your
+                    followers. We craft high-quality content that engages and
+                    converts.
                   </p>
                 </div>
               </motion.div>
@@ -342,10 +351,10 @@ function Social_media_marketing() {
                   Why Choose Orionsols
                 </h2>
                 <p className="text-lg text-gray-300 mb-6">
-                  We don&apos;t believe in one-size-fits-all. Every strategy we build
-                  is personalized, focused on your brand&apos;s unique goals and
-                  market. Our team combines creativity with data-driven insights
-                  to deliver content that performs.
+                  We don&apos;t believe in one-size-fits-all. Every strategy we
+                  build is personalized, focused on your brand&apos;s unique
+                  goals and market. Our team combines creativity with
+                  data-driven insights to deliver content that performs.
                 </p>
                 <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
@@ -426,17 +435,16 @@ function Social_media_marketing() {
               viewport={{ once: false, amount: 0.5 }}
               className="text-xl max-w-3xl mx-auto mb-8"
             >
-              If your brand isn&apos;t making an impact on social media, you&apos;re
-              missing valuable opportunities. Let Orionsols help you stand out,
-              grow your community, and drive meaningful business results through
-              powerful, personalized social media marketing.
+              If your brand isn&apos;t making an impact on social media,
+              you&apos;re missing valuable opportunities. Let Orionsols help you
+              stand out, grow your community, and drive meaningful business
+              results through powerful, personalized social media marketing.
             </motion.p>
           </div>
         </section>
-   
       </div>
     </div>
-  )
+  );
 }
 
-export default Social_media_marketing
+export default Social_media_marketing;

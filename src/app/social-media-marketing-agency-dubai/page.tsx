@@ -27,7 +27,11 @@ export const metadata = {
       "Boost engagement and brand awareness through powerful social media marketing strategies tailored for your business.",
   },
   alternates: {
-    canonical: "https://orionsols.com/social-media-marketing-agency-dubai",
+    canonical: "https://www.orionsols.com/social-media-marketing-agency-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

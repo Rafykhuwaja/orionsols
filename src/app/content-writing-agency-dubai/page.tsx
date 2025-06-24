@@ -28,7 +28,11 @@ export const metadata = {
       "Engage your audience with clear, compelling, and conversion-focused content from Orionsols’ expert writers.",
   },
   alternates: {
-    canonical: "https://orionsols.com/content-writing-agency-dubai",
+    canonical: "https://www.orionsols.com/content-writing-agency-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

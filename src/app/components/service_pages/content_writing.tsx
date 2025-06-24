@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Pencil, Book, BarChart4, Users, MessageCircle, Mail } from "lucide-react";
+import {
+  Pencil,
+  Book,
+  BarChart4,
+  Users,
+  MessageCircle,
+  Mail,
+} from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
@@ -10,7 +17,7 @@ function Content_writing() {
   return (
     <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw] mt-5">
+      <div className="md:px-[12vw] px-4 w-[100vw] mt-10">
         {/* Hero Section */}
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
@@ -28,24 +35,33 @@ function Content_writing() {
                   Services
                 </h1>
                 <p className="text-lg md:text-xl mb-8">
-                  Elevate your brand with compelling content that connects with your 
-                  audience, drives traffic, and converts visitors into loyal customers.
+                  Elevate your brand with compelling content that connects with
+                  your audience, drives traffic, and converts visitors into
+                  loyal customers.
                 </p>
               </motion.div>
-<div className="relative h-full md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
-                {/* Loading placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+              <motion.div
+        initial={{ opacity: 1, x: 120 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="md:w-1/2 w-full"
+      >
+        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+          {/* Loading placeholder */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
 
-                <Image
-                  src="/images/creativecontent.jpg"
-                  alt="Professional Website Development"
-                  layout="responsive"
-        width={700}
-        height={475}
-                  objectFit="cover"
-                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
-                />
-              </div>            </div>
+          <Image
+            src="/images/creativecontent.jpg"
+                  alt="Content Writing"
+            width={700}
+            height={500}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+            priority
+          />
+        </div>
+      </motion.div>
+            </div>
           </div>
         </section>
 
@@ -59,13 +75,15 @@ function Content_writing() {
           >
             <div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                In today&apos;s fast-paced digital age, content is king. Whether you&apos;re a startup, 
-                small business, or a large corporation, high-quality and engaging content is 
-                essential to building your brand identity, driving web traffic, and converting 
-                visitors into loyal customers. At Orionsols, we understand the power of 
-                storytelling and impactful content that connects with your target audience. 
-                Our creative content creation services are designed to help you engage, 
-                convert, and grow like never before.
+                In today&apos;s fast-paced digital age, content is king. Whether
+                you&apos;re a startup, small business, or a large corporation,
+                high-quality and engaging content is essential to building your
+                brand identity, driving web traffic, and converting visitors
+                into loyal customers. At Orionsols, we understand the power of
+                storytelling and impactful content that connects with your
+                target audience. Our creative content creation services are
+                designed to help you engage, convert, and grow like never
+                before.
               </p>
             </div>
           </motion.div>
@@ -101,9 +119,10 @@ function Content_writing() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Content writing isn&apos;t just about words—it&apos;s about building narratives that 
-                  resonate with your audience and solve their problems. This establishes trust 
-                  and credibility for your brand.
+                  Content writing isn&apos;t just about words—it&apos;s about
+                  building narratives that resonate with your audience and solve
+                  their problems. This establishes trust and credibility for
+                  your brand.
                 </p>
               </motion.div>
               <motion.div
@@ -122,8 +141,9 @@ function Content_writing() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Strategic content not only improves your search engine visibility, but also 
-                  builds brand recognition and drives measurable conversions.
+                  Strategic content not only improves your search engine
+                  visibility, but also builds brand recognition and drives
+                  measurable conversions.
                 </p>
               </motion.div>
               <motion.div
@@ -142,9 +162,9 @@ function Content_writing() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Effective content provides value, nurtures long-term relationships, and 
-                  encourages your audience to take meaningful action aligned with your 
-                  business goals.
+                  Effective content provides value, nurtures long-term
+                  relationships, and encourages your audience to take meaningful
+                  action aligned with your business goals.
                 </p>
               </motion.div>
               <motion.div
@@ -163,9 +183,10 @@ function Content_writing() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Whether it&apos;s blog posts, product descriptions, or social media content—everything 
-                  we create is tailored to meet the specific needs, desires, and pain points of your 
-                  target audience.
+                  Whether it&apos;s blog posts, product descriptions, or social
+                  media content—everything we create is tailored to meet the
+                  specific needs, desires, and pain points of your target
+                  audience.
                 </p>
               </motion.div>
             </div>
@@ -204,8 +225,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We start by learning about your brand, goals, and audience to create a 
-                    custom content strategy that aligns with your objectives.
+                    We start by learning about your brand, goals, and audience
+                    to create a custom content strategy that aligns with your
+                    objectives.
                   </p>
                 </div>
               </motion.div>
@@ -227,9 +249,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We conduct comprehensive research on industry trends, competitors, 
-                    and SEO keywords to ensure every piece of content is relevant, 
-                    insightful, and performance-optimized.
+                    We conduct comprehensive research on industry trends,
+                    competitors, and SEO keywords to ensure every piece of
+                    content is relevant, insightful, and performance-optimized.
                   </p>
                 </div>
               </motion.div>
@@ -251,8 +273,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    Our skilled writers develop compelling content that reflects your brand 
-                    voice, engages readers, and is fully optimized for SEO and readability.
+                    Our skilled writers develop compelling content that reflects
+                    your brand voice, engages readers, and is fully optimized
+                    for SEO and readability.
                   </p>
                 </div>
               </motion.div>
@@ -274,8 +297,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We incorporate your feedback to fine-tune the content, ensuring accuracy, 
-                    quality, and consistency across all messaging.
+                    We incorporate your feedback to fine-tune the content,
+                    ensuring accuracy, quality, and consistency across all
+                    messaging.
                   </p>
                 </div>
               </motion.div>
@@ -297,8 +321,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    Once approved, your content is published using best SEO practices and 
-                    promoted through targeted campaigns for maximum reach and visibility.
+                    Once approved, your content is published using best SEO
+                    practices and promoted through targeted campaigns for
+                    maximum reach and visibility.
                   </p>
                 </div>
               </motion.div>
@@ -320,8 +345,9 @@ function Content_writing() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We continuously monitor performance metrics and update your content to 
-                    ensure it remains fresh, relevant, and engaging over time.
+                    We continuously monitor performance metrics and update your
+                    content to ensure it remains fresh, relevant, and engaging
+                    over time.
                   </p>
                 </div>
               </motion.div>
@@ -357,8 +383,8 @@ function Content_writing() {
                   Blog Posts & Articles
                 </h3>
                 <p className="text-gray-300">
-                  Position your brand as a thought leader with SEO-friendly, value-driven 
-                  blogs and articles that educate and engage.
+                  Position your brand as a thought leader with SEO-friendly,
+                  value-driven blogs and articles that educate and engage.
                 </p>
               </motion.div>
 
@@ -376,8 +402,8 @@ function Content_writing() {
                   Website Copywriting
                 </h3>
                 <p className="text-gray-300">
-                  From home pages to landing pages, we write persuasive website content that 
-                  turns visitors into paying customers.
+                  From home pages to landing pages, we write persuasive website
+                  content that turns visitors into paying customers.
                 </p>
               </motion.div>
 
@@ -395,8 +421,9 @@ function Content_writing() {
                   Social Media Content
                 </h3>
                 <p className="text-gray-300">
-                  We create engaging, on-brand posts tailored for platforms like Facebook, 
-                  Instagram, Twitter, and LinkedIn—ensuring your brand stays top-of-mind.
+                  We create engaging, on-brand posts tailored for platforms like
+                  Facebook, Instagram, Twitter, and LinkedIn—ensuring your brand
+                  stays top-of-mind.
                 </p>
               </motion.div>
 
@@ -414,8 +441,8 @@ function Content_writing() {
                   White Papers & Case Studies
                 </h3>
                 <p className="text-gray-300">
-                  Demonstrate authority with detailed, professional content designed for 
-                  industries like tech, healthcare, and finance.
+                  Demonstrate authority with detailed, professional content
+                  designed for industries like tech, healthcare, and finance.
                 </p>
               </motion.div>
 
@@ -433,8 +460,8 @@ function Content_writing() {
                   Email Campaigns
                 </h3>
                 <p className="text-gray-300">
-                  Convert leads with well-written newsletters, offers, and automated sequences 
-                  that engage and inform your audience.
+                  Convert leads with well-written newsletters, offers, and
+                  automated sequences that engage and inform your audience.
                 </p>
               </motion.div>
 
@@ -452,8 +479,8 @@ function Content_writing() {
                   Press Releases
                 </h3>
                 <p className="text-gray-300">
-                  Share your milestones and announcements through professionally crafted press 
-                  releases that attract media and influencers.
+                  Share your milestones and announcements through professionally
+                  crafted press releases that attract media and influencers.
                 </p>
               </motion.div>
             </div>
@@ -490,10 +517,11 @@ function Content_writing() {
                   Why Choose Orionsols
                 </h2>
                 <p className="text-lg text-gray-300 mb-6">
-                  We don&apos;t do one-size-fits-all. Every project is backed by a customized 
-                  approach designed to achieve your business goals. Our team of expert writers 
-                  covers a wide range of industries—ensuring we speak your audience&apos;s language 
-                  and deliver content that performs.
+                  We don&apos;t do one-size-fits-all. Every project is backed by
+                  a customized approach designed to achieve your business goals.
+                  Our team of expert writers covers a wide range of
+                  industries—ensuring we speak your audience&apos;s language and
+                  deliver content that performs.
                 </p>
                 <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
@@ -518,8 +546,9 @@ function Content_writing() {
                       Expert Writers
                     </h3>
                     <p className="text-gray-300">
-                      Our experienced writers cover a wide range of industries—ensuring we speak 
-                      your audience&apos;s language and deliver content that performs.
+                      Our experienced writers cover a wide range of
+                      industries—ensuring we speak your audience&apos;s language
+                      and deliver content that performs.
                     </p>
                   </div>
 
@@ -528,8 +557,9 @@ function Content_writing() {
                       Tailored Strategy
                     </h3>
                     <p className="text-gray-300">
-                      We don&apos;t do one-size-fits-all. Every project is backed by a customized 
-                      approach designed to achieve your business goals.
+                      We don&apos;t do one-size-fits-all. Every project is
+                      backed by a customized approach designed to achieve your
+                      business goals.
                     </p>
                   </div>
 
@@ -538,8 +568,8 @@ function Content_writing() {
                       SEO-Focused
                     </h3>
                     <p className="text-gray-300">
-                      We embed SEO best practices into every piece, helping your content rank 
-                      and drive organic traffic effectively.
+                      We embed SEO best practices into every piece, helping your
+                      content rank and drive organic traffic effectively.
                     </p>
                   </div>
 
@@ -548,8 +578,9 @@ function Content_writing() {
                       Results-Driven
                     </h3>
                     <p className="text-gray-300">
-                      Whether it&apos;s increased website traffic, leads, or conversions—our focus is 
-                      always on delivering measurable results.
+                      Whether it&apos;s increased website traffic, leads, or
+                      conversions—our focus is always on delivering measurable
+                      results.
                     </p>
                   </div>
 
@@ -558,8 +589,8 @@ function Content_writing() {
                       On-Time Delivery
                     </h3>
                     <p className="text-gray-300">
-                      We respect deadlines and always deliver high-quality content on time, 
-                      every time.
+                      We respect deadlines and always deliver high-quality
+                      content on time, every time.
                     </p>
                   </div>
                 </div>
@@ -587,15 +618,16 @@ function Content_writing() {
               viewport={{ once: false, amount: 0.5 }}
               className="text-xl max-w-3xl mx-auto mb-8"
             >
-              Let Orionsols help you create content that speaks, sells, and succeeds. Whether 
-              you need blog posts, website copy, social media content, or something in between—we&apos;re 
-              here to bring your ideas to life.
+              Let Orionsols help you create content that speaks, sells, and
+              succeeds. Whether you need blog posts, website copy, social media
+              content, or something in between—we&apos;re here to bring your
+              ideas to life.
             </motion.p>
           </div>
         </section>
       </div>
     </div>
-  )
+  );
 }
 
-export default Content_writing
+export default Content_writing;

@@ -15,48 +15,56 @@ function Web_development() {
     <div>
          <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw] md:mt-5">
+      <div className="md:px-[12vw] px-4 w-[100vw] md:mt-10">
         {/* Hero Section */}
-        <section className="py-20 relative overflow-hidden text-gray-300">
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="flex flex-col md:flex-row items-center">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 mb-8 md:mb-0 md:pr-12"
-              >
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Professional{" "}
-                  <span className="text-[#b8a9fe]">Website Development</span>{" "}
-                  Services
-                </h1>
-                <p className="text-lg md:text-xl mb-8">
-                  Your site is more than an internet brochure - it makes your
-                  business connect with potential buyers, partners, and
-                  customers.
-                </p>
-              </motion.div>
-            
-              <div className="relative h-full md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
-                {/* Loading placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
 
-                <Image
-                  src="/images/webdev3.jpg"
-                  alt="Professional Website Development"
-                  layout="responsive"
-        width={700}
-        height={475}
-                  objectFit="cover"
-                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
-                />
-              </div>
-            
-            </div>
-          </div>
-        </section>
+
+<section className="py-20 relative overflow-hidden text-gray-300">
+  <div className="container mx-auto px-6 relative z-10">
+    <div className="flex flex-col md:flex-row items-center gap-8">
+      <motion.div
+        initial={{ opacity: 1, x: -120 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="md:w-1/2 mb-8 md:mb-0"
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Professional{" "}
+          <span className="text-[#b8a9fe]">Website Development</span>{" "}
+          Services
+        </h1>
+        <p className="text-lg md:text-xl mb-8">
+          Your site is more than an internet brochure - it makes your
+          business connect with potential buyers, partners, and
+          customers.
+        </p>
+      </motion.div>
+    
+      <motion.div
+        initial={{ opacity: 1, x: 120 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="md:w-1/2 w-full"
+      >
+        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+          {/* Loading placeholder */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+
+          <Image
+            src="/images/webdev3.jpg"
+            alt="Professional Website Development"
+            width={700}
+            height={500}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+            priority
+          />
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
         {/* Introduction */}
         <section className="py-16">

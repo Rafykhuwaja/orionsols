@@ -27,7 +27,11 @@ export const metadata = {
       "Get better rankings and more traffic with expert SEO strategies tailored for Dubai businesses.",
   },
   alternates: {
-    canonical: "https://orionsols.com/seo-agency-dubai",
+    canonical: "https://www.orionsols.com/seo-agency-dubai",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

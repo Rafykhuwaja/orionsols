@@ -1,16 +1,23 @@
 "use client";
 import Image from "next/image";
-import { Palette, Smartphone, FileText, Package, Monitor, Award } from "lucide-react";
+import {
+  Palette,
+  Smartphone,
+  FileText,
+  Package,
+  Monitor,
+  Award,
+} from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
 import { motion } from "framer-motion";
 
-import React from 'react'
+import React from "react";
 
 function Graphic_design() {
   return (
     <div>
       <Navbar2 />
-      <div className="md:px-[12vw] px-4 w-[100vw] mt-5">
+      <div className="md:px-[12vw] px-4 w-[100vw] mt-10">
         {/* Hero Section */}
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
@@ -28,23 +35,31 @@ function Graphic_design() {
                   Services in Dubai
                 </h1>
                 <p className="text-lg md:text-xl mb-8">
-                  Empower your brand with stunning visuals that stand out, connect with audiences, and leave a lasting impression.
+                  Empower your brand with stunning visuals that stand out,
+                  connect with audiences, and leave a lasting impression.
                 </p>
               </motion.div>
-              <div className="relative h-full md:w-1/2 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
-                {/* Loading placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
+              <motion.div
+                initial={{ opacity: 1, x: 120 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: false, amount: 0.5 }}
+                className="md:w-1/2 w-full"
+              >
+                <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+                  {/* Loading placeholder */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
 
-                <Image
-                  src="/images/graphic-design.jpg"
-                  alt="Professional Website Development"
-                  layout="responsive"
-        width={700}
-        height={475}
-                  objectFit="cover"
-                  className="object-cover hover:scale-105 transition-transform duration-300 relative z-10"
-                />
-              </div>
+                  <Image
+                    src="/images/ppc1.jpg"
+                    alt="Pay per click"
+                    width={700}
+                    height={500}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 relative z-10"
+                    priority
+                  />
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -59,7 +74,16 @@ function Graphic_design() {
             className="container mx-auto px-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              In today’s competitive marketplace, visual identity isn’t a luxury—it’s a necessity. At Orionsols, we deliver professional graphic designing services in Dubai that empower brands to stand out, connect with audiences, and create lasting impressions. Whether launching a startup or revamping an existing brand, our expert design team crafts impactful visuals that clearly communicate your brand story. We’re more than just another graphic design company in Dubai—we’re your creative partners, driven by passion and focused on transforming your ideas into stunning designs.
+              In today’s competitive marketplace, visual identity isn’t a
+              luxury—it’s a necessity. At Orionsols, we deliver professional
+              graphic designing services in Dubai that empower brands to stand
+              out, connect with audiences, and create lasting impressions.
+              Whether launching a startup or revamping an existing brand, our
+              expert design team crafts impactful visuals that clearly
+              communicate your brand story. We’re more than just another graphic
+              design company in Dubai—we’re your creative partners, driven by
+              passion and focused on transforming your ideas into stunning
+              designs.
             </p>
           </motion.div>
         </section>
@@ -94,7 +118,9 @@ function Graphic_design() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Your visual branding—logo, color scheme, typography—shapes customer perception. Great design builds recognition and trust in Dubai’s dynamic market.
+                  Your visual branding—logo, color scheme, typography—shapes
+                  customer perception. Great design builds recognition and trust
+                  in Dubai’s dynamic market.
                 </p>
               </motion.div>
               <motion.div
@@ -113,7 +139,8 @@ function Graphic_design() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  High-quality visuals for social media, websites, or newsletters boost engagement and make your message memorable.
+                  High-quality visuals for social media, websites, or
+                  newsletters boost engagement and make your message memorable.
                 </p>
               </motion.div>
               <motion.div
@@ -132,7 +159,8 @@ function Graphic_design() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Professional design reflects quality. We ensure every element enhances your brand’s credibility and inspires confidence.
+                  Professional design reflects quality. We ensure every element
+                  enhances your brand’s credibility and inspires confidence.
                 </p>
               </motion.div>
               <motion.div
@@ -151,7 +179,8 @@ function Graphic_design() {
                   </h3>
                 </div>
                 <p className="text-gray-300">
-                  Effective design guides customer behavior, drives clicks, and boosts conversions with a strategic approach.
+                  Effective design guides customer behavior, drives clicks, and
+                  boosts conversions with a strategic approach.
                 </p>
               </motion.div>
             </div>
@@ -189,7 +218,9 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We start by understanding your business, audience, values, and goals to ensure designs reflect your brand authentically.
+                    We start by understanding your business, audience, values,
+                    and goals to ensure designs reflect your brand
+                    authentically.
                   </p>
                 </div>
               </motion.div>
@@ -210,7 +241,8 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We analyze industry trends and competitors to deliver designs that elevate your brand above the rest.
+                    We analyze industry trends and competitors to deliver
+                    designs that elevate your brand above the rest.
                   </p>
                 </div>
               </motion.div>
@@ -231,7 +263,8 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We explore multiple directions and moodboards to align visuals with your brand tone before design execution.
+                    We explore multiple directions and moodboards to align
+                    visuals with your brand tone before design execution.
                   </p>
                 </div>
               </motion.div>
@@ -252,7 +285,9 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    Our designers bring concepts to life using cutting-edge tools, delivering everything from logos to full brand systems.
+                    Our designers bring concepts to life using cutting-edge
+                    tools, delivering everything from logos to full brand
+                    systems.
                   </p>
                 </div>
               </motion.div>
@@ -273,7 +308,8 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We collaborate closely, welcoming feedback to refine designs until they meet or exceed your expectations.
+                    We collaborate closely, welcoming feedback to refine designs
+                    until they meet or exceed your expectations.
                   </p>
                 </div>
               </motion.div>
@@ -294,7 +330,9 @@ function Graphic_design() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-300">
-                    We deliver files in print, digital, and social-ready formats, with ongoing support for updates or future projects.
+                    We deliver files in print, digital, and social-ready
+                    formats, with ongoing support for updates or future
+                    projects.
                   </p>
                 </div>
               </motion.div>
@@ -329,7 +367,8 @@ function Graphic_design() {
                   Logo Design & Brand Identity
                 </h3>
                 <p className="text-gray-300">
-                  Crafting timeless logos and cohesive branding systems that express your brand’s essence.
+                  Crafting timeless logos and cohesive branding systems that
+                  express your brand’s essence.
                 </p>
               </motion.div>
               <motion.div
@@ -346,7 +385,8 @@ function Graphic_design() {
                   Social Media Graphics
                 </h3>
                 <p className="text-gray-300">
-                  Custom visuals for Instagram, Facebook, LinkedIn, and more to keep your brand fresh and relevant.
+                  Custom visuals for Instagram, Facebook, LinkedIn, and more to
+                  keep your brand fresh and relevant.
                 </p>
               </motion.div>
               <motion.div
@@ -363,7 +403,8 @@ function Graphic_design() {
                   Marketing Collateral
                 </h3>
                 <p className="text-gray-300">
-                  Impactful brochures, business cards, banners, and flyers for promotions and events.
+                  Impactful brochures, business cards, banners, and flyers for
+                  promotions and events.
                 </p>
               </motion.div>
               <motion.div
@@ -380,7 +421,8 @@ function Graphic_design() {
                   UI/UX Design (Web & App)
                 </h3>
                 <p className="text-gray-300">
-                  Intuitive, user-friendly interfaces combining aesthetic appeal with seamless functionality.
+                  Intuitive, user-friendly interfaces combining aesthetic appeal
+                  with seamless functionality.
                 </p>
               </motion.div>
               <motion.div
@@ -397,7 +439,8 @@ function Graphic_design() {
                   Packaging Design
                 </h3>
                 <p className="text-gray-300">
-                  Compelling, on-brand packaging for retail, cosmetics, food, and more to grab attention.
+                  Compelling, on-brand packaging for retail, cosmetics, food,
+                  and more to grab attention.
                 </p>
               </motion.div>
               <motion.div
@@ -414,7 +457,8 @@ function Graphic_design() {
                   Presentation & Document Design
                 </h3>
                 <p className="text-gray-300">
-                  Polished presentations and company profiles reflecting your brand’s professionalism.
+                  Polished presentations and company profiles reflecting your
+                  brand’s professionalism.
                 </p>
               </motion.div>
             </div>
@@ -450,7 +494,10 @@ function Graphic_design() {
                   Why Choose Orionsols
                 </h2>
                 <p className="text-lg text-gray-300 mb-6">
-                  Your brand deserves more than generic templates. At Orionsols, we deliver unique, impactful designs tailored to the Dubai market, combining creativity with strategy to drive engagement and growth.
+                  Your brand deserves more than generic templates. At Orionsols,
+                  we deliver unique, impactful designs tailored to the Dubai
+                  market, combining creativity with strategy to drive engagement
+                  and growth.
                 </p>
                 <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
@@ -474,7 +521,9 @@ function Graphic_design() {
                       Deep Knowledge of Dubai Market
                     </h3>
                     <p className="text-gray-300">
-                      As a homegrown agency, we understand Dubai’s cultural and commercial nuances, delivering designs that connect locally.
+                      As a homegrown agency, we understand Dubai’s cultural and
+                      commercial nuances, delivering designs that connect
+                      locally.
                     </p>
                   </div>
                   <div className="p-6 rounded-lg shadow-sm">
@@ -482,7 +531,8 @@ function Graphic_design() {
                       Strategic Creativity
                     </h3>
                     <p className="text-gray-300">
-                      Every design is intentional, rooted in business strategy and aligned with your goals for maximum impact.
+                      Every design is intentional, rooted in business strategy
+                      and aligned with your goals for maximum impact.
                     </p>
                   </div>
                   <div className="p-6 rounded-lg shadow-sm">
@@ -490,7 +540,8 @@ function Graphic_design() {
                       Experienced & Passionate Team
                     </h3>
                     <p className="text-gray-300">
-                      Our specialists—from branding to UI/UX—turn your vision into compelling reality with dedication.
+                      Our specialists—from branding to UI/UX—turn your vision
+                      into compelling reality with dedication.
                     </p>
                   </div>
                   <div className="p-6 rounded-lg shadow-sm">
@@ -498,7 +549,8 @@ function Graphic_design() {
                       Transparent & Collaborative
                     </h3>
                     <p className="text-gray-300">
-                      We involve you at every step, encouraging feedback for a smooth, rewarding process.
+                      We involve you at every step, encouraging feedback for a
+                      smooth, rewarding process.
                     </p>
                   </div>
                 </div>
@@ -526,13 +578,16 @@ function Graphic_design() {
               viewport={{ once: false, amount: 0.5 }}
               className="text-xl max-w-3xl mx-auto mb-8"
             >
-              Your brand deserves unique, impactful designs that tell your story and drive engagement. Contact Orionsols for a free consultation and see how our professional graphic designing services in Dubai can make your brand unforgettable.
+              Your brand deserves unique, impactful designs that tell your story
+              and drive engagement. Contact Orionsols for a free consultation
+              and see how our professional graphic designing services in Dubai
+              can make your brand unforgettable.
             </motion.p>
           </div>
         </section>
       </div>
     </div>
-  )
+  );
 }
 
-export default Graphic_design
+export default Graphic_design;
