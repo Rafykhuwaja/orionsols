@@ -27,9 +27,9 @@ function Banner() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen max-w-full overflow-hidden">
+    <div className="relative w-full h-screen max-w-full overflow-hidden ">
       <div id="home" className="relative flex flex-col px-4 sm:px-8 text-white w-full h-full justify-center items-center max-w-full">
-        <h1 className="text-center font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-20 md:mt-5 mb-10 max-w-full leading-tight">
+        <h1 className="text-center font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-20 md:mt-[18vh] mb-10 max-w-full leading-tight">
           Take Your Business to the <span className="text-[#b8a9fe]">New Height</span> <br className="hidden sm:block" />with <span className="text-[#b8a9fe]">Orionsols</span>
         </h1>
         <div className="w-full max-w-full overflow-hidden flex justify-center">
