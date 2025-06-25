@@ -42,7 +42,7 @@ function ContactForm() {
 
         <div className="flex items-center mt-5">
           <img width="35" height="35" src="https://img.icons8.com/ios/50/b8a9fe/marker--v1.png" alt="marker--v1"/>
-          <p className="font-bold md:text-2xl ml-5">Address: Ascote Park Place office 401,Dubai</p>
+          <p className="font-bold md:text-2xl ml-5">Address: Ascott Park Place office 401,Dubai</p>
         </div>
       </div>
       </div>
