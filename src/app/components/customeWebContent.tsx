@@ -30,13 +30,10 @@ function CustomeWebContent() {
                 />
 
                 <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
-                  Planning
+                 Strategy & Planning
                 </h2>
                 <p className="leading-relaxed text-base text-center">
-                  Effective content planning involves defining your target
-                  audience, identifying goals, and brainstorming topics to
-                  create resonant content that achieves desired outcomes and
-                  sets you apart from the competition
+                  We start with clarity. Our team takes time to understand your business, goals, and markets. Then, we especially develop a strategy according to your objectives-combining the creative direction with demonstration-driven thinking.
                 </p>
               </div>
             </div>
@@ -49,13 +46,10 @@ function CustomeWebContent() {
                 />
 
                 <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
-                  Research
+                 In-depth Research
                 </h2>
                 <p className="leading-relaxed text-base text-center">
-                  Conducting thorough research is essential to creating
-                  high-quality content, involving gathering credible sources,
-                  analyzing data, and verifying facts to ensure accuracy,
-                  credibility, and relevance to your target audience
+                  We believe that great marketing lies in knowledge. Our research process examines your audience, industry trends, and competitive landscapes to ensure that every decision is informed, relevant, and effective.
                 </p>
               </div>
             </div>
@@ -68,13 +62,10 @@ function CustomeWebContent() {
                 />
 
                 <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
-                  Optimization
+                  Optimization & Execution
                 </h2>
                 <p className="leading-relaxed text-base text-center">
-                  Optimizing content involves refining and perfecting it for
-                  maximum impact, including editing, proofreading, and
-                  formatting, to ensure clarity, coherence, and engagement,
-                  while also considering SEO and accessibility best practices
+                  Execution matters. We launch our campaigns, test, and continuously improve them for the highest results, from scene to messaging to the demonstration matrix.
                 </p>
               </div>
             </div>
@@ -87,13 +78,10 @@ function CustomeWebContent() {
                 />
 
                 <h2 className="text-lg text-[#b8a9fe] font-medium title-font mb-4 text-center">
-                  Results
+                  Results & Growth
                 </h2>
                 <p className="leading-relaxed text-base text-center">
-                  Measuring content results involves tracking key performance
-                  indicators (KPIs), analyzing metrics, and assessing feedback
-                  to determine the effectiveness of content in achieving its
-                  intended goals and resonating with the target audience
+                  We distribute more than reports - we provide impact. With real-time tracking, clear data, and transparent insights, we show you how your brand is growing and where it is forward.
                 </p>
               </div>
             </div>

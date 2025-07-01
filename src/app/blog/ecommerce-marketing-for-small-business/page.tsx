@@ -52,7 +52,7 @@ function Page() {
             suit the local environment.
           </p>
           <p className="text-lg">
-            This blog post examines many benefits of e-commerce marketing in
+            This blog post examines many benefits of <a className="underline" href="https://www.topdevelopers.co/directory/ecommerce-marketing-agencies">e-commerce marketing</a> in
             Dubai, effective strategies small businesses can use, and face those
             challenges and practical ways to overcome those obstacles. By the
             end, it will be clear why e-commerce can be an important step
