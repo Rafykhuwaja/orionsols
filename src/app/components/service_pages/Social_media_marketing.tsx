@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { Share2, Target, BarChart4, Users } from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
-import { motion } from "framer-motion";
 
 function Social_media_marketing() {
   return (
@@ -14,13 +13,7 @@ function Social_media_marketing() {
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col md:flex-row items-center">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 mb-8 md:mb-0 md:pr-12"
-              >
+              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   Top-Tier{" "}
                   <span className="text-[#b8a9fe]">Social Media Marketing</span>{" "}
@@ -30,14 +23,8 @@ function Social_media_marketing() {
                   Elevate your brand with strategic social media marketing that
                   builds meaningful connections and drives measurable results.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 w-full"
-              >
+              </div>
+              <div className="md:w-1/2 w-full">
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
                   {/* Loading placeholder */}
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
@@ -51,20 +38,14 @@ function Social_media_marketing() {
                     priority
                   />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Introduction */}
         <section className="py-16">
-          <motion.div
-            initial={{ opacity: 1, y: 120 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.5 }}
-            className="container mx-auto px-6"
-          >
+          <div className="container mx-auto px-6">
             <p className="text-gray-300 text-lg leading-relaxed">
               In today&apos;s digital era, social media is at the heart of
               modern marketing. Whether you&apos;re a small startup or a large
@@ -77,30 +58,18 @@ function Social_media_marketing() {
               grow your community, increase visibility, and generate real
               results.
             </p>
-          </motion.div>
+          </div>
         </section>
 
         {/* Why Social Media Marketing Matters */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-3xl font-bold text-center mb-16 text-gray-300"
-            >
+            <h2 className="text-3xl font-bold text-center mb-16 text-gray-300">
               Why <span className="text-[#b8a9fe]">Social Media Marketing</span>{" "}
               Matters
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="p-8 rounded-lg border border-[#b8a9fe]"
-              >
+              <div className="p-8 rounded-lg border border-[#b8a9fe]">
                 <div className="flex items-center mb-4">
                   <div className="bg-[#b8a9fe] p-3 rounded-full mr-4">
                     <Users className="h-6 w-6 text-white" />
@@ -114,14 +83,8 @@ function Social_media_marketing() {
                   directly with customers, and build trust through active
                   conversations.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="p-8 rounded-lg border border-[#b8a9fe]"
-              >
+              </div>
+              <div className="p-8 rounded-lg border border-[#b8a9fe]">
                 <div className="flex items-center mb-4">
                   <div className="bg-[#b8a9fe] p-3 rounded-full mr-4">
                     <BarChart4 className="h-6 w-6 text-white" />
@@ -135,7 +98,7 @@ function Social_media_marketing() {
                   cost-effective advertising options, and a boost in online
                   visibility that even supports your SEO efforts.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -143,24 +106,12 @@ function Social_media_marketing() {
         {/* Our Process */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-3xl font-bold text-center mb-16 text-gray-300"
-            >
+            <h2 className="text-3xl font-bold text-center mb-16 text-gray-300">
               Our <span className="text-[#b8a9fe]">Social Media Marketing</span>{" "}
               Process
-            </motion.h2>
+            </h2>
             <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="flex flex-col md:flex-row mb-12"
-              >
+              <div className="flex flex-col md:flex-row mb-12">
                 <div className="md:w-1/3">
                   <div className="bg-[#b8a9fe] rounded-full h-16 w-16 flex items-center justify-center mb-4">
                     <span className="text-white text-2xl font-bold">1</span>
@@ -176,14 +127,8 @@ function Social_media_marketing() {
                     to identify the best opportunities.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="flex flex-col md:flex-row mb-12"
-              >
+              </div>
+              <div className="flex flex-col md:flex-row mb-12">
                 <div className="md:w-1/3">
                   <div className="bg-[#b8a9fe] rounded-full h-16 w-16 flex items-center justify-center mb-4">
                     <span className="text-white text-2xl font-bold">2</span>
@@ -200,14 +145,8 @@ function Social_media_marketing() {
                     converts.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="flex flex-col md:flex-row mb-12"
-              >
+              </div>
+              <div className="flex flex-col md:flex-row mb-12">
                 <div className="md:w-1/3">
                   <div className="bg-[#b8a9fe] rounded-full h-16 w-16 flex items-center justify-center mb-4">
                     <span className="text-white text-2xl font-bold">3</span>
@@ -223,14 +162,8 @@ function Social_media_marketing() {
                     nurture relationships.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="flex flex-col md:flex-row"
-              >
+              </div>
+              <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3">
                   <div className="bg-[#b8a9fe] rounded-full h-16 w-16 flex items-center justify-center mb-4">
                     <span className="text-white text-2xl font-bold">4</span>
@@ -246,7 +179,7 @@ function Social_media_marketing() {
                     conversions for your brand.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -254,23 +187,11 @@ function Social_media_marketing() {
         {/* Our Services */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-3xl font-bold text-center mb-16 text-[#b8a9fe]"
-            >
+            <h2 className="text-3xl font-bold text-center mb-16 text-[#b8a9fe]">
               What We Offer
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
-              >
+              <div className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300">
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Target className="h-8 w-8 text-[#b8a9fe]" />
                 </div>
@@ -281,14 +202,8 @@ function Social_media_marketing() {
                   Complete social media strategy development, content planning,
                   scheduling, and day-to-day account management.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
-              >
+              </div>
+              <div className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300">
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Share2 className="h-8 w-8 text-[#b8a9fe]" />
                 </div>
@@ -299,14 +214,8 @@ function Social_media_marketing() {
                   Targeted social media advertising campaigns designed to
                   increase reach, engagement, and conversions with optimal ROI.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
-              >
+              </div>
+              <div className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300">
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <BarChart4 className="h-8 w-8 text-[#b8a9fe]" />
                 </div>
@@ -317,22 +226,16 @@ function Social_media_marketing() {
                   Comprehensive performance tracking and detailed reports that
                   show the real impact of your social media marketing efforts.
                 </p>
-              </motion.div>
+              </div>
             </div>
-            <motion.div
-              initial={{ opacity: 1, x: 150 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="mt-16 relative h-80 md:h-96 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg"
-            >
+            <div className="mt-16 relative h-80 md:h-96 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/socialmedia2.jpg"
                 alt="Our Social Media Marketing Services"
                 layout="fill"
                 objectFit="cover"
               />
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -340,13 +243,7 @@ function Social_media_marketing() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center mb-16">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 mb-8 md:mb-0"
-              >
+              <div className="md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-3xl font-bold mb-6 text-[#b8a9fe]">
                   Why Choose Orionsols
                 </h2>
@@ -364,14 +261,8 @@ function Social_media_marketing() {
                     objectFit="cover"
                   />
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
-                className="md:w-1/2 md:pl-12"
-              >
+              </div>
+              <div className="md:w-1/2 md:pl-12">
                 <div className="grid grid-cols-1 gap-6">
                   <div className="p-6 rounded-lg shadow-sm">
                     <h3 className="text-xl font-semibold mb-3 text-[#b8a9fe]">
@@ -411,7 +302,7 @@ function Social_media_marketing() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -419,27 +310,15 @@ function Social_media_marketing() {
         {/* Call to Action */}
         <section className="py-20 text-white">
           <div className="container mx-auto px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-3xl font-bold mb-6 text-[#b8a9fe]"
-            >
+            <h2 className="text-3xl font-bold mb-6 text-[#b8a9fe]">
               Ready to Get Started?
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-xl max-w-3xl mx-auto mb-8"
-            >
+            </h2>
+            <p className="text-xl max-w-3xl mx-auto mb-8">
               If your brand isn&apos;t making an impact on social media,
               you&apos;re missing valuable opportunities. Let Orionsols help you
               stand out, grow your community, and drive meaningful business
               results through powerful, personalized social media marketing.
-            </motion.p>
+            </p>
           </div>
         </section>
       </div>

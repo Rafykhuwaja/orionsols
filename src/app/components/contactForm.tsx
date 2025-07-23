@@ -4,14 +4,6 @@ import { useState } from "react";
 import {motion} from "framer-motion"
 import Image from "next/image";
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log("Form submitted:", { name, email, message });
-  };
 
   return (
     <div id="contact" className="flex flex-col md:flex-row md:justify-between lg:py-20">
@@ -56,7 +48,7 @@ function ContactForm() {
           <h2 className="text-2xl font-semibold text-center mb-4 text-[#b8a9fe]">
             Contact Us
           </h2>
-          <form onSubmit={handleSubmit}>
+          <form action="https://formsubmit.co/info@orionsols.com" method="POST" >
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -65,11 +57,10 @@ function ContactForm() {
                 Your Name
               </label>
               <input
-                type="text"
+                type="text" 
+                name="name"
                 id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
+                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] text-white bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="John Doe"
                 required
               />
@@ -83,10 +74,9 @@ function ContactForm() {
               </label>
               <input
                 type="email"
+                name="email"
                 id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border bg-gray-800 border-[#b8a9fe] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
+                className="mt-1 block w-full px-3 py-2 border bg-gray-800 text-white border-[#b8a9fe] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="john@example.com"
                 required
               />
@@ -98,14 +88,14 @@ function ContactForm() {
               >
                 Your Message
               </label>
-              <textarea
+              <input
+                type="text"
+                name="message"
                 id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#9a83ff] focus:border-[#917bf3]"
+                className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] text-white bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#9a83ff] focus:border-[#917bf3]"
                 placeholder="Your message here..."
                 required
-              ></textarea>
+              ></input>
             </div>
             <button
               type="submit"

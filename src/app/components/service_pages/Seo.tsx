@@ -9,7 +9,6 @@ import {
   FileText,
 } from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
-import { motion } from "framer-motion";
 
 function Seo() {
   return (
@@ -20,11 +19,7 @@ function Seo() {
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col md:flex-row items-center">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0 md:pr-12"
               >
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -39,12 +34,8 @@ function Seo() {
                   with SEO strategies designed for sustainable growth and
                   measurable results.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="md:w-1/2 w-full"
               >
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
@@ -60,19 +51,14 @@ function Seo() {
                     priority
                   />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Introduction */}
         <section className="py-16">
-          <motion.div
-            initial={{ opacity: 1, y: 120 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.5 }}
-          >
+          <div>
             <div>
               <p className="text-gray-300 text-lg leading-relaxed">
                 In today&apos;s web-based world, being found on the internet
@@ -96,27 +82,19 @@ function Seo() {
                 results, you are at the right place.
               </p>
             </div>
-          </motion.div>
+          </div>
         </section>
 
         {/* Why SEO Matters */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Why <span className="text-[#b8a9fe]">SEO</span> Matters
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -132,12 +110,8 @@ function Seo() {
                   your website is on the first page of search results,
                   you&apos;re missing out on significant potential business.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -153,12 +127,8 @@ function Seo() {
                   credibility and reliability. SEO not only generates traffic
                   but boosts your company&apos;s reputation.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -174,12 +144,8 @@ function Seo() {
                   an investment that provides long-term, sustainable growth with
                   minimal recurring costs.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -195,7 +161,7 @@ function Seo() {
                   and easier to use, which not only improves rankings but also
                   increases conversion rates.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -203,22 +169,14 @@ function Seo() {
         {/* Our Process */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Our <span className="text-[#b8a9fe]">SEO</span> Process
-            </motion.h2>
+            </h2>
 
             <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -237,12 +195,9 @@ function Seo() {
                     strategy development.
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -261,12 +216,9 @@ function Seo() {
                     effectively.
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -285,12 +237,9 @@ function Seo() {
                     experience.
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -309,12 +258,9 @@ function Seo() {
                     rankings.
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="flex flex-col md:flex-row"
               >
                 <div className="md:w-1/3">
@@ -332,7 +278,7 @@ function Seo() {
                     your site&apos;s authority and improving long-term rankings.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -340,20 +286,14 @@ function Seo() {
         {/* Our Services */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-[#b8a9fe]"
             >
               Services We Provide in SEO
-            </motion.h2>
+            </h2>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -367,12 +307,9 @@ function Seo() {
                   local landing pages to rank in local searches for
                   service-based businesses and retailers.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -386,12 +323,9 @@ function Seo() {
                   Vitals, and enhance mobile friendliness to build a strong
                   foundation for your SEO efforts.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -405,12 +339,9 @@ function Seo() {
                   ensure your products are found by online shoppers using
                   Shopify, WooCommerce, or Magento.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -424,12 +355,9 @@ function Seo() {
                   that generates traffic while maintaining your brand voice with
                   strategic keyword targeting.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -443,12 +371,9 @@ function Seo() {
                   recovery work if you&apos;re slipping in rankings or affected
                   by Google algorithm changes.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -462,13 +387,10 @@ function Seo() {
                   languages and regions, from hreflang implementation to
                   localized keyword optimization.
                 </p>
-              </motion.div>
+              </div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 1, x: 150 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+            <div
               className="mt-16 relative h-80 md:h-96 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg"
             >
               <Image
@@ -477,7 +399,7 @@ function Seo() {
                 layout="fill"
                 objectFit="cover"
               />
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -485,10 +407,7 @@ function Seo() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center mb-16">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0"
               >
                 <h2 className="text-3xl font-bold mb-6 text-[#b8a9fe]">
@@ -508,12 +427,9 @@ function Seo() {
                     objectFit="cover"
                   />
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+              <div
                 className="md:w-1/2 md:pl-12"
               >
                 <div className="grid grid-cols-1 gap-6">
@@ -561,7 +477,7 @@ function Seo() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -569,29 +485,20 @@ function Seo() {
         {/* Call to Action */}
         <section className="py-20 text-white">
           <div className="container mx-auto px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            <h2
               className="text-3xl font-bold mb-6 text-[#b8a9fe]"
             >
               Get Started with Engaging SEO Today
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            </h2>
+            <p
               className="text-xl max-w-3xl mx-auto mb-8"
             >
               Ready to expand your online presence, generate high-intent
               traffic, and boost revenue? It&apos;s time to join forces with a
               reputable SEO agency in Dubai that prioritizes your success. At
               Orionsols, we don&apos;t just generate clicks—we generate results.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            </p>
+            <p
               className="text-xl max-w-3xl mx-auto mb-8"
             >
               Our experts provide full SEO services in Dubai—from audits and
@@ -599,7 +506,7 @@ function Seo() {
               win at search. Call Orionsols today for a consultation. Let&apos;s
               build an SEO plan that drives the needle today and in the long
               run.
-            </motion.p>
+            </p>
           </div>
         </section>
       </div>

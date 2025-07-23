@@ -9,7 +9,6 @@ import {
   Award,
 } from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
-import { motion } from "framer-motion";
 
 import React from "react";
 
@@ -22,11 +21,7 @@ function Graphic_design() {
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col md:flex-row items-center">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0 md:pr-12"
               >
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -38,12 +33,8 @@ function Graphic_design() {
                   Empower your brand with stunning visuals that stand out,
                   connect with audiences, and leave a lasting impression.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="md:w-1/2 w-full"
               >
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
@@ -59,18 +50,14 @@ function Graphic_design() {
                     priority
                   />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Introduction */}
         <section className="py-16">
-          <motion.div
-            initial={{ opacity: 1, y: 120 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.5 }}
+          <div
             className="container mx-auto px-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -85,28 +72,20 @@ function Graphic_design() {
               passion and focused on transforming your ideas into stunning
               designs.
             </p>
-          </motion.div>
+          </div>
         </section>
 
         {/* Why Graphic Designing Matters */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Why <span className="text-[#b8a9fe]">Graphic Designing</span>{" "}
               Matters
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -122,12 +101,8 @@ function Graphic_design() {
                   customer perception. Great design builds recognition and trust
                   in Dubai’s dynamic market.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -142,12 +117,8 @@ function Graphic_design() {
                   High-quality visuals for social media, websites, or
                   newsletters boost engagement and make your message memorable.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -162,12 +133,8 @@ function Graphic_design() {
                   Professional design reflects quality. We ensure every element
                   enhances your brand’s credibility and inspires confidence.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -182,7 +149,7 @@ function Graphic_design() {
                   Effective design guides customer behavior, drives clicks, and
                   boosts conversions with a strategic approach.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -190,22 +157,14 @@ function Graphic_design() {
         {/* Our Process */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Our <span className="text-[#b8a9fe]">Graphic Designing</span>{" "}
               Process
-            </motion.h2>
+            </h2>
             <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -223,12 +182,8 @@ function Graphic_design() {
                     authentically.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -245,12 +200,8 @@ function Graphic_design() {
                     designs that elevate your brand above the rest.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -267,12 +218,8 @@ function Graphic_design() {
                     visuals with your brand tone before design execution.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -290,12 +237,8 @@ function Graphic_design() {
                     systems.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -312,12 +255,8 @@ function Graphic_design() {
                     until they meet or exceed your expectations.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row"
               >
                 <div className="md:w-1/3">
@@ -335,7 +274,7 @@ function Graphic_design() {
                     projects.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -343,21 +282,13 @@ function Graphic_design() {
         {/* Our Services */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-[#b8a9fe]"
             >
               Our Graphic Designing Services
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -370,12 +301,8 @@ function Graphic_design() {
                   Crafting timeless logos and cohesive branding systems that
                   express your brand’s essence.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -388,12 +315,8 @@ function Graphic_design() {
                   Custom visuals for Instagram, Facebook, LinkedIn, and more to
                   keep your brand fresh and relevant.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -406,12 +329,8 @@ function Graphic_design() {
                   Impactful brochures, business cards, banners, and flyers for
                   promotions and events.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -424,12 +343,8 @@ function Graphic_design() {
                   Intuitive, user-friendly interfaces combining aesthetic appeal
                   with seamless functionality.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -442,12 +357,8 @@ function Graphic_design() {
                   Compelling, on-brand packaging for retail, cosmetics, food,
                   and more to grab attention.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -460,13 +371,9 @@ function Graphic_design() {
                   Polished presentations and company profiles reflecting your
                   brand’s professionalism.
                 </p>
-              </motion.div>
+              </div>
             </div>
-            <motion.div
-              initial={{ opacity: 1, x: 150 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <div
               className="mt-16 relative h-80 md:h-96 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg"
             >
               <Image
@@ -475,7 +382,7 @@ function Graphic_design() {
                 layout="fill"
                 objectFit="cover"
               />
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -483,11 +390,7 @@ function Graphic_design() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center mb-16">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0"
               >
                 <h2 className="text-3xl font-bold mb-6 text-[#b8a9fe]">
@@ -507,12 +410,8 @@ function Graphic_design() {
                     objectFit="cover"
                   />
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="md:w-1/2 md:pl-12"
               >
                 <div className="grid grid-cols-1 gap-6">
@@ -554,7 +453,7 @@ function Graphic_design() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -562,27 +461,19 @@ function Graphic_design() {
         {/* Call to Action */}
         <section className="py-20 text-white">
           <div className="container mx-auto px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold mb-6 text-[#b8a9fe]"
             >
               Get Started with Orionsols Today
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            </h2>
+            <p
               className="text-xl max-w-3xl mx-auto mb-8"
             >
               Your brand deserves unique, impactful designs that tell your story
               and drive engagement. Contact Orionsols for a free consultation
               and see how our professional graphic designing services in Dubai
               can make your brand unforgettable.
-            </motion.p>
+            </p>
           </div>
         </section>
       </div>

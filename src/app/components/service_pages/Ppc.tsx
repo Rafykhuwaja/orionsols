@@ -10,7 +10,6 @@ import {
   Youtube,
 } from "lucide-react";
 import Navbar2 from "../../components/Navbar2";
-import { motion } from "framer-motion";
 
 function Ppc() {
   return (
@@ -21,11 +20,7 @@ function Ppc() {
         <section className="py-20 relative overflow-hidden text-gray-300">
           <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col md:flex-row items-center">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0 md:pr-12"
               >
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -37,12 +32,8 @@ function Ppc() {
                   campaigns designed to reach the right audience at the right
                   time.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="md:w-1/2 w-full"
               >
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl bg-gray-800">
@@ -58,18 +49,14 @@ function Ppc() {
                     priority
                   />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Introduction */}
         <section className="py-16">
-          <motion.div
-            initial={{ opacity: 1, y: 120 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.5 }}
+          <div
             className="container mx-auto px-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -87,27 +74,19 @@ function Ppc() {
               understand the UAE market intricately and know exactly how to make
               your campaigns succeed.
             </p>
-          </motion.div>
+          </div>
         </section>
 
         {/* Why PPC Matters */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Why <span className="text-[#b8a9fe]">PPC</span> Matters
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -124,12 +103,8 @@ function Ppc() {
                   A well-executed campaign can position your business at the top
                   of search results within hours.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -146,12 +121,8 @@ function Ppc() {
                   professionals in Downtown Dubai or tourists near Marina Mall?
                   No problem.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -168,12 +139,8 @@ function Ppc() {
                   clicks your ad. We manage your campaigns to ensure your budget
                   is optimized for maximum return.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="p-8 rounded-lg border border-[#b8a9fe]"
               >
                 <div className="flex items-center mb-4">
@@ -190,7 +157,7 @@ function Ppc() {
                   insights and continually optimize your campaigns to increase
                   your ROI.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -198,21 +165,13 @@ function Ppc() {
         {/* Our Process */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-gray-300"
             >
               Our Proven <span className="text-[#b8a9fe]">PPC</span> Process
-            </motion.h2>
+            </h2>
             <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -230,12 +189,8 @@ function Ppc() {
                     build a campaign aligned with your objectives.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -253,12 +208,8 @@ function Ppc() {
                     resonate with your audience.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -276,12 +227,8 @@ function Ppc() {
                     Google Ads, Facebook, and YouTube for maximum performance.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -300,12 +247,8 @@ function Ppc() {
                     effectively.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row mb-12"
               >
                 <div className="md:w-1/3">
@@ -323,12 +266,8 @@ function Ppc() {
                     refinements, we fine-tune your campaign continuously.
                   </p>
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="flex flex-col md:flex-row"
               >
                 <div className="md:w-1/3">
@@ -346,7 +285,7 @@ function Ppc() {
                     your budget is going and how it&apos;s performing.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -354,21 +293,13 @@ function Ppc() {
         {/* Our Services */}
         <section className="py-16">
           <div className="container mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold text-center mb-16 text-[#b8a9fe]"
             >
               Our PPC Services in Dubai
-            </motion.h2>
+            </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -381,12 +312,8 @@ function Ppc() {
                   Show up at the top of Google when users are actively
                   searching. Ideal for service providers and lead generation.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -399,12 +326,8 @@ function Ppc() {
                   Target users across millions of websites and apps. Great for
                   brand awareness, retargeting, and nurturing leads.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -417,12 +340,8 @@ function Ppc() {
                   Perfect for eCommerce businesses. Showcase products directly
                   in search results with images, pricing, and reviews.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -435,12 +354,8 @@ function Ppc() {
                   Tell your story through engaging video content. Ideal for
                   brand building and audience engagement.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -454,12 +369,8 @@ function Ppc() {
                   Facebook, Instagram, and LinkedIn. Perfect for engagement and
                   conversions.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="border border-[#b8a9fe] rounded-lg p-6 hover:shadow-lg transition duration-300"
               >
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
@@ -472,13 +383,9 @@ function Ppc() {
                   Bring back users who previously visited your website with
                   smart remarketing strategies across platforms.
                 </p>
-              </motion.div>
+              </div>
             </div>
-            <motion.div
-              initial={{ opacity: 1, x: 150 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <div
               className="mt-16 relative h-80 md:h-96 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg"
             >
               <Image
@@ -487,7 +394,7 @@ function Ppc() {
                 layout="fill"
                 objectFit="cover"
               />
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -495,11 +402,7 @@ function Ppc() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center mb-16">
-              <motion.div
-                initial={{ opacity: 1, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              <div
                 className="md:w-1/2 mb-8 md:mb-0"
               >
                 <h2 className="text-3xl font-bold mb-6 text-[#b8a9fe]">
@@ -520,12 +423,8 @@ function Ppc() {
                     objectFit="cover"
                   />
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 1, x: 120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.5 }}
+              </div>
+              <div
                 className="md:w-1/2 md:pl-12"
               >
                 <div className="grid grid-cols-1 gap-6">
@@ -580,7 +479,7 @@ function Ppc() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -588,20 +487,12 @@ function Ppc() {
         {/* Call to Action */}
         <section className="py-20 text-white">
           <div className="container mx-auto px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            <h2
               className="text-3xl font-bold mb-6 text-[#b8a9fe]"
             >
               Let&apos;s Launch Your PPC Campaign Today
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 1, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.5 }}
+            </h2>
+            <p
               className="text-xl max-w-3xl mx-auto mb-8"
             >
               Your customers are already online—make sure they find you first.
@@ -610,7 +501,7 @@ function Ppc() {
               strategies. Let&apos;s start with a free consultation and explore
               how pay-per-click marketing in Dubai can drive real, trackable
               results for your business.
-            </motion.p>
+            </p>
           </div>
         </section>
       </div>
