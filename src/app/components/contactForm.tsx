@@ -7,7 +7,7 @@ function ContactForm() {
    const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
 
@@ -27,11 +27,11 @@ function ContactForm() {
         setStatus("Message sent successfully!");
         setForm({ name: "", email: "", message: "" });
       } else {
-        setStatus("Failed to send message.");
+        setStatus(result.message || "Failed to send message.");
       }
     } catch (err) {
-      setStatus("Something went wrong.");
-      console.log(err)
+      setStatus("Network error. Please check your connection and try again.");
+      console.error("Contact form error:", err);
     }
   };
 
@@ -119,15 +119,15 @@ function ContactForm() {
               >
                 Your Message
               </label>
-              <input
-              
+              <textarea
                 onChange={handleChange}
                 value={form.message}
                 id="message"
+                rows={4}
                 className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] text-white bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#9a83ff] focus:border-[#917bf3]"
                 placeholder="Your message here..."
                 required
-              ></input>
+              ></textarea>
             </div>
             <button
               type="submit"
