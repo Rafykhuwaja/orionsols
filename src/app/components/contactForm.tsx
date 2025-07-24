@@ -5,6 +5,36 @@ import {motion} from "framer-motion"
 import Image from "next/image";
 function ContactForm() {
 
+   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(form),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const result = await res.json();
+      if (result.success) {
+        setStatus("Message sent successfully!");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (err) {
+      setStatus("Something went wrong.");
+    }
+  };
+
   return (
     <div id="contact" className="flex flex-col md:flex-row md:justify-between lg:py-20">
       <div className="md:w-1/2 text-white p-6">
@@ -48,7 +78,7 @@ function ContactForm() {
           <h2 className="text-2xl font-semibold text-center mb-4 text-[#b8a9fe]">
             Contact Us
           </h2>
-          <form action="https://formsubmit.co/info@orionsols.com" method="POST" >
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -57,8 +87,8 @@ function ContactForm() {
                 Your Name
               </label>
               <input
-                type="text" 
-                name="name"
+                onChange={handleChange}
+                value={form.name}
                 id="name"
                 className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] text-white bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="John Doe"
@@ -73,8 +103,9 @@ function ContactForm() {
                 Your Email
               </label>
               <input
-                type="email"
-                name="email"
+              
+                onChange={handleChange}
+                value={form.email}
                 id="email"
                 className="mt-1 block w-full px-3 py-2 border bg-gray-800 text-white border-[#b8a9fe] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#b8a9fe] focus:border-[#b8a9fe]"
                 placeholder="john@example.com"
@@ -89,8 +120,9 @@ function ContactForm() {
                 Your Message
               </label>
               <input
-                type="text"
-                name="message"
+              
+                onChange={handleChange}
+                value={form.message}
                 id="message"
                 className="mt-1 block w-full px-3 py-2 border border-[#b8a9fe] text-white bg-gray-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#9a83ff] focus:border-[#917bf3]"
                 placeholder="Your message here..."
@@ -103,6 +135,7 @@ function ContactForm() {
             >
               Send Message
             </button>
+            <p className="text-white text-xl my-4">{status}</p>
           </form>
         </div>
       </motion.div>
