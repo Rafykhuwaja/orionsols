@@ -24,6 +24,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true, message: "Message sent!" });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ success: false, message: "Failed to send." }, { status: 500 });
+    return NextResponse.json({ success: false, message: "Failed to send." + error }, { status: 500 });
   }
 }

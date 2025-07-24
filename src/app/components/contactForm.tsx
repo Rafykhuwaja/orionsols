@@ -2,7 +2,6 @@
 import React from "react";
 import { useState } from "react";
 import {motion} from "framer-motion"
-import Image from "next/image";
 function ContactForm() {
 
    const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -32,6 +31,7 @@ function ContactForm() {
       }
     } catch (err) {
       setStatus("Something went wrong.");
+      console.log(err)
     }
   };
 
