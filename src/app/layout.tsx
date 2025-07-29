@@ -6,6 +6,16 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script"; // ⬅️ Add this
 import { GA_TRACKING_ID } from "./lib/gtag"; // ⬅️ Add this
 import Footer from "./components/Footer";
+import CanonicalTag from "./components/CanoncialTag";
+
+
+
+
+
+
+
+
+
 
 const lato = Raleway({
   weight: "400",
@@ -86,6 +96,7 @@ export default function RootLayout({
         )}
       </head>
       <body id="background" className={`${lato.className} responsive-container no-scroll`}>
+        <CanonicalTag />
         {children}
         <Footer/>
         <SpeedInsights />
