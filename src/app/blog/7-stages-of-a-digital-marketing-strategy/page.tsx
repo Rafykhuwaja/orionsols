@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import React from "react";
 import Image from "next/image";
 import Navbar2 from "@/app/components/Navbar2";
@@ -60,7 +59,7 @@ function Page() {
           <p className="text-lg">
             In addition, having a well -employed digital marketing strategy
             allows organizations to track performance well and even measure the
-            campaign effectiveness. With the help of analytics tools, companies
+            campaign effectiveness. With the help of analytics tools, digital marketing companies
             can collect valuable responses to what they are working and do not
             work to customize their strategies and produce better.
           </p>
@@ -440,7 +439,6 @@ function Page() {
 
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

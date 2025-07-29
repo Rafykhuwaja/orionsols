@@ -85,6 +85,24 @@ const cardData = [
       "developing a digital marketing strategy, digital marketing plan, digital marketing channels, online marketing ...",
     link: "/blog/7-stages-of-a-digital-marketing-strategy",
   },
+  {
+  imgSrc: "/images/wordpressblog/wordpress.avif",
+  subtitle: "WordPress Update",
+  title: "WordPress 6.8.1 Update: Key Fixes & What You Should Know",
+  description:
+    "Explore WordPress 6.8.1 changes, including performance improvements, plugin compatibility, and why it is important to update now.",
+  link: "/blog/WordPress-Update-Whats-New-and-What-It-Means-for-You",
+},
+{
+  imgSrc: "/images/geo-blog/geo.jpg",
+  subtitle: "Generative Engine Optimization",
+  title: "Generative Engine Optimization (GEO): The Future of Search Has Evolved",
+  description:
+    "GEO is the next evolution of SEO. Learn how to optimize for AI platforms like ChatGPT, Perplexity, and Google's SGE in 2025.",
+  link: "/blog/generative-engine-optimization",
+}
+
+
 ];
 const Card: React.FC<CardProps> = ({
   imgSrc,

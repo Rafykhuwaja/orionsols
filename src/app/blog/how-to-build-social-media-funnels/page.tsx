@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import React from "react";
 import Image from "next/image";
 import Navbar2 from "@/app/components/Navbar2";
@@ -502,7 +501,6 @@ function Page() {
           effective, data-driven social media marketing.
         </p>
       </div>
-      <Footer />
     </div>
   );
 }

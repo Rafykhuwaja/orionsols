@@ -71,6 +71,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="avutSsJPoqgvjuDAvCZCD_hmxJGL1zy_cR4LtEn2fwA"
         />
+        <meta name="robots" content="all" />
         {/* Google Analytics Script */}
         {GA_TRACKING_ID && (
           <>
