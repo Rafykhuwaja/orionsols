@@ -10,12 +10,13 @@ import AboutusContent from "./components/AboutusContent";
 import CustomeWebContent from "./components/customeWebContent";
 import CardComponent from "./serviceServiceSevtion";
 import ContactForm from "./components/contactForm";
+import Badges from "./components/Badges";
 
 
 export const metadata = {
   title: "Orionsols | Digital Solutions & Business Growth Agency",
   description:
-    "Orionsols is a Dubai-based digital agency providing expert services in web development, mobile apps, SEO, and e-commerce — helping businesses grow online with strategic digital solutions.",
+    "Orionsols is a Dubai-based digital agency providing expert services in web development, mobile apps, SEO, and e-commerce,  helping businesses grow online.",
   keywords: [
     "web development Dubai",
     "mobile app development",
@@ -61,8 +62,8 @@ export default function Home() {
       {/* <Testinominols/> */}
       <CustomeWebContent/>
       <CardComponent/>
+      <Badges/>
       <ContactForm/>
-
       <Contact/>
       </div>
     </main>
