@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar2 from "@/app/components/Navbar2";
 
 export const metadata = {
-  title: "How to Build a WordPress Website from Scratch",
+  title: "How to Build a WordPress Website from Scratch | Orionsols",
   description:
     "Learn how to build a WordPress website from scratch in 10 easy steps. Perfect for beginners looking to create a stunning, functional site without coding.",
   keywords: [

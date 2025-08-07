@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar2 from "@/app/components/Navbar2";
 
 export const metadata = {
-  title: "WordPress 6.8.1 Update: What’s New & Why It Matters",
+  title: "WordPress 6.8.1 Update: What’s New and Why It Matters",
   description:
     "Discover what's new in WordPress 6.8.1, a vital maintenance update with bug fixes, block editor improvements, and enhanced site stability.",
   keywords: [

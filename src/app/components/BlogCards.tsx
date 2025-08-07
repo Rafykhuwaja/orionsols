@@ -91,7 +91,7 @@ const cardData = [
   title: "WordPress 6.8.1 Update: Key Fixes & What You Should Know",
   description:
     "Explore WordPress 6.8.1 changes, including performance improvements, plugin compatibility, and why it is important to update now.",
-  link: "/blog/WordPress-Update-Whats-New-and-What-It-Means-for-You",
+  link: "/blog/wordpress-update-whats-new-and-what-it-means-for-you",
 },
 {
   imgSrc: "/images/geo-blog/geo.jpg",
